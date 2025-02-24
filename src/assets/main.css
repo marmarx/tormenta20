@@ -1,0 +1,21 @@
+@import './base.css';
+@font-face{font-family:'tormenta20';src:url('Tormenta20.ttf') format('truetype');font-weight:normal;font-style:normal}
+:root{
+  --t20-color:#b72a2b;
+  --overlay:#e8e8e8;
+  --over-trans:#eeeeee69
+}
+body{
+  position:fixed;padding:2em;
+  background-color:var(--back-color);background-size:20em;background-blend-mode:var(--back-blend);
+  background-image:var(--back-img);background-repeat:repeat;background-attachment:fixed;
+}
+p{
+  line-height:1.8em;
+  letter-spacing:.8px;
+  text-align:justify;
+  font-size:1.1em;
+  font-weight:500;
+  margin:.5em 0;
+  color:var(--color);
+}
