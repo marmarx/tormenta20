@@ -1,7 +1,3 @@
-<script setup>
-import spells from '@/stores/localStorage'
-</script>
-
 <template>
     <router-view />
   <nav>

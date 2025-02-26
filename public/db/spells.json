@@ -1,5 +1,6 @@
 [
-  {"id":0,
+  {
+    "id":0,
     "Nome":"Abençoar Alimentos",
     "Tipo":"Divina",
     "Círculo":1,
@@ -16,7 +17,8 @@
       {"1":"muda a duração para permanente, o alvo para 1 frasco com água e adiciona componente material (pó de prata no valor de T$ 5). Em vez do normal, cria um frasco de água benta."}
     ]
   },
-  {"id":1,
+  {
+    "id":1,
     "Nome":"Acalmar Animal",
     "Tipo":"Divina",
     "Círculo":1,
@@ -35,7 +37,8 @@
       {"5":"muda o alvo para 1 monstro ou espírito. Requer 3o círculo."}
     ]
   },
-  {"id":2,
+  {
+    "id":2,
     "Nome":"Adaga Mental",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -53,7 +56,8 @@
       {"2":"aumenta o dano em +1d6."}
     ]
   },
-  {"id":3,
+  {
+    "id":3,
     "Nome":"Alarme",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -70,7 +74,8 @@
       {"9":"muda a duração para 1 dia ou até ser descarregada e a resistência para Vontade anula. Quando um intruso entra na área, você pode descarregar a magia. Se o intruso falhar na resistência, ficará paralisado por 1d4 rodadas. Além disso, pelas próximas 24 horas você e as criaturas escolhidas ganham +10 em testes de Sobrevivência para rastrear o intruso."}
     ]
   },
-  {"id":4,
+  {
+    "id":4,
     "Nome":"Amedrontar",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -88,7 +93,8 @@
       {"5":"afeta todos os alvos válidos a sua escolha dentro do alcance."}
     ]
   },
-  {"id":5,
+  {
+    "id":5,
     "Nome":"Área Escorregadia",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -106,7 +112,8 @@
       {"5":"muda a CD dos testes de Acrobacia para 20."}
     ]
   },
-  {"id":6,
+  {
+    "id":6,
     "Nome":"Arma Espiritual",
     "Tipo":"Divina",
     "Círculo":1,
@@ -126,7 +133,8 @@
       {"2":"aumenta o dano causado pela arma em +1d6, limitado pelo círculo máximo de magia que você pode lançar."}
     ]
   },
-  {"id":7,
+  {
+    "id":7,
     "Nome":"Arma Mágica",
     "Tipo":"Universal",
     "Círculo":1,
@@ -143,7 +151,8 @@
       {"3":"muda o bônus de dano do aprimoramento elemental para +2d6."}
     ]
   },
-  {"id":8,
+  {
+    "id":8,
     "Nome":"Armadura Arcana",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -160,7 +169,8 @@
       {"2":"muda a duração para 1 dia."}
     ]
   },
-  {"id":9,
+  {
+    "id":9,
     "Nome":"Armamento da Natureza",
     "Tipo":"Divina",
     "Círculo":1,
@@ -178,7 +188,8 @@
       {"5":"aumenta o dano da arma em mais um passo."}
     ]
   },
-  {"id":10,
+  {
+    "id":10,
     "Nome":"Aviso",
     "Tipo":"Universal",
     "Círculo":1,
@@ -196,7 +207,8 @@
       {"3":"aumenta o número de alvos em +1."}
     ]
   },
-  {"id":11,
+  {
+    "id":11,
     "Nome":"Bênção",
     "Tipo":"Divina",
     "Círculo":1,
@@ -212,7 +224,8 @@
       {"2":"aumenta os bônus em +1, limitado pelo círculo máximo de magia que você pode lançar."}
     ]
   },
-  {"id":12,
+  {
+    "id":12,
     "Nome":"Caminhos da Natureza",
     "Tipo":"Divina",
     "Círculo":1,
@@ -229,7 +242,8 @@
       {"2":"aumenta o bônus de deslocamento em +3m."}
     ]
   },
-  {"id":13,
+  {
+    "id":13,
     "Nome":"Comando",
     "Tipo":"Divina",
     "Círculo":1,
@@ -246,7 +260,8 @@
       {"2":"aumenta a quantidade de alvos em +1"}
     ]
   },
-  {"id":14,
+  {
+    "id":14,
     "Nome":"Compreensão",
     "Tipo":"Universal",
     "Círculo":1,
@@ -265,7 +280,8 @@
       {"5":"muda o alcance para pessoal e o alvo para você. Em vez do normal, você pode falar, entender e escrever qualquer idioma. Requer 3º círculo."}
     ]
   },
-  {"id":15,
+  {
+    "id":15,
     "Nome":"Concentração de Combate",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -283,7 +299,8 @@
       {"14":"muda a execução para padrão e a duração para 1 dia. Além do normal, você recebe um sexto sentido que o avisa de qualquer perigo ou ameaça. Você fica imune às condições surpreendido e desprevenido e recebe +10 em Defesa e Reflexos. Requer 5º círculo."}
     ]
   },
-  {"id":16,
+  {
+    "id":16,
     "Nome":"Conjurar Monstro",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -310,7 +327,8 @@
       {"14":"aumenta o tamanho do monstro para Colossal. Ele tem For 15, Des 0, 180 PV, deslocamento 15m e seu ataque causa 4d12+20 pontos de dano com 9m de alcance. Requer 5º círculo."}
     ]
   },
-  {"id":17,
+  {
+    "id":17,
     "Nome":"Consagrar",
     "Tipo":"Divina",
     "Círculo":1,
@@ -327,7 +345,8 @@
       {"9":"muda a execução para 1 hora, a duração para permanente e adiciona componente material (incenso e óleos no valor de T$ 1.000). Requer 4º círculo."}
     ]
   },
-  {"id":18,
+  {
+    "id":18,
     "Nome":"Controlar Plantas",
     "Tipo":"Divina",
     "Círculo":1,
@@ -346,7 +365,8 @@
       {"2":"muda o alcance para pessoal, a área para alvo (você) e a resistência para nenhuma. Em vez do normal, você consegue se comunicar com plantas, que começam com atitude prestativa em relação a você. Além disso, você pode fazer testes de Diplomacia com plantas. Em geral, plantas têm uma percepção limitada de seus arredores e normalmente fornecem respostas simplórias."}
     ]
   },
-  {"id":19,
+  {
+    "id":19,
     "Nome":"Criar Elementos",
     "Tipo":"Divina",
     "Círculo":1,
@@ -363,7 +383,8 @@
       {"1":"se escolheu fogo, aumenta o dano inicial de cada chama em +1d6."}
     ]
   },
-  {"id":20,
+  {
+    "id":20,
     "Nome":"Criar Ilusão",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -386,7 +407,8 @@
       {"5":"muda a duração para sustentada. Além do normal, você pode gastar uma ação livre para modificar livremente a ilusão (mas não pode acrescentar novos aprimoramentos após lançá-la). Requer 3º círculo."}
     ]
   },
-  {"id":21,
+  {
+    "id":21,
     "Nome":"Curar Ferimentos",
     "Tipo":"Divina",
     "Círculo":1,
@@ -405,7 +427,8 @@
       {"5":"muda o alcance para curto e o alvo para criaturas escolhidas."}
     ]
   },
-  {"id":22,
+  {
+    "id":22,
     "Nome":"Despedaçar",
     "Tipo":"Divina",
     "Círculo":1,
@@ -426,7 +449,8 @@
       {"14":"muda o alvo para objeto mundano Colossal. Requer 5º círculo."}
     ]
   },
-  {"id":23,
+  {
+    "id":23,
     "Nome":"Detectar Ameaças",
     "Tipo":"Divina",
     "Círculo":1,
@@ -442,7 +466,8 @@
       {"2":"além do normal, você não fica surpreso e desprevenido contra perigos detectados com sucesso e recebe +5 em testes de resistência contra armadilhas. Requer 2º círculo."}
     ]
   },
-  {"id":24,
+  {
+    "id":24,
     "Nome":"Disfarce Ilusório",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -462,7 +487,8 @@
       {"3":"muda o alcance para curto e o alvo para criaturas escolhidas. Cada criatura pode ter uma aparência diferente. Criaturas involuntárias podem anular o efeito com um teste de Vontade. Requer 2º círculo."}
     ]
   },
-  {"id":25,
+  {
+    "id":25,
     "Nome":"Enfeitiçar",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -480,7 +506,8 @@
       {"5":"afeta todos os alvos dentro do alcance."}
     ]
   },
-  {"id":26,
+  {
+    "id":26,
     "Nome":"Escudo da Fé",
     "Tipo":"Divina",
     "Círculo":1,
@@ -499,7 +526,8 @@
       {"3":"muda a duração para 1 dia. Requer 2º círculo."}
     ]
   },
-  {"id":27,
+  {
+    "id":27,
     "Nome":"Escuridão",
     "Tipo":"Universal",
     "Círculo":1,
@@ -519,7 +547,8 @@
       {"5":"muda o alcance para pessoal e o alvo para você. Em vez do normal, você é coberto por sombras, recebendo +10 em testes de Furtividade e camuflagem leve. Requer 2º círculo."}
     ]
   },
-  {"id":28,
+  {
+    "id":28,
     "Nome":"Explosão de Chamas",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -537,7 +566,8 @@
       {"1":"muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica em chamas (veja Condições, no Apêndice)."}
     ]
   },
-  {"id":29,
+  {
+    "id":29,
     "Nome":"Hipnotismo",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -558,7 +588,8 @@
       {"5":"também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo."}
     ]
   },
-  {"id":30,
+  {
+    "id":30,
     "Nome":"Imagem Espelhada",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -574,7 +605,8 @@
       {"2":"além do normal, toda vez que uma cópia é destruída, emite um clarão de luz. A criatura que destruiu a cópia fica ofuscada por uma rodada. Requer 2º círculo."}
     ]
   },
-  {"id":31,
+  {
+    "id":31,
     "Nome":"Infligir Ferimentos",
     "Tipo":"Divina",
     "Círculo":1,
@@ -593,7 +625,8 @@
       {"5":"muda o alcance para curto e o alvo para criaturas escolhidas."}
     ]
   },
-  {"id":32,
+  {
+    "id":32,
     "Nome":"Leque Cromático",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -611,7 +644,8 @@
       {"5":"também afeta construtos, espíritos, monstros e mortos-vivos na área. Requer 3º círculo."}
     ]
   },
-  {"id":33,
+  {
+    "id":33,
     "Nome":"Luz",
     "Tipo":"Universal",
     "Círculo":1,
@@ -637,7 +671,8 @@
       }
     ]
   },
-  {"id":34,
+  {
+    "id":34,
     "Nome":"Névoa",
     "Tipo":"Universal",
     "Círculo":1,
@@ -657,7 +692,8 @@
       {"5":"além do normal, a nuvem fica espessa, quase sólida. Qualquer criatura dentro dela tem seu deslocamento reduzido para 3m (independentemente de seu deslocamento normal) e sofre –2 em testes de ataque e rolagens de dano."}
     ]
   },
-  {"id":35,
+  {
+    "id":35,
     "Nome":"Orientação",
     "Tipo":"Divina",
     "Círculo":1,
@@ -674,7 +710,8 @@
       {"5":"muda o alvo para criaturas escolhidas. Requer 3º círculo."}
     ]
   },
-  {"id":36,
+  {
+    "id":36,
     "Nome":"Perdição",
     "Tipo":"Divina",
     "Círculo":1,
@@ -690,7 +727,8 @@
       {"2":"aumenta as penalidades em –1, limitado pelo círculo máximo de magia que você pode lançar."}
     ]
   },
-  {"id":37,
+  {
+    "id":37,
     "Nome":"Primor Atlético",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -708,7 +746,8 @@
       {"3":"além do normal, ao fazer testes de perícias baseadas em Força, Destreza ou Constituição, o alvo pode rolar dois dados e escolher o melhor. Não afeta testes de ataque ou resistência. Requer 2º círculo."}
     ]
   },
-  {"id":38,
+  {
+    "id":38,
     "Nome":"Profanar",
     "Tipo":"Divina",
     "Círculo":1,
@@ -725,7 +764,8 @@
       {"9":"muda a execução para 1 hora, a duração para permanente e adiciona componente material (incenso e óleos no valor de T$ 1.000). Requer 4º círculo."}
     ]
   },
-  {"id":39,
+  {
+    "id":39,
     "Nome":"Proteção Divina",
     "Tipo":"Divina",
     "Círculo":1,
@@ -743,7 +783,8 @@
       {"5":"também torna o alvo imune a efeitos mentais e de medo. Requer 3º círculo."}
     ]
   },
-  {"id":40,
+  {
+    "id":40,
     "Nome":"Queda Suave",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -760,7 +801,8 @@
       {"2":"aumenta a categoria de tamanho do alvo em uma"}
     ]
   },
-  {"id":41,
+  {
+    "id":41,
     "Nome":"Raio do Enfraquecimento",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -778,7 +820,8 @@
       {"5":"como acima, mas muda o alvo para criaturas escolhidas. Requer 3º círculo."}
     ]
   },
-  {"id":42,
+  {
+    "id":42,
     "Nome":"Resistência à Energia",
     "Tipo":"Universal",
     "Círculo":1,
@@ -797,7 +840,8 @@
       {"9":"muda o efeito para imunidade a um tipo listado na magia. Requer 4º círculo"}
     ]
   },
-  {"id":43,
+  {
+    "id":43,
     "Nome":"Santuário",
     "Tipo":"Divina",
     "Círculo":1,
@@ -814,7 +858,8 @@
       {"9":"também protege o alvo contra efeitos de área. Uma criatura que tente atacar uma área que inclua o alvo deve fazer o teste de Vontade; se falhar, não consegue e perde a ação. Ela só pode tentar novamente se o alvo sair da área."}
     ]
   },
-  {"id":44,
+  {
+    "id":44,
     "Nome":"Seta Infalível de Talude",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -832,7 +877,8 @@
       {"9":"muda o número de setas/lanças para dez. Requer 4º círculo."}
     ]
   },
-  {"id":45,
+  {
+    "id":45,
     "Nome":"Sono",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -850,7 +896,8 @@
       {"5":"afeta todos os alvos válidos a sua escolha dentro do alcance."}
     ]
   },
-  {"id":46,
+  {
+    "id":46,
     "Nome":"Suporte Ambiental",
     "Tipo":"Divina",
     "Círculo":1,
@@ -865,7 +912,8 @@
       {"5":"muda o alcance para curto e o alvo para criaturas escolhidas."}
     ]
   },
-  {"id":47,
+  {
+    "id":47,
     "Nome":"Teia",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -883,7 +931,8 @@
       {"2":"aumenta a área em +1 cubo de 1,5m."}
     ]
   },
-  {"id":48,
+  {
+    "id":48,
     "Nome":"Toque Chocante",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -901,7 +950,8 @@
       {"2":"muda o alcance para pessoal e o alvo para área:esfera com 6m de raio. Você dispara raios pelas pontas dos dedos que afetam todas as criaturas na área."}
     ]
   },
-  {"id":49,
+  {
+    "id":49,
     "Nome":"Tranca Arcana",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -919,7 +969,8 @@
       {"5":"muda o alvo para 1 objeto de qualquer tamanho, podendo afetar até mesmo os portões de um castelo. Requer 3º círculo."}
     ]
   },
-  {"id":50,
+  {
+    "id":50,
     "Nome":"Tranquilidade",
     "Tipo":"Divina",
     "Círculo":1,
@@ -937,7 +988,8 @@
       {"5":"muda o alcance para médio e o alvo para criaturas escolhidas. Requer 3º círculo."}
     ]
   },
-  {"id":51,
+  {
+    "id":51,
     "Nome":"Transmutar Objetos",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -957,7 +1009,8 @@
       {"9":"como o aprimoramento anterior, mas passa a afetar itens mágicos."}
     ]
   },
-  {"id":52,
+  {
+    "id":52,
     "Nome":"Visão Mística",
     "Tipo":"Universal",
     "Círculo":1,
@@ -974,7 +1027,8 @@
       {"2":"também pode enxergar objetos e criaturas invisíveis. Eles aparecem como formas translúcidas."}
     ]
   },
-  {"id":53,
+  {
+    "id":53,
     "Nome":"Vitalidade Fantasma",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -990,7 +1044,8 @@
       {"5":"muda o alvo para área:esfera com 6m de raio centrada em você e a resistência para Fortitude reduz à metade. Em vez do normal, você suga energia das criaturas vivas na área, causando 1d10 pontos de dano de trevas e recebendo PV temporários iguais ao dano total causado. Os PV temporários desaparecem ao final da cena. Requer 2º círculo."}
     ]
   },
-  {"id":54,
+  {
+    "id":54,
     "Nome":"Aliado Animal",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1007,7 +1062,8 @@
       {"12":"muda o alvo para 2 animais prestativos. Cada animal funciona como um parceiro de um tipo diferente, e você pode receber a ajuda de ambos (mas ainda precisa seguir o limite de parceiros de acordo com o seu nível de personagem). Requer 4º círculo."}
     ]
   },
-  {"id":55,
+  {
+    "id":55,
     "Nome":"Alterar Tamanho",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1025,7 +1081,8 @@
       {"7":"muda o alcance para toque, o alvo para 1 criatura, a duração para permanente e a resistência para Fortitude anula. Em vez do normal, se falhar na resistência o alvo e seu equipamento têm seu tamanho mudado para Minúsculo. O alvo também tem seu valor de Força reduzido a 1 e suas formas de deslocamento reduzidas a 3m. Requer 4o círculo."}
     ]
   },
-  {"id":56,
+  {
+    "id":56,
     "Nome":"Amarras Etéreas",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1043,7 +1100,8 @@
       {"3":"em vez do normal, cada laço é destruído automaticamente com um único ataque bem-sucedido; porém, cada laço destruído libera um choque de energia que causa 1d8+1 pontos de dano de essência na criatura amarrada. Requer 3º círculo."}
     ]
   },
-  {"id":57,
+  {
+    "id":57,
     "Nome":"Aparência Perfeita",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1058,7 +1116,8 @@
       {"1":"muda o alcance para toque e o alvo para 1 humanoide"}
     ]
   },
-  {"id":58,
+  {
+    "id":58,
     "Nome":"Augúrio",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1076,7 +1135,8 @@
       {"12":"o mestre rola 1d20; a magia só falha em um resultado 1."}
     ]
   },
-  {"id":59,
+  {
+    "id":59,
     "Nome":"Bola de Fogo",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1094,7 +1154,8 @@
       {"3":"muda a duração para 1 dia ou até ser descarregada. Em vez do normal, você cria uma pequena pedra flamejante, que pode detonar como uma reação, descarregando a magia. A pedra pode ser usada como uma arma de arremesso com alcance curto. Uma vez detonada, causa o dano da magia numa área de esfera de 6m com raio."}
     ]
   },
-  {"id":60,
+  {
+    "id":60,
     "Nome":"Campo de Força",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1113,7 +1174,8 @@
       {"9":"como o aprimoramento acima, mas tudo dentro da esfera fica praticamente sem peso. Uma vez por rodada, você pode gastar uma ação livre para flutuar a esfera e seu conteúdo 9m em uma direção. Requer 4º círculo."}
     ]
   },
-  {"id":61,
+  {
+    "id":61,
     "Nome":"Camuflagem Ilusória",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1129,7 +1191,8 @@
       {"7":"muda o alcance para curto e o alvo para criaturas escolhidas. Requer 4º círculo."}
     ]
   },
-  {"id":62,
+  {
+    "id":62,
     "Nome":"Círculo da Justiça",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1147,7 +1210,8 @@
       {"7":"muda a duração para permanente e adiciona componente material (balança de prata no valor de T$ 5.000)."}
     ]
   },
-  {"id":63,
+  {
+    "id":63,
     "Nome":"Condição",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1163,7 +1227,8 @@
       {"1":"aumenta a duração para 1 dia."}
     ]
   },
-  {"id":64,
+  {
+    "id":64,
     "Nome":"Conjurar Mortos-Vivos",
     "Tipo":"Universal",
     "Círculo":2,
@@ -1184,7 +1249,8 @@
       {"3":"em vez de esqueletos, conjura zumbis peçonhas. Requer 3º círculo. Apenas devotos de Sszzaas.<br><i>Zumbi Peçonha:</i> como esqueletos, mas têm For 3, Des 1, Defesa 25 e causam 1d8+1 pontos de dano de trevas mais perda de 2d6 PV por veneno. Além disso, criaturas atingidas por um zumbi peçonha devem passar num teste de Fortitude ou ficam atordoadas por 1 rodada e depois fracas. Uma criatura que passe no teste de resistência fica fraca por 1 rodada e imune ao atordoamento dos zumbis peçonha até o fim da cena."}
     ]
   },
-  {"id":65,
+  {
+    "id":65,
     "Nome":"Controlar Fogo",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1201,7 +1267,8 @@
       {"3":"muda o alvo para 1 criatura composta principalmente por fogo, lava ou magma (como um elemental do fogo) e a resistência para Fortitude parcial. Em vez do normal, se a criatura falhar no teste de resistência, é reduzida a 0 PV. Se passar, sofre 5d6 pontos de dano."}
     ]
   },
-  {"id":66,
+  {
+    "id":66,
     "Nome":"Controlar Madeira",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1219,7 +1286,8 @@
       {"12":"muda o alvo para Colossal ou menor. Requer 4º círculo."}
     ]
   },
-  {"id":67,
+  {
+    "id":67,
     "Nome":"Crânio Voador de Vladislav",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1236,7 +1304,8 @@
       {"2":"aumenta o número de alvos em +1."}
     ]
   },
-  {"id":68,
+  {
+    "id":68,
     "Nome":"Desespero Esmagador",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1254,7 +1323,8 @@
       {"3":"além do normal, criaturas que falhem na resistência ficam aos prantos (em termos de jogo, adquirem a condição pasmo) por 1 rodada (apenas uma vez por cena). Requer 3º círculo."}
     ]
   },
-  {"id":69,
+  {
+    "id":69,
     "Nome":"Dissipar Magia",
     "Tipo":"Universal",
     "Círculo":2,
@@ -1269,7 +1339,8 @@
       {"12":"muda a área para esfera com 9m de raio. Em vez do normal, cria um efeito de disjunção. Todas as magias na área são automaticamente dissipadas e todos os itens mágicos na área, exceto aqueles que você estiver carregando, viram itens mundanos por uma cena (com direito a um teste de resistência para evitar esse efeito). Requer 5º círculo."}
     ]
   },
-  {"id":70,
+  {
+    "id":70,
     "Nome":"Enxame de Pestes",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1288,7 +1359,8 @@
       {"7":"muda a resistência para Reflexos reduz à metade e o enxame para criaturas elementais. Ele causa 5d12 pontos do dano (a sua escolha entre ácido, eletricidade, fogo ou frio). O resto da magia segue normal. Requer 4º círculo."}
     ]
   },
-  {"id":71,
+  {
+    "id":71,
     "Nome":"Esculpir Sons",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1304,7 +1376,8 @@
       {"2":"aumenta o número de alvos em +1. Todas as criaturas e objetos devem ser afetadas da mesma forma."}
     ]
   },
-  {"id":72,
+  {
+    "id":72,
     "Nome":"Físico Divino",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1322,7 +1395,8 @@
       {"12":"em vez do normal, o alvo recebe +4 nos três atributos físicos. Requer 5º círculo."}
     ]
   },
-  {"id":73,
+  {
+    "id":73,
     "Nome":"Flecha Ácida",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1340,7 +1414,8 @@
       {"2":"aumenta o dano inicial e o dano por rodada em +1d6."}
     ]
   },
-  {"id":74,
+  {
+    "id":74,
     "Nome":"Globo da Verdade de Gwen",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1358,7 +1433,8 @@
       {"4":"muda o alcance para longo e o efeito para 10 globos. Todos mostram a mesma cena."}
     ]
   },
-  {"id":75,
+  {
+    "id":75,
     "Nome":"Invisibilidade",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1376,7 +1452,8 @@
       {"7":"muda a execução para ação padrão, o alcance para toque e o alvo para 1 criatura. A magia não é dissipada caso o alvo faça um ação hostil. Requer 4º círculo."}
     ]
   },
-  {"id":76,
+  {
+    "id":76,
     "Nome":"Ligação Telepática",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1392,7 +1469,8 @@
       {"3":"muda o alvo para 1 criatura. Em vez do normal, você cria um elo mental que permite que você veja e ouça pelos sentidos da criatura, se gastar uma ação de movimento. Uma criatura involuntária pode fazer um teste de Vontade para suprimir a magia por uma hora. Requer 3º círculo."}
     ]
   },
-  {"id":77,
+  {
+    "id":77,
     "Nome":"Localização",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1408,7 +1486,8 @@
       {"5":"aumenta a área em um fator de 10 (90m para 900m, 900m para 9km e assim por diante)."}
     ]
   },
-  {"id":78,
+  {
+    "id":78,
     "Nome":"Mapear",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1423,7 +1502,8 @@
       {"3":"muda o alvo para 1 criatura e a duração para 1 hora. Em vez do normal, a criatura tocada descobre o caminho mais direto para entrar ou sair de um lugar. Assim, a magia pode ser usada para descobrir a rota até o relicário de uma catedral ou a saída mais próxima de uma masmorra (mas não para encontrar a localização de uma criatura ou objeto; a magia funciona apenas em relação a lugares). Caso a criatura demore mais de uma hora para percorrer o caminho, o conhecimento se perde."}
     ]
   },
-  {"id":79,
+  {
+    "id":79,
     "Nome":"Marca da Obediência",
     "Tipo":"Universal",
     "Círculo":2,
@@ -1440,7 +1520,8 @@
       {"3":"sempre que o alvo fizer o teste de Vontade e falhar, a marca causa 3d6 pontos de dano psíquico. Requer 3º círculo."}
     ]
   },
-  {"id":80,
+  {
+    "id":80,
     "Nome":"Mente Divina",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1458,7 +1539,8 @@
       {"12":"em vez do normal, o alvo recebe +4 nos três atributos mentais. Requer 5º círculo."}
     ]
   },
-  {"id":81,
+  {
+    "id":81,
     "Nome":"Metamorfose",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1479,7 +1561,8 @@
       {"12":"além do normal, no início de seus turnos o alvo pode mudar de forma novamente, como uma ação livre, fazendo novas escolhas. Requer 5º círculo."}
     ]
   },
-  {"id":82,
+  {
+    "id":82,
     "Nome":"Miasma Mefítico",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1497,7 +1580,8 @@
       {"3":"muda o tipo do dano para trevas."}
     ]
   },
-  {"id":83,
+  {
+    "id":83,
     "Nome":"Montaria Arcana",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1515,7 +1599,8 @@
       {"3":"muda o nível do aliado para mestre. Requer 3º círculo."}
     ]
   },
-  {"id":84,
+  {
+    "id":84,
     "Nome":"Oração",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1533,7 +1618,8 @@
       {"12":"muda a duração para cena. Requer 4º círculo"}
     ]
   },
-  {"id":85,
+  {
+    "id":85,
     "Nome":"Purificação",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1551,7 +1637,8 @@
       {"7":"também dissipa magias e efeitos prejudiciais de encantamento, necromancia e transmutação afetando o alvo. Requer 3º círculo."}
     ]
   },
-  {"id":86,
+  {
+    "id":86,
     "Nome":"Raio Solar",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1570,7 +1657,8 @@
       {"3":"criaturas que falhem na resistência ficam cegas por 1d4 rodadas."}
     ]
   },
-  {"id":87,
+  {
+    "id":87,
     "Nome":"Refúgio",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1588,7 +1676,8 @@
       {"9":"em vez do normal, cria uma mansão extradimensional que comporta até 100 criaturas Médias, com quartos luxuosos, comida e bebida e dez servos fantasmagóricos (como na magia Servos Invisíveis). Descansar na mansão concede recuperação luxuosa (recupera PV e PM igual ao triplo do nível). A mansão tem uma única entrada, uma porta feita de luz. Você pode deixá-la visível ou invisível como uma ação livre e apenas criaturas escolhidas por você podem passar. Requer 4º círculo."}
     ]
   },
-  {"id":88,
+  {
+    "id":88,
     "Nome":"Relâmpago",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1605,7 +1694,8 @@
       {"3":"muda a área para alvo (criaturas escolhidas). Em vez do normal, você dispara vários relâmpagos, um para cada alvo escolhido, causando 6d6 pontos de dano de eletricidade. Requer 3º círculo."}
     ]
   },
-  {"id":89,
+  {
+    "id":89,
     "Nome":"Rogar Maldição",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1622,7 +1712,8 @@
       {"7":"muda a duração para permanente e resistência para Fortitude parcial. Se passar, a criatura ainda sofre os efeitos da maldição, mas por 1 rodada. Requer 4º círculo."}
     ]
   },
-  {"id":90,
+  {
+    "id":90,
     "Nome":"Runa de Proteção",
     "Tipo":"Universal",
     "Círculo":2,
@@ -1640,7 +1731,8 @@
       {"3":"como o aprimoramento anterior, mas você pode escolher magias de 2º  círculo. Requer 3º<br>círculo."}
     ]
   },
-  {"id":91,
+  {
+    "id":91,
     "Nome":"Salto Dimensional",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1658,7 +1750,8 @@
       {"3":"muda o alcance para longo."}
     ]
   },
-  {"id":92,
+  {
+    "id":92,
     "Nome":"Servos Invisíveis",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1674,7 +1767,8 @@
       {"3":"você pode comandar os servos para realizar uma única tarefa no seu lugar. Em termos de jogo, eles passam automaticamente em um teste de perícia com CD máxima igual ao seu nível, +2 para cada servo conjurado. O tempo necessário para realizar a tarefa é o tempo do uso da perícia em questão. Requer 3º círculo"}
     ]
   },
-  {"id":93,
+  {
+    "id":93,
     "Nome":"Silêncio",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1690,7 +1784,8 @@
       {"2":"muda a duração para cena. Em vez do normal, nenhum som pode deixar a área, mas criaturas dentro da área podem falar, ouvir e lançar magias com palavras mágicas normalmente."}
     ]
   },
-  {"id":94,
+  {
+    "id":94,
     "Nome":"Soco de Arsenal",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1709,7 +1804,8 @@
       {"5":"muda o tipo do dano para essência."}
     ]
   },
-  {"id":95,
+  {
+    "id":95,
     "Nome":"Sopro das Uivantes",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1726,7 +1822,8 @@
       {"3":"aumenta o tamanho máximo das criaturas afetadas em uma categoria. Requer 3º círculo."}
     ]
   },
-  {"id":96,
+  {
+    "id":96,
     "Nome":"Sussurros Insanos",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1744,7 +1841,8 @@
       {"12":"muda o alvo para criaturas escolhidas. Requer 5º círculo."}
     ]
   },
-  {"id":97,
+  {
+    "id":97,
     "Nome":"Tempestade Divina",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1764,7 +1862,8 @@
       {"3":"muda a área para cilindro com 90m de raio e 90m de altura."}
     ]
   },
-  {"id":98,
+  {
+    "id":98,
     "Nome":"Toque Vampírico",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1782,7 +1881,8 @@
       {"2":"muda o alcance para pessoal, o alvo para você e a duração para cena. Em vez do normal, a cada rodada você pode gastar uma ação padrão para tocar 1 criatura e causar 3d6 pontos de dano. Você recupera pontos de vida iguais à metade do dano causado. Requer 3º círculo."}
     ]
   },
-  {"id":99,
+  {
+    "id":99,
     "Nome":"Velocidade",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -1802,7 +1902,8 @@
       }
     ]
   },
-  {"id":100,
+  {
+    "id":100,
     "Nome":"Vestimenta da Fé",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1819,7 +1920,8 @@
       {"7":"o objeto também oferece resistência a dano 5. Requer 4º círculo."}
     ]
   },
-  {"id":101,
+  {
+    "id":101,
     "Nome":"Voz Divina",
     "Tipo":"Divina",
     "Círculo":2,
@@ -1835,7 +1937,8 @@
       {"1":"você pode falar com plantas (normais ou monstruosas) e rochas. Plantas e rochas têm percepção limitada de seus arredores e normalmente fornecem respostas simplórias."}
     ]
   },
-  {"id":102,
+  {
+    "id":102,
     "Nome":"Âncora Dimensional",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -1854,7 +1957,8 @@
       {"9":"muda o alcance para médio, a área para esfera de 3m de raio e o alvo para criaturas escolhidas. Cria um fio de energia (veja acima) que prende todos os alvos ao centro da área."}
     ]
   },
-  {"id":103,
+  {
+    "id":103,
     "Nome":"Anular a Luz",
     "Tipo":"Divina",
     "Círculo":3,
@@ -1871,7 +1975,8 @@
       {"9":"muda o círculo máximo de magias dissipadas para 5º. Requer 5º Círculo."}
     ]
   },
-  {"id":104,
+  {
+    "id":104,
     "Nome":"Banimento",
     "Tipo":"Divina",
     "Círculo":3,
@@ -1888,7 +1993,8 @@
       }
     ]
   },
-  {"id":105,
+  {
+    "id":105,
     "Nome":"Coluna de Chamas",
     "Tipo":"Divina",
     "Círculo":3,
@@ -1905,7 +2011,8 @@
       {"1":"aumenta o dano de luz em +1d6."}
     ]
   },
-  {"id":106,
+  {
+    "id":106,
     "Nome":"Comunhão com a Natureza",
     "Tipo":"Divina",
     "Círculo":3,
@@ -1923,7 +2030,8 @@
       {"8":"muda o tipo dos dados de auxílio para d8."}
     ]
   },
-  {"id":107,
+  {
+    "id":107,
     "Nome":"Contato Extraplanar",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -1939,7 +2047,8 @@
       {"8":"Muda os dados de auxílio para d12. Sempre que rolar um resultado 12 num desses d12, a entidade “suga” 2 PM de você. Requer 4º círculo."}
     ]
   },
-  {"id":108,
+  {
+    "id":108,
     "Nome":"Controlar Água",
     "Tipo":"Divina",
     "Círculo":3,
@@ -1955,7 +2064,8 @@
       {"2":"aumenta o dano em +2d8."}
     ]
   },
-  {"id":109,
+  {
+    "id":109,
     "Nome":"Controlar Terra",
     "Tipo":"Divina",
     "Círculo":3,
@@ -1971,7 +2081,8 @@
       {"1":"muda o alcance para pessoal, o alvo para você e a duração para 1 dia. Você e seu equipamento fundem-se a uma superfície ou objeto adjacente feito de pedra, terra, argila ou areia que possa acomodá-lo. Você pode voltar ao espaço adjacente como uma ação livre, dissipando a magia. Enquanto mesclado, você não pode falar ou fazer ações físicas, mas consegue perceber seus arredores normalmente. Pequenos danos não o afetam, mas se o objeto (ou o trecho onde você está imerso) for destruído, a magia é dissipada, você volta a um espaço livre adjacente e sofre 10d6 pontos de dano de impacto."}
     ]
   },
-  {"id":110,
+  {
+    "id":110,
     "Nome":"Convocação Instantânea",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -1989,7 +2100,8 @@
       {"2":"muda o alvo para 1 objeto de até 10 espaços. Um objeto muito grande ou pesado para aparecer em suas mãos surge em um espaço adjacente a sua escolha."}
     ]
   },
-  {"id":111,
+  {
+    "id":111,
     "Nome":"Despertar Consciência",
     "Tipo":"Divina",
     "Círculo":3,
@@ -2005,7 +2117,8 @@
       {"4":"muda a duração para permanente e adiciona penalidade de -3 PM."}
     ]
   },
-  {"id":112,
+  {
+    "id":112,
     "Nome":"Dificultar Detecção",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2021,7 +2134,8 @@
       {"4":"muda a duração para 1 semana."}
     ]
   },
-  {"id":113,
+  {
+    "id":113,
     "Nome":"Dispersar as Trevas",
     "Tipo":"Divina",
     "Círculo":3,
@@ -2039,7 +2153,8 @@
       {"9":"muda o círculo máximo de magias dissipadas para 5º. Requer 5º círculo."}
     ]
   },
-  {"id":114,
+  {
+    "id":114,
     "Nome":"Enxame Rubro de Ichabod",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2060,7 +2175,8 @@
       {"4":"o enxame inclui parasitas inchados que explodem e criam novos enxames. No início de cada um de seus turnos, role 1d6. Em um resultado 5 ou 6, um novo enxame surge adjacente a um já existente à sua escolha. Você pode mover todos os enxames com uma única ação de movimento, mas eles não podem ocupar o mesmo espaço. Requer 4º círculo."}
     ]
   },
-  {"id":115,
+  {
+    "id":115,
     "Nome":"Erupção Glacial",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2077,7 +2193,8 @@
       {"4":"muda a área para cilindro com 6m de raio e 6m de altura e a duração para sustentada. Em vez do normal, a magia cria uma tempestade de granizo que causa 3d6 pontos de dano de impacto e 3d6 pontos de dano de frio em todas as criaturas na área (sem teste de resistência). A tempestade fornece camuflagem leve as criaturas dentro dela e deixa o piso escorregadio. Piso escorregadio conta como terreno difícil e obriga criaturas na área a fazer testes de Acrobacia para equilíbrio (veja o Capítulo 2). Requer 4º círculo."}
     ]
   },
-  {"id":116,
+  {
+    "id":116,
     "Nome":"Ferver Sangue",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2094,7 +2211,8 @@
       {"9":"muda alvo para criaturas escolhidas. Requer 5º círculo."}
     ]
   },
-  {"id":117,
+  {
+    "id":117,
     "Nome":"Globo de Invulnerabilidade",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2110,7 +2228,8 @@
       {"9":"muda o efeito para afetar magias de até 4º círculo. Requer 5º círculo."}
     ]
   },
-  {"id":118,
+  {
+    "id":118,
     "Nome":"Heroísmo",
     "Tipo":"Divina",
     "Círculo":3,
@@ -2125,7 +2244,8 @@
       {"2":"muda o bônus para +6."}
     ]
   },
-  {"id":119,
+  {
+    "id":119,
     "Nome":"Ilusão Lacerante",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2142,7 +2262,8 @@
       {"4":"muda a área para um cubo de 90m. Requer 4º círculo."}
     ]
   },
-  {"id":120,
+  {
+    "id":120,
     "Nome":"Imobilizar",
     "Tipo":"Universal",
     "Círculo":3,
@@ -2160,7 +2281,8 @@
       {"3":"muda o alvo para 1 criatura. Requer 4º círculo"}
     ]
   },
-  {"id":121,
+  {
+    "id":121,
     "Nome":"Lança Ígnea de Aleph",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2177,7 +2299,8 @@
       {"4":"muda a duração para cena ou até ser descarregada. Em vez do efeito normal, a magia cria quatro dardos de lava que flutuam ao lado do conjurador. Uma vez por rodada, como uma ação livre, você pode disparar um dos dardos em uma criatura, causando o efeito normal da magia. Requer 4º Círculo."}
     ]
   },
-  {"id":122,
+  {
+    "id":122,
     "Nome":"Lendas e Histórias",
     "Tipo":"Universal",
     "Círculo":3,
@@ -2192,7 +2315,8 @@
       {"4":"muda a execução para 1 dia, o alcance para ilimitado e adiciona componente material (cuba de ouro cheia d’água e ingredientes mágicos, no valor de T$ 1.000). Você ainda precisa ter alguma informação sobre o alvo, como um nome, descrição ou localização."}
     ]
   },
-  {"id":123,
+  {
+    "id":123,
     "Nome":"Manto de Sombras",
     "Tipo":"Universal",
     "Círculo":3,
@@ -2207,7 +2331,8 @@
       {"4":"muda o alcance para toque e o alvo para 1 criatura. Requer 4º círculo."}
     ]
   },
-  {"id":124,
+  {
+    "id":124,
     "Nome":"Miragem",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2224,7 +2349,8 @@
       {"9":"muda a duração para permanente e adiciona componente material (pó de diamante no valor de T$ 1.000). Requer 5º círculo."}
     ]
   },
-  {"id":125,
+  {
+    "id":125,
     "Nome":"Missão Divina",
     "Tipo":"Divina",
     "Círculo":3,
@@ -2241,7 +2367,8 @@
       {"4":"aumenta a duração para 1 ano ou até ser descarregada."}
     ]
   },
-  {"id":126,
+  {
+    "id":126,
     "Nome":"Muralha Elemental",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2259,7 +2386,8 @@
       {"4":"muda a duração para sustentada e adiciona uma nova escolha, Essência. A muralha é invisível e indestrutível — imune a qualquer forma de dano e não afetada por nenhuma magia. Ela não pode ser atravessada nem mesmo por criaturas incorpóreas. No entanto, magias que teletransportam criaturas, como Salto Dimensional, podem atravessá-la. Magias e efeitos de dano, como Bola de Fogo e o sopro de um dragão, não vencem a muralha, mas magias lançadas diretamente sobre uma criatura ou área, como Sono, podem ser lançadas contra alvos que estejam no outro lado como se tivessem linha de efeito. Requer 4º círculo."}
     ]
   },
-  {"id":127,
+  {
+    "id":127,
     "Nome":"Pele de Pedra",
     "Tipo":"Universal",
     "Círculo":3,
@@ -2278,7 +2406,8 @@
       {"9":"como acima, mas com duração permanente. Requer 5º círculo."}
     ]
   },
-  {"id":128,
+  {
+    "id":128,
     "Nome":"Poeira da Podridão",
     "Tipo":"Divina",
     "Círculo":3,
@@ -2294,7 +2423,8 @@
       {"2":"aumenta o dano em 1d8+4."}
     ]
   },
-  {"id":129,
+  {
+    "id":129,
     "Nome":"Potência Divina",
     "Tipo":"Divina",
     "Círculo":3,
@@ -2311,7 +2441,8 @@
       {"2":"muda o alcance para toque e o alvo para 1 criatura. A magia falha se você e o alvo não forem devotos da mesma divindade."}
     ]
   },
-  {"id":130,
+  {
+    "id":130,
     "Nome":"Proteção Contra Magia",
     "Tipo":"Divina",
     "Círculo":3,
@@ -2328,7 +2459,8 @@
       {"9":"em vez do normal, o alvo fica imune a duas escolas de magia a sua escolha. Requer 5º Círculo."}
     ]
   },
-  {"id":131,
+  {
+    "id":131,
     "Nome":"Selo de Mana",
     "Tipo":"Universal",
     "Círculo":3,
@@ -2344,7 +2476,8 @@
       {"4":"muda o alcance para curto e o alvo para criaturas escolhidas dentro do alcance. Requer 4º círculo."}
     ]
   },
-  {"id":132,
+  {
+    "id":132,
     "Nome":"Servo Divino",
     "Tipo":"Divina",
     "Círculo":3,
@@ -2360,7 +2493,8 @@
       {"9":"muda a duração para 1 semana ou até ser descarregada. O espírito realiza uma tarefa que exija até uma semana. O custo do pagamento aumenta para T$ 1.000. O resto segue normal."}
     ]
   },
-  {"id":133,
+  {
+    "id":133,
     "Nome":"Servo Morto-Vivo",
     "Tipo":"Universal",
     "Círculo":3,
@@ -2377,7 +2511,8 @@
       {"7":"muda o componente material para ferramentas de embalsamar (T$ 1.000). Em vez de um zumbi ou esqueleto, cria uma múmia. Ela pode funcionar como um aliado mestre, escolhido entre ajudante, destruidor, guardião ou médico. O restante da magia segue normal. Requer 4º círculo."}
     ]
   },
-  {"id":134,
+  {
+    "id":134,
     "Nome":"Sopro da Salvação",
     "Tipo":"Divina",
     "Círculo":3,
@@ -2394,7 +2529,8 @@
       {"4":"remove todas as condições listadas, em vez de apenas uma."}
     ]
   },
-  {"id":135,
+  {
+    "id":135,
     "Nome":"Telecinésia",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2409,7 +2545,8 @@
       {"3":"aumenta o tamanho máximo da criatura em uma categoria (para Grande, Enorme e Colossal) ou dobra a quantidade de espaços do objeto."}
     ]
   },
-  {"id":136,
+  {
+    "id":136,
     "Nome":"Teletransporte",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2426,7 +2563,8 @@
       {"9":"muda a execução para ação completa, a duração para cena e adiciona sacrifício de 1 PM. Em vez do normal, você cria um círculo de 1,5m de diâmetro no chão, que transporta qualquer criatura que pisar nele. O destino é escolhido quando a magia é lançada e pode ser qualquer lugar, em qualquer mundo, sem a necessidade de testes, desde que seja conhecido por você. O círculo é tênue e praticamente invisível. Você pode marcá-lo de alguma forma (por exemplo, lançando-o sobre uma plataforma elevada). Se não fizer isso, alguém pode pisar nele por acidente. Junte isso a um destino hostil e você terá uma armadilha bastante eficaz! Requer 5º círculo."}
     ]
   },
-  {"id":137,
+  {
+    "id":137,
     "Nome":"Tentáculos de Trevas",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2442,7 +2580,8 @@
       {"3":"aumenta o dano dos tentáculos em +2d6."}
     ]
   },
-  {"id":138,
+  {
+    "id":138,
     "Nome":"Transformação de Guerra",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2458,7 +2597,8 @@
       {"2":"adiciona componente material (uma barra de adamante no valor de T$ 100). Sua forma de combate ganha um aspecto metálico e sem expressões. Além do normal, você recebe resistência a dano 10 e imunidade a atordoamento e efeitos de cansaço, encantamento, metabolismo, trevas e veneno, e não precisa respirar."}
     ]
   },
-  {"id":139,
+  {
+    "id":139,
     "Nome":"Viagem Arbórea",
     "Tipo":"Divina",
     "Círculo":3,
@@ -2473,7 +2613,8 @@
       {"2":"muda o alcance para toque, o alvo para até cinco criaturas e a duração para instantânea. Os alvos entram em uma planta (de tamanho Médio ou maior) e saem em outra planta do mesmo tamanho a até 100km de distância, especificada em direção e distância aproximadas (como “50km ao norte”)."}
     ]
   },
-  {"id":140,
+  {
+    "id":140,
     "Nome":"Vidência",
     "Tipo":"Universal",
     "Círculo":3,
@@ -2487,7 +2628,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":141,
+  {
+    "id":141,
     "Nome":"Voo",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -2504,7 +2646,8 @@
       {"4":"muda o alcance para curto e o alvo para até 10 criaturas. Requer 4° círculo."}
     ]
   },
-  {"id":142,
+  {
+    "id":142,
     "Nome":"Alterar Memória",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2521,7 +2664,8 @@
       {"5":"você pode alterar ou apagar as memórias das últimas 24 horas."}
     ]
   },
-  {"id":143,
+  {
+    "id":143,
     "Nome":"Animar Objetos",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2536,7 +2680,8 @@
       {"5":"muda a duração para permanente e adiciona componente material (prataria no valor de T$ 1.000). Você pode ter um máximo de objetos animados igual à metade do seu nível."}
     ]
   },
-  {"id":144,
+  {
+    "id":144,
     "Nome":"Assassino Fantasmagórico",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2550,7 +2695,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":145,
+  {
+    "id":145,
     "Nome":"Campo Antimagia",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2563,7 +2709,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":146,
+  {
+    "id":146,
     "Nome":"Círculo da Restauração",
     "Tipo":"Divina",
     "Círculo":4,
@@ -2578,7 +2725,8 @@
       {"2":"aumenta a regeneração de PV em 1d8+1."}
     ]
   },
-  {"id":147,
+  {
+    "id":147,
     "Nome":"Cólera de Azgher",
     "Tipo":"Divina",
     "Círculo":4,
@@ -2596,7 +2744,8 @@
       {"5":"a luz purificadora do Deus-Sol dissipa todas as magias de necromancia ativas na área. Requer 5º círculo"}
     ]
   },
-  {"id":148,
+  {
+    "id":148,
     "Nome":"Conceder Milagre",
     "Tipo":"Divina",
     "Círculo":4,
@@ -2611,7 +2760,8 @@
       {"4":"muda o círculo da magia concedida para 3º e a penalidade de PM para –6."}
     ]
   },
-  {"id":149,
+  {
+    "id":149,
     "Nome":"Conjurar Elemental",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2627,7 +2777,8 @@
       {"5":"você convoca um elemental de cada tipo. Quando lança a magia, você pode escolher se cada elemental vai auxiliar você ou um aliado no alcance. Requer 5º círculo."}
     ]
   },
-  {"id":150,
+  {
+    "id":150,
     "Nome":"Controlar a Gravidade",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2640,7 +2791,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":151,
+  {
+    "id":151,
     "Nome":"Controlar o Clima",
     "Tipo":"Divina",
     "Círculo":4,
@@ -2655,7 +2807,8 @@
       {"1":"(Apenas Druidas):muda o raio da área para 3km e duração para 1d4 dias."}
     ]
   },
-  {"id":152,
+  {
+    "id":152,
     "Nome":"Cúpula de Repulsão",
     "Tipo":"Divina",
     "Círculo":4,
@@ -2672,7 +2825,8 @@
       {"5":"além do normal, criaturas afetadas também precisam fazer o teste de resistência se fizerem um ataque ou efeito à distância você. Se falharem, o efeito é desviado pela cúpula. Requer 5º círculo."}
     ]
   },
-  {"id":153,
+  {
+    "id":153,
     "Nome":"Desintegrar",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2688,7 +2842,8 @@
       {"4":"aumenta o dano total em +2d12 e o dano mínimo em +1d12."}
     ]
   },
-  {"id":154,
+  {
+    "id":154,
     "Nome":"Duplicata Ilusória",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2703,7 +2858,8 @@
       {"3":"cria uma cópia adicional."}
     ]
   },
-  {"id":155,
+  {
+    "id":155,
     "Nome":"Explosão Caleidoscópica",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2717,7 +2873,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":156,
+  {
+    "id":156,
     "Nome":"Forma Etérea",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2732,7 +2889,8 @@
       {"5":"muda o alcance para toque e o alvo para até 5 criaturas voluntárias que estejam de mãos dadas. Depois que a magia é lançada, as criaturas podem soltar as mãos. Requer 5º círculo."}
     ]
   },
-  {"id":157,
+  {
+    "id":157,
     "Nome":"Guardião Divino",
     "Tipo":"Divina",
     "Círculo":4,
@@ -2745,7 +2903,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":158,
+  {
+    "id":158,
     "Nome":"Libertação",
     "Tipo":"Universal",
     "Círculo":4,
@@ -2764,7 +2923,8 @@
       {"5":"pode dissipar Aprisionamento."}
     ]
   },
-  {"id":159,
+  {
+    "id":159,
     "Nome":"Ligação Sombria",
     "Tipo":"Divina",
     "Círculo":4,
@@ -2780,7 +2940,8 @@
       {"5":"a magia não termina se o alvo chegar a 0 PV (o que significa que dano causado por essa magia pode matá-lo)."}
     ]
   },
-  {"id":160,
+  {
+    "id":160,
     "Nome":"Manto do Cruzado",
     "Tipo":"Divina",
     "Círculo":4,
@@ -2793,7 +2954,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":161,
+  {
+    "id":161,
     "Nome":"Mão Poderosa de Talude",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2809,7 +2971,8 @@
       {"5":"muda o bônus adicional em Misticismo para +20. Requer 5º círculo."}
     ]
   },
-  {"id":162,
+  {
+    "id":162,
     "Nome":"Marionete",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2823,7 +2986,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":163,
+  {
+    "id":163,
     "Nome":"Muralha de Ossos",
     "Tipo":"Universal",
     "Círculo":4,
@@ -2839,7 +3003,8 @@
       {"5":"o muro é feito de uma massa de esqueletos animados. Sempre que uma criatura iniciar seu turno adjacente ou escalando a muralha, deve fazer um teste de Reflexos. Se falhar fica agarrada, sofrendo os feitos normais de estar agarrada pela magia."}
     ]
   },
-  {"id":164,
+  {
+    "id":164,
     "Nome":"Premonição",
     "Tipo":"Divina",
     "Círculo":4,
@@ -2855,7 +3020,8 @@
       {"10":"muda a duração para 1 dia."}
     ]
   },
-  {"id":165,
+  {
+    "id":165,
     "Nome":"Raio Polar",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2872,7 +3038,8 @@
       {"5":"muda o alvo para área de esfera de 6m de raio. Em vez de um raio, você dispara uma esfera de gelo que explode, causando o efeito da magia em todas as criaturas na área."}
     ]
   },
-  {"id":166,
+  {
+    "id":166,
     "Nome":"Relâmpago Flamejante de Reynard",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2888,7 +3055,8 @@
       {"2":"aumenta o dano das rajadas em +1d6 e o dano da rajada mista em +2d12."}
     ]
   },
-  {"id":167,
+  {
+    "id":167,
     "Nome":"Sonho",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2904,7 +3072,8 @@
       {"1":"aumenta o número de alvos em +1. Todos os alvos compartilham um mesmo sonho (ou pesadelo) entre si e com você."}
     ]
   },
-  {"id":168,
+  {
+    "id":168,
     "Nome":"Talho Invisível de Edauros",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -2921,7 +3090,8 @@
       {"2":"muda o alvo para você, a duração para sustentada e o efeito para uma vez por rodada, como uma ação de movimento, você pode disparar uma lâmina de ar contra um alvo em alcance médio, causando 6d8 pontos de dano de corte (Fortitude reduz à metade)."}
     ]
   },
-  {"id":169,
+  {
+    "id":169,
     "Nome":"Terremoto",
     "Tipo":"Divina",
     "Círculo":4,
@@ -2935,7 +3105,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":170,
+  {
+    "id":170,
     "Nome":"Viagem Planar",
     "Tipo":"Universal",
     "Círculo":4,
@@ -2950,7 +3121,8 @@
       {"2":"muda o alvo para até cinco criaturas voluntárias que você esteja tocando."}
     ]
   },
-  {"id":171,
+  {
+    "id":171,
     "Nome":"Visão da Verdade",
     "Tipo":"Universal",
     "Círculo":4,
@@ -2968,7 +3140,8 @@
       {"4":"além do normal, o alvo enxerga através de paredes e barreiras com 30cm de espessura ou menos (as paredes e barreiras parecem translúcidas)."}
     ]
   },
-  {"id":172,
+  {
+    "id":172,
     "Nome":"Alterar Destino",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -2981,7 +3154,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":173,
+  {
+    "id":173,
     "Nome":"Aprisionamento",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -2995,7 +3169,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":174,
+  {
+    "id":174,
     "Nome":"Aura Divina",
     "Tipo":"Divina",
     "Círculo":5,
@@ -3011,7 +3186,8 @@
       {"2":"aumenta os bônus na Defesa e em testes de resistência em +1."}
     ]
   },
-  {"id":175,
+  {
+    "id":175,
     "Nome":"Barragem elemental de Vectorius",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3028,7 +3204,8 @@
       {"5":"muda o tipo de dano de todas as esferas para essência (mas elas ainda causam os outros efeitos como se seu tipo de dano não mudasse)."}
     ]
   },
-  {"id":176,
+  {
+    "id":176,
     "Nome":"Buraco Negro",
     "Tipo":"Universal",
     "Círculo":5,
@@ -3044,7 +3221,8 @@
       {"5":"muda o efeito para que você não seja afetado."}
     ]
   },
-  {"id":177,
+  {
+    "id":177,
     "Nome":"Chuva de Meteoros",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3060,7 +3238,8 @@
       {"2":"aumenta o número de meteoros que atingem a área, o que aumenta o dano em +2d6 de impacto e +2d6 de fogo."}
     ]
   },
-  {"id":178,
+  {
+    "id":178,
     "Nome":"Controlar o Tempo",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3073,7 +3252,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":179,
+  {
+    "id":179,
     "Nome":"Deflagração de Mana",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3090,7 +3270,8 @@
       {"5":"afeta apenas criaturas a sua escolha."}
     ]
   },
-  {"id":180,
+  {
+    "id":180,
     "Nome":"Desejo",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3104,7 +3285,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":181,
+  {
+    "id":181,
     "Nome":"Engenho de Mana",
     "Tipo":"Divina",
     "Círculo":5,
@@ -3120,7 +3302,8 @@
       {"4":"muda a duração para 1 dia."}
     ]
   },
-  {"id":182,
+  {
+    "id":182,
     "Nome":"Fúria do Panteão",
     "Tipo":"Divina",
     "Círculo":5,
@@ -3134,7 +3317,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":183,
+  {
+    "id":183,
     "Nome":"Intervenção Divina",
     "Tipo":"Divina",
     "Círculo":5,
@@ -3147,7 +3331,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":184,
+  {
+    "id":184,
     "Nome":"Invulnerabilidade",
     "Tipo":"Universal",
     "Círculo":5,
@@ -3162,7 +3347,8 @@
       {"5":"muda o alcance para curto e o alvo para 1 criatura."}
     ]
   },
-  {"id":185,
+  {
+    "id":185,
     "Nome":"Lágrimas de Wynna",
     "Tipo":"Divina",
     "Círculo":5,
@@ -3179,7 +3365,8 @@
       {"5":"muda a execução para 1 dia e adiciona custo adicional (sacrifício de 1 PM). O alvo da magia precisa ser mantido em alcance curto do conjurador durante toda a execução. Ao término, faz um teste de Vontade. Se falhar, perde a habilidade de lançar magias arcanas permanentemente. Se passar, resiste, mas ainda pode ser alvo da magia no dia seguinte. Nenhum poder mortal é capaz de reverter essa perda. Os clérigos da deusa da Magia dizem que a deusa chora cada vez que este ritual é realizado."}
     ]
   },
-  {"id":186,
+  {
+    "id":186,
     "Nome":"Legião",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3195,7 +3382,8 @@
       {"1":"aumenta o número de alvos em +1."}
     ]
   },
-  {"id":187,
+  {
+    "id":187,
     "Nome":"Mata-Dragão",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3211,7 +3399,8 @@
       {"1":"aumenta o dano em 1d12."}
     ]
   },
-  {"id":188,
+  {
+    "id":188,
     "Nome":"Palavra Primordial",
     "Tipo":"Universal",
     "Círculo":5,
@@ -3225,7 +3414,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":189,
+  {
+    "id":189,
     "Nome":"Possessão",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3243,7 +3433,8 @@
       {"5":"muda a duração para permanente, mas destrói seu corpo original no processo. Uma criatura possuída pode fazer um teste de Vontade no começo do dia para retomar seu corpo. Se passar, recobra a consciência (e a sua própria consciência fica inerte). O teste se repete no início de cada dia. Se o corpo de uma criatura possuída morrer e houver outra criatura em alcance curto, você pode tentar possuí-la como uma reação. Enquanto houver novos corpos para possuir, você é imortal!"}
     ]
   },
-  {"id":190,
+  {
+    "id":190,
     "Nome":"Projetar Consciência",
     "Tipo":"Divina",
     "Círculo":5,
@@ -3258,7 +3449,8 @@
       {"10":"além do normal, sua projeção é capaz de lançar magias que não precisem de componentes materiais e tenham duração diferente de sustentada. Sua forma fantasmagórica funciona como na magia Forma Etérea, sendo afetada por magias de abjuração e essência, mas as magias que ela lança podem afetar criaturas corpóreas."}
     ]
   },
-  {"id":191,
+  {
+    "id":191,
     "Nome":"Reanimação Impura",
     "Tipo":"Divina",
     "Círculo":5,
@@ -3271,7 +3463,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":192,
+  {
+    "id":192,
     "Nome":"Réquiem",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3285,7 +3478,8 @@
     "Publicação":"Jogo do Ano",
     "mod":0
   },
-  {"id":193,
+  {
+    "id":193,
     "Nome":"Roubar a Alma",
     "Tipo":"Divina",
     "Círculo":5,
@@ -3302,7 +3496,8 @@
       {"10":"como uma reação ao lançar esta magia, você possui o corpo sem alma do alvo, como na magia Possessão (mesmo que não conheça a magia)."}
     ]
   },
-  {"id":194,
+  {
+    "id":194,
     "Nome":"Segunda Chance",
     "Tipo":"Divina",
     "Círculo":5,
@@ -3319,7 +3514,8 @@
       {"5":"muda o alvo para uma criatura que tenha morrido há até uma rodada. Esta magia pode curá-la."}
     ]
   },
-  {"id":195,
+  {
+    "id":195,
     "Nome":"Semiplano",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3335,7 +3531,8 @@
       {"5":"muda a duração para permanente e adiciona componente material (maquete do semiplano feito de materiais preciosos no valor de T$ 5.000). Você pode lançar a magia diversas vezes para aumentar as dimensões do semiplano em +30m de lado a cada vez."}
     ]
   },
-  {"id":196,
+  {
+    "id":196,
     "Nome":"Sombra Assassina",
     "Tipo":"Arcana",
     "Círculo":5,
@@ -3351,7 +3548,8 @@
       {"10":"muda o alvo para criaturas escolhidas na área."}
     ]
   },
-  {"id":197,
+  {
+    "id":197,
     "Nome":"Toque da Morte",
     "Tipo":"Universal",
     "Círculo":5,
@@ -3368,7 +3566,8 @@
       {"10":"muda o alcance para curto e o alvo para inimigos no alcance. Em vez de tocar no alvo, você dispara raios púrpuras da ponta de seus dedos."}
     ]
   },
-  {"id":198,
+  {
+    "id":198,
     "Nome":"Açoite Flamejante",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -3386,7 +3585,8 @@
       {"5":"muda o dano para 6d6. Requer 3° círculo."}
     ]
   },
-  {"id":199,
+  {
+    "id":199,
     "Nome":"Dardo Gélido",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -3403,7 +3603,8 @@
       {"1":"muda a resistência para Fortitude parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica lenta até o final da cena."}
     ]
   },
-  {"id":200,
+  {
+    "id":200,
     "Nome":"Jato Corrosivo",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -3420,7 +3621,8 @@
       {"1":"muda a resistência para Fortitude parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica vulnerável."}
     ]
   },
-  {"id":201,
+  {
+    "id":201,
     "Nome":"Invocar Fagulha Elemental",
     "Tipo":"Arcana",
     "Círculo":2,
@@ -3436,7 +3638,8 @@
       {"2":"em vez do normal, o elemental recebe a habilidade de dois familiares, um comum e um elemental."}
     ]
   },
-  {"id":202,
+  {
+    "id":202,
     "Nome":"Momento de Tormenta",
     "Tipo":"Universal",
     "Círculo":2,
@@ -3454,7 +3657,8 @@
       {"5":"muda a área para círculo de 1km de raio. <i>Requisito:</i> devotos de Aharadak."}
     ]
   },
-  {"id":203,
+  {
+    "id":203,
     "Nome":"Transformação em Dragão",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -3473,7 +3677,8 @@
       {"3":"o bônus em atributos se torna +4."}
     ]
   },
-  {"id":204,
+  {
+    "id":204,
     "Nome":"Katana Celestial",
     "Tipo":"Divina",
     "Círculo":5,
@@ -3490,7 +3695,8 @@
       {"6":"muda a área para uma linha de 120m ou quatro linhas de 30m em direções opostas, formando um “X”."}
     ]
   },
-  {"id":205,
+  {
+    "id":205,
     "Nome":"Preparação de Batalha",
     "Tipo":"Universal",
     "Círculo":2,
@@ -3505,7 +3711,8 @@
       {"1":"aumenta o número de alvos em dois e o custo adicional em 1 PM"}
     ]
   },
-  {"id":206,
+  {
+    "id":206,
     "Nome":"Detonação Congelante",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -3522,7 +3729,8 @@
       {"2":"muda a duração para sustentada. Ao invés do normal, você emite uma aura de frio constante em alcance curto. Uma criatura que entre na área ou inicie seu turno dentro dela sofre 2d6 pontos de dano de frio e fica enredada e imóvel por uma rodada. Passar no teste de resistência reduz o dano pela metade, evita a condição imóvel e faz com que a criatura não possa mais ficar imóvel por esta magia nesta cena. Requer 2º círculo."}
     ]
   },
-  {"id":207,
+  {
+    "id":207,
     "Nome":"Disparo Gélido",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -3539,7 +3747,8 @@
       {"1":"muda a resistência para Fortitude parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica lenta até o final da cena."}
     ]
   },
-  {"id":208,
+  {
+    "id":208,
     "Nome":"Geiser Cáustico",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -3556,7 +3765,8 @@
       {"2":"além do normal, o solo continua borbulhando em ácido venenoso até o final da cena, tornando-se terreno difícil. Qualquer criatura que entre na área ou comece o turno dentro dela sofre 2d6 pontos de dano de ácido (sem direito a teste de resistência)."}
     ]
   },
-  {"id":209,
+  {
+    "id":209,
     "Nome":"Jato Corrosivo",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -3573,7 +3783,8 @@
       {"1":"muda a resistência para Reflexos parcial. Se passar, a criatura reduz o dano à metade; se falhar, fica vulnerável."}
     ]
   },
-  {"id":210,
+  {
+    "id":210,
     "Nome":"Nuvem Tempestuosa",
     "Tipo":"Arcana",
     "Círculo":1,
@@ -3590,7 +3801,8 @@
       {"2":"a nuvem também retumba com trovões. Além do normal, uma criatura que falhar no teste de Fortitude fica atordoada por 1 rodada. Se passar no teste, não pode mais ser atordoada por essa magia até o final da cena."}
     ]
   },
-  {"id":211,
+  {
+    "id":211,
     "Nome":"Controlar Ar",
     "Tipo":"Divina",
     "Círculo":2,
@@ -3606,7 +3818,8 @@
       {"2":"aumenta o limite de tamanho de criaturas e objetos afetados em um passo."}
     ]
   },
-  {"id":212,
+  {
+    "id":212,
     "Nome":"Hálito Peçonhento",
     "Tipo":"Universal",
     "Círculo":3,
@@ -3622,7 +3835,8 @@
       {"2":"aumenta o dano de ácido em +1d8 e o dano de veneno em +1d8."}
     ]
   },
-  {"id":213,
+  {
+    "id":213,
     "Nome":"Impacto Fulminante",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -3639,7 +3853,8 @@
       {"4":"muda o alvo para “criaturas escolhidas”. Requer 4º Círculo."}
     ]
   },
-  {"id":214,
+  {
+    "id":214,
     "Nome":"Toque Álgido",
     "Tipo":"Arcana",
     "Círculo":3,
@@ -3656,7 +3871,8 @@
       {"2":"aumenta o dano em +2d8."}
     ]
   },
-  {"id":215,
+  {
+    "id":215,
     "Nome":"Bênção da Dragoa Rainha",
     "Tipo":"Universal",
     "Círculo":4,
@@ -3669,7 +3885,8 @@
     "Publicação":"Dragão Brasil",
     "mod":0
   },
-  {"id":216,
+  {
+    "id":216,
     "Nome":"Pântano Vitriólico",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -3686,7 +3903,8 @@
       {"5":"além do normal, o pântano exala gases com efeitos alucinógenos. Criaturas que falham no teste de Fortitude ficam confusas por uma rodada."}
     ]
   },
-  {"id":217,
+  {
+    "id":217,
     "Nome":"Raio de Plasma",
     "Tipo":"Arcana",
     "Círculo":4,
@@ -3703,7 +3921,8 @@
       {"2":"muda o alcance para pessoal, a área para “Efeito:espada de plasma”, a duração para sustentada e a resistência para “Reflexos reduz à metade”. Ao invés do normal, você condensa a rajada na forma de uma espada de plasma que emite luz (alcance curto) e calor intensos. Você pode usar uma ação padrão para atingir um alvo adjacente com a espada, que causa 10d8 pontos de dano de fogo e ignora a resistência a dano de objetos. Sua mão que “empunha” a espada é considerada ocupada."}
     ]
   },
-  {"id":218,
+  {
+    "id":218,
     "Nome":"Velocidade do Relâmpago",
     "Tipo":"Arcana",
     "Círculo":4,

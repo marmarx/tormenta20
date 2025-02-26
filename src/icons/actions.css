@@ -6,11 +6,11 @@
 .ac_movimento,.ac_padrão,.ac_completa,.ac_padrão:before,.ac_completa:before,.ac_completa:after{background:#b3b2b2}
 .ac_padrão:before,.ac_completa:before,.ac_completa:after{content:''}
 .ac_padrão:before,.ac_completa:before{transform:translate(5px,-7px)}
-.ac_completa:after{transform:translate(9px,-23px)}
+.ac_completa:after{transform:translate(11px,-25px)}
 
 .ac_padrão{transform:translateX(-3px) rotate(45deg)}
 .ac_completa{transform:translateX(-7px) rotate(45deg)}
 
-.ac_reação{width:14px;height:14px;border:2px solid;border-right-color:transparent;border-radius:100px;transform:rotate(135deg)}
+.ac_reação{width:14px;height:14px;border:2px solid;border-right-color:transparent;border-radius:100px;transform:rotate(135deg);margin:auto}
 .ac_reação:before{content:"";position:absolute;width:6px;height:6px;border-top:2px solid;border-right:2px solid;top:-3px;right:-1px;transform:rotate(68deg)}
 .ac_reação,.ac_reação:before{color:#b3b2b2}

@@ -8,38 +8,39 @@ import spellList from '@/components/spell-list.vue'
 import {spellNumber} from '@/stores/spellsStore'
 import {spells} from '@/stores/localStorage'
 const charSpellsList = spells;
+console.log(charSpellsList.value)
 
-const selected_tab = ref(0);
-const tab = value => selected_tab.value = value;
+const selected_tab = ref();
+const change_tab = value => selected_tab.value = value;
 
 const add_remove = (key) => {
-  if(charSpellsList.includes(key)){charSpellsList.splice(charSpellsList.indexOf(key),1)}
-  else{charSpellsList.push(key);charSpellsList.sort((a,b) => a - b)}
+  if(charSpellsList.value.includes(key)){charSpellsList.value.splice(charSpellsList.value.indexOf(key),1)}
+  else{charSpellsList.value.push(key);charSpellsList.value.sort((a,b) => a - b)}
 }
 
 import spellDetails from '@/components/spell-details.vue'
 import spellEdit from '@/components/spell-edit.vue'
 import { useRoute } from 'vue-router';
 const route = useRoute();
-const comp1 = computed(()=>route.params.id?spellDetails:'')
-const comp2 = computed(()=>route.path.includes('edit')?spellEdit:'')
+const comp1 = computed(()=>route.params.id?spellDetails:null)
+const comp2 = computed(()=>route.path.includes('edit')?spellEdit:null)
 </script>
 
 <template>
 <layout>
-  <template #first>
+  <template #layout1>
     <titles>Magias</titles>
-    <tabs @tab="tab">
-      <template #first>Pessoal ({{ charSpellsList.length }})</template>
-      <template #second>Restantes ({{ spellNumber - charSpellsList.length }})</template>
+    <tabs @tab="change_tab">
+      <template #tab1>Pessoal ({{ charSpellsList.length }})</template>
+      <template #tab2>Restantes ({{ spellNumber - charSpellsList.length }})</template>
     </tabs>
-    <spellList v-if="!selected_tab" :list="charSpellsList" @add_remove="add_remove"/>
-    <spellList v-else :all="true" :list="charSpellsList" @add_remove="add_remove"/>
+    <spellList v-if="!selected_tab" :list="charSpellsList" @add_remove="add_remove" />
+    <spellList v-else :all="true" :list="charSpellsList" @add_remove="add_remove" />
   </template>
-  <template #second>
+  <template #layout2 v-if="comp1">
     <component :is="comp1"></component>
   </template>
-  <template #third>
+  <template #layout3 v-if="comp2">
     <component :is="comp2"></component>  
   </template>
 </layout>

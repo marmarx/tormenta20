@@ -19,7 +19,12 @@ const router = createRouter({
     {
       path: '/magias',
       name: 'magias',
-      alias:['/magias/:id','/magias/:id/editar','/magias/:id/edit'],
+      component: () => import('@/views/spells.vue')
+    },
+    {
+      path: '/magias/:id',
+      name: 'magiasId',
+      alias:['/magias/:id/editar','/magias/:id/edit'],
       component: () => import('@/views/spells.vue')
     }
   ],

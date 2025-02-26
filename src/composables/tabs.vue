@@ -4,10 +4,10 @@ defineEmits(['tab'])
 
 <template>
 <div class="tab_container">
-  <input type="radio" id="tab1" class="tab" name="tab" checked @click="$emit('tab',0)">
-  <label for="tab1"><slot name="first"></slot></label>
-  <input type="radio" id="tab2" class="tab" name="tab" @click="$emit('tab',1)">
-  <label for="tab2"><slot name="second"></slot></label>
+  <input type="radio" id="tab1" class="tab" name="tab" checked @click="$emit('tab',0)" />
+  <label for="tab1"><slot name="tab1"></slot></label>
+  <input type="radio" id="tab2" class="tab" name="tab" @click="$emit('tab',1)" />
+  <label for="tab2"><slot name="tab2"></slot></label>
   <div class="line"></div>
 </div>
 </template>

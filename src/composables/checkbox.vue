@@ -1,6 +1,5 @@
 <script setup>
 defineProps({checkmarked:Boolean})
-const checkmark = () => {event.target.children[0].classList.toggle('checkmarked')}
 </script>
 
 <template>
