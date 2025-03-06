@@ -1,21 +1,16 @@
 @import './base.css';
-@font-face{font-family:'tormenta20';src:url('Tormenta20.ttf') format('truetype');font-weight:normal;font-style:normal}
-:root{
-  --t20-color:#b72a2b;
-  --overlay:#e8e8e8;
-  --over-trans:#eeeeee69
-}
+@import './input.css';
+@import './t20.css';
+
 body{
-  position:fixed;padding:2em;
+  position:fixed;padding:0 7em;
   background-color:var(--back-color);background-size:20em;background-blend-mode:var(--back-blend);
   background-image:var(--back-img);background-repeat:repeat;background-attachment:fixed;
 }
+@media (max-width:859px){body{padding:0 1em}}
+
 p{
-  line-height:1.8em;
-  letter-spacing:.8px;
-  text-align:justify;
-  font-size:1.1em;
-  font-weight:500;
+  font-size:1.1em;font-weight:500;line-height:1.8em;
+  letter-spacing:.8px;text-align:justify;color:currentColor;
   margin:.5em 0;
-  color:var(--color);
 }

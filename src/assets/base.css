@@ -1,7 +1,9 @@
 :root{
   --white:#fff;--white-soft:#f8f8f8;--white-mute:#f2f2f2;--white-washed:rgba(255,255,255,.9);--white-vanish:rgba(255,255,255,.6);
   --black:#171717;--black-soft:#222222;--black-mute:#292929;--black-washed:rgba(0,0,0,.75);--black-vanish:rgba(0,0,0,.4);
+  --gray:#717171;--gray-washed:rgba(255,255,255,.25);
   --invalid-color:#6c6c6c;
+  --unfocused-color:#b0b0b0;
 }
 
 :root{
@@ -10,6 +12,7 @@
   --back-color: var(--white-washed);
   --back-blend: lighten;
   --el-back-color: var(--white-vanish);
+  --el-back-hover: var(--white-washed);
   --bright:brightness(.9)
 }
 
@@ -20,6 +23,7 @@
     --back-color: var(--black-washed);
     --back-blend: darken;
     --el-back-color: var(--black-vanish);
+    --el-back-hover: var(--black-washed);
     --bright:brightness(1.1)
   }
 }
@@ -39,7 +43,7 @@
 ::-webkit-scrollbar-thumb:hover{background:#999}
 ::selection{background:#30f2bb}
 
-html,body{scroll-behavior:smooth;overflow-x:hidden;width:100vw;background:var(--bg-color)}
+html,body{scroll-behavior:smooth;overflow:hidden;width:100vw;background:var(--bg-color)}
 html{height:100vh}body{height:100%}
 /* html{font-size:62.5%} makes 1 rem = 10px, thus making 1.6 rem = 16px; normally 1 rem = 16px */
 body{font-size:1rem} /* 1 rem = 16px */

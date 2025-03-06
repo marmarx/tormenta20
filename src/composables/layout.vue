@@ -12,8 +12,8 @@ const smallScreen = useMatchMedia('(max-width: 859px)');
 </template>
 
 <style>
-.layout{display:flex;flex-direction:row;max-height:calc(100vh - 64px)}
-.layout-third{width:33.3333%;padding:0 5em;overflow-y:scroll}
+.layout{display:flex;flex-direction:row;height:100vh}
+.layout-third{width:33.3333%;padding:2em 3em 0;display:flex;flex-direction:column}
 @media (max-width:859px){
   .layout-third{width:100%;height:100%}
 }

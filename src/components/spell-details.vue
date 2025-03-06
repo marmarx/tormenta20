@@ -11,7 +11,7 @@ const router = useRouter();
 const edit_spell = () => router.push(`/magias/${id.value}/editar`) //router.currentRoute.value.params.id
 
 const spellList = ref(null)
-import {useSpellStore} from '@/stores/spellsStore'
+import {useSpellStore} from '@/stores/archive/old_spellsStore'
 const fetchSpells = async () => spellList.value = await useSpellStore(0,[id.value]).then(data => data[0])
 onMounted(fetchSpells); //Fetch spells when component is mounted
 watch(() => [id.value],fetchSpells,{deep:true});
@@ -22,30 +22,37 @@ const avoid = ['id','Nome','Tipo','Círculo','Escola','mod','Publicação']
 </script>
 
 <template>
-  <p v-if="!spellList">Loading spell details...</p>
-  <flex v-else>
+  <flex v-if="spellList">
     <h2>{{ spellList.Nome }}</h2>
     <p class="tac">{{`${pms(spellList.Círculo)} PM${spellList.Círculo>1?'s':''} • ${spellList.Tipo} • ${spellList.Escola} ${spellList.Círculo}`}}</p>
+  </flex>
+  <flex class="grow" v-if="spellList">
+    <div class="flex-over overflow">
+      <div v-for="(value, key) in spellList" :key="key">
+        <p v-if="(!avoid.includes(key))"><b>{{ key==='Descrição'?'':`${key}:` }}</b> <span v-html="value"></span></p>
+      </div>
 
-    <div v-for="(value, key) in spellList" :key="key">
-      <p v-if="(!avoid.includes(key))"><b>{{ key==='Descrição'?'':`${key}:` }}</b> <span v-html="value"></span></p>
+      <p v-for="mod in spellList.mod">
+        <b>{{ mod_pms(Object.keys(mod).join()) }}:</b>  <span v-html="mod[Object.keys(mod)]"></span>
+      </p>
+      <p v-if="spellList.Publicação"><i>Publicação:</i> {{spellList.Publicação}}</p>
+      <btn @click="edit_spell()">Editar magia</btn>
     </div>
-
-    <p v-for="mod in spellList.mod">
-      <b>{{ mod_pms(Object.keys(mod).join()) }}:</b>  <span v-html="mod[Object.keys(mod)]"></span>
-    </p>
-    <p v-if="spellList.Publicação"><i>Publicação:</i> {{spellList.Publicação}}</p>
-    <btn @click="edit_spell()">Editar magia</btn>
+  </flex>
+  <flex v-else class="h100">
+    <p class="tac">Clique em uma magia para ver e editar</p>
   </flex>
 </template>
 
-<style scoped>
+<style>
 h2{
   font-family:'tormenta20';font-size:2.4em;font-weight:500;
   line-height:1.2em;letter-spacing:4px;text-align:center;
   color:var(--t20-color);filter:var(--bright);
 }
 p{font-size:.95em;margin:.1em 0;line-height:2.2em}
+.flex-over{display:flex;flex-direction:column}
+.h100{height:100%}
 </style>
 
 <!--

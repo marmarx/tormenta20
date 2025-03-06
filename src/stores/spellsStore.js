@@ -1,8 +1,8 @@
-import { ref,computed } from "vue";
+import { defineStore } from "pinia";
+import { ref, computed } from "vue";
 
-const spellsStore = () => {
-  const allSpells = ref(null); // Global variable, retains value across function calls
-  const spellNumber = computed(() => allSpells.value?allSpells.value.length:219)
+export const useSpellsStore = defineStore("spellsStore", () => {
+  const allSpells = ref(null); 
 
   const fetchSpells = async () => {
     if(!allSpells.value){
@@ -15,15 +15,15 @@ const spellsStore = () => {
         .catch(error => console.log('Spells JSON failed to load:\n',error));
       allSpells.value = data;
     }
+    return allSpells.value;
   }
 
-  const findSpells = async (all=0,list) => {
-    await fetchSpells();
-    if(!allSpells.value) return [];
-    if(all){return allSpells.value.filter((_,i) => !list.includes(i))}  //all but list
-    if(list){return list.map(i => allSpells.value[i])}  //list only
-  }
-  return [findSpells,spellNumber]
-}
-const [useSpellStore,spellNumber] = spellsStore();
-export {useSpellStore,spellNumber};
+  const spellNumber = computed(() => allSpells.value ? allSpells.value.length : 0);
+  const spellTypes = computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Tipo))].sort() : []); //arcana, divina, universal
+  const spellSchools = computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Escola))].sort() : []);
+  const spellLevels = computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Círculo))] : []);
+  const spellPub = computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Publicação))].sort() : []);
+  const spellAlphabet = computed(() => allSpells.value ? allSpells.value.map(spell => spell.Nome.charAt(0)) : []);
+
+  return { allSpells, spellNumber, spellTypes, spellSchools, spellLevels, spellPub, spellAlphabet, fetchSpells };
+});

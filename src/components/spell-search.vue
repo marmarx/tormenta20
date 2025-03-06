@@ -1,5 +1,5 @@
 <script setup>
-import {useSpellStore} from '@/stores/spellsStore'
+import {useSpellStore} from '@/stores/archive/old_spellsStore'
 const fetchSpells = async () => {
   spellList.value = await useSpellStore(props.all,props.list)
 }

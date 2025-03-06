@@ -1,10 +1,11 @@
 <script setup>
 defineProps({checkmarked:Boolean})
+const checkmark = () => event.target.classList.toggle('checkmarked')
 </script>
 
 <template>
 <div class="checkbox-cont">
-  <div class="checkmark" :class="checkmarked?'checkmarked':''"></div>
+  <div class="checkmark" :class="checkmarked?'checkmarked':''" @click="checkmark"></div>
 </div>
 </template>
 
