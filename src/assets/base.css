@@ -7,7 +7,10 @@
 }
 
 :root{
+  --plain-color: var(--black);
+  --plain-bg: var(--white);
   --color: var(--black-mute);
+  --sub-color:var(--black-washed);
   --back-img: url("@/assets/back-light.jpg");
   --back-color: var(--white-washed);
   --back-blend: lighten;
@@ -18,12 +21,15 @@
 
 @media (prefers-color-scheme:dark){
   :root{
+    --plain-color: var(--white);
+    --plain-bg: var(--black);
     --color: var(--white-mute);
+    --sub-color:var(--white-washed);
     --back-img: url("@/assets/back-dark.jpg");
     --back-color: var(--black-washed);
     --back-blend: darken;
-    --el-back-color: var(--black-vanish);
-    --el-back-hover: var(--black-washed);
+    --el-back-color: var(--black-washed);
+    --el-back-hover: var(--black-vanish);
     --bright:brightness(1.1)
   }
 }
@@ -48,7 +54,6 @@ html{height:100vh}body{height:100%}
 /* html{font-size:62.5%} makes 1 rem = 10px, thus making 1.6 rem = 16px; normally 1 rem = 16px */
 body{font-size:1rem} /* 1 rem = 16px */
 textarea{field-sizing:content}
-select option{color:var(--black)!important}option:disabled{color:unset!important}select:invalid{color:#6c6c6c!important}
 
 b{font-weight:bold}i{font-weight:italic}.tac{text-align:center}
 

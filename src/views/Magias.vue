@@ -31,11 +31,7 @@ const comp2 = computed(() => route.path.includes('edit')?spellEdit:spellDetails)
 
 <template>
 <layout>
-
-  <template #layout1>
-    <filtro></filtro>
-  </template>
-
+  <template #layout1><filtro></filtro></template>
   <template #layout2>
     <titles>Magias</titles>
     <tabs @tab="change_tab">
@@ -45,10 +41,6 @@ const comp2 = computed(() => route.path.includes('edit')?spellEdit:spellDetails)
     <spellList v-if="!selected_tab" :list="charSpellsList" @add_remove="addRemove" />
     <spellList v-else :all="true" :list="charSpellsList" @add_remove="addRemove" />
   </template>
-
-  <template #layout3 v-if="comp2">
-    <component :is="comp2"></component>  
-  </template>
-  
+  <template #layout3 v-if="comp2"><component :is="comp2"></component></template>
 </layout>
 </template>

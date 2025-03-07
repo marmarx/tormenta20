@@ -1,33 +1,40 @@
 <script setup>
-defineProps({check:{type:String,required:true}})
-const model = defineModel()
-// const update = () => model.includes(event.target.value)?model.splice(model.indexOf(event.target.value),1):model.push(event.target.value)
+const props = defineProps({modelValue:Array, options:Array})
+const emit = defineEmits(["update:modelValue"])
+
+const updateSelection = (option, isChecked) => {
+  const newValue = isChecked ? [...props.modelValue, option] : props.modelValue.filter((item) => item !== option);  //add or remove option
+  emit("update:modelValue", newValue); //emit updated array
+}
 </script>
 
 <template>
-  <label :for="check" :value="check">
-    <slot>Generic checkbox</slot>
-    <input type="checkbox" :id="check" :value="check" v-model="model">
-    <span class="checkmark"></span>
-  </label>
+  <div class="input">
+    <p><slot>Custom checkbox set</slot></p>
+    <label v-for="option in options" :key="`checkbox-${option}`" :for="`checkbox-${option}`">
+      {{ option }}
+      <input type="checkbox" :id="`checkbox-${option}`" :value="option" :checked="modelValue.includes(option)" @change="updateSelection(option, $event.target.checked)" />
+      <span class="checkmark"></span>
+    </label>
+  </div>
 </template>
 
 <style scoped>
-label,input,.checkmark{cursor:pointer}
+@import '@/assets/input.css';
+label,input,.checkmark{cursor:pointer;pointer-events:auto}
 label{
-  position:relative;
-  width:100%;display:block;
+  position:relative;width:100%;display:block;
   padding:0 45px 0;margin:.5em -2%;
-  font-size:1em;color:currentColor;cursor:pointer;
+  font-size:1em;color:currentColor;
   -webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
 }
-input,.checkmark{position:absolute;left:0;top:0}
 input{opacity:0;width:100%;height:100%}
+input,.checkmark{position:absolute;left:0;top:0}
 .checkmark{
   width:22px;height:22px;
   border:2px solid #dbdbdb;border-radius:4px;margin:0 .8em 0 .5em;
   color:var(--color)!important;background:var(--el-back-color);
-  transition:all .3s;pointer-events:auto
+  transition:all .3s
 }
 label:hover input ~ .checkmark,label:focus input ~ .checkmark,label input:checked ~ .checkmark{background:var(--el-back-hover)}
 
@@ -38,4 +45,5 @@ label:hover input ~ .checkmark,label:focus input ~ .checkmark,label input:checke
   transform-origin:bottom left;transform:rotate(45deg) translate(-2.5px,-4px);
 }
 label input:checked ~ .checkmark:after{display:block}
+p{font-size:1em;line-height:1em;padding:.5em 0;font-weight:600}
 </style>

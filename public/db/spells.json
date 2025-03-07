@@ -661,14 +661,10 @@
       {"1":"aumenta a área iluminada em +3m de raio."},
       {"2":"muda a duração para 1 dia."},
       {"2":"muda a duração para permanente e adiciona componente material (pó de rubi no valor de T$ 50). Não pode ser usado em conjunto com outros aprimoramentos. Requer 2º círculo."},
-      {"(Apenas Arcanos):muda o alvo para 1 criatura. Você lança a magia nos olhos do alvo, que fica ofuscado pela cena. Não afeta criaturas cegas.":2
-      },
-      {"(Apenas Arcanos):muda o alcance para longo e o efeito para cria 4 pequenos globos flutuantes de pura luz. Você pode posicionar os globos onde quiser dentro do alcance. Você pode enviar um à frente, outra para trás, outra para cima e manter um perto de você, por exemplo. Uma vez por rodada, você pode mover os globos com uma ação livre. Cada um ilumina como uma tocha, mas não produz calor. Se um globo ocupar o espaço de uma criatura, ela fica ofuscada e sua silhueta pode ser vista claramente (ela não recebe camuflagem por escuridão ou invisibilidade). Requer 2º círculo.":2
-      },
-      {"(Apenas Divinos):a luz é cálida como a do sol. Criaturas que sofrem penalidades e dano pela luz solar sofrem seus efeitos como se estivessem expostos à luz solar real. Seus aliados na área estabilizam automaticamente e ficam imunes à condição sangrando, e seus inimigos ficam ofuscados. Requer 2º círculo.":5
-      },
-      {"(Apenas Divinos):muda o alcance para toque e o alvo para 1 criatura. Em vez do normal, o alvo é envolto por um halo de luz, recebendo +10 em testes de Diplomacia e resistência a trevas 10. Requer 2º círculo.":0
-      }
+      {"2":"(Apenas Arcanos):muda o alvo para 1 criatura. Você lança a magia nos olhos do alvo, que fica ofuscado pela cena. Não afeta criaturas cegas."},
+      {"2":"(Apenas Arcanos):muda o alcance para longo e o efeito para cria 4 pequenos globos flutuantes de pura luz. Você pode posicionar os globos onde quiser dentro do alcance. Você pode enviar um à frente, outra para trás, outra para cima e manter um perto de você, por exemplo. Uma vez por rodada, você pode mover os globos com uma ação livre. Cada um ilumina como uma tocha, mas não produz calor. Se um globo ocupar o espaço de uma criatura, ela fica ofuscada e sua silhueta pode ser vista claramente (ela não recebe camuflagem por escuridão ou invisibilidade). Requer 2º círculo."},
+      {"5":"(Apenas Divinos):a luz é cálida como a do sol. Criaturas que sofrem penalidades e dano pela luz solar sofrem seus efeitos como se estivessem expostos à luz solar real. Seus aliados na área estabilizam automaticamente e ficam imunes à condição sangrando, e seus inimigos ficam ofuscados. Requer 2º círculo."},
+      {"0":"(Apenas Divinos):muda o alcance para toque e o alvo para 1 criatura. Em vez do normal, o alvo é envolto por um halo de luz, recebendo +10 em testes de Diplomacia e resistência a trevas 10. Requer 2º círculo."}
     ]
   },
   {
@@ -1894,12 +1890,9 @@
     "Descrição":"O alvo pode realizar uma ação padrão ou de movimento adicional por turno. Esta ação não pode ser usada para lançar magias e ativar engenhocas.",
     "Publicação":"Jogo do Ano",
     "mod":[
-      {"muda a duração para cena. A ação adicional que você pode fazer é apenas de movimento. Uma criatura só pode receber uma ação adicional por turno como efeito de Velocidade.":7
-      },
-      {"muda o alvo para criaturas escolhidas no alcance. Requer 4º círculo.":7
-      },
-      {"muda o alcance para pessoal e o alvo para você. Você acelera sua mente, além de seu corpo. A ação adicional pode ser usada para lançar magias e ativar engenhocas. Requer 4º círculo.":0
-      }
+      {"7":"muda a duração para cena. A ação adicional que você pode fazer é apenas de movimento. Uma criatura só pode receber uma ação adicional por turno como efeito de Velocidade."},
+      {"7":"muda o alvo para criaturas escolhidas no alcance. Requer 4º círculo."},
+      {"0":"muda o alcance para pessoal e o alvo para você. Você acelera sua mente, além de seu corpo. A ação adicional pode ser usada para lançar magias e ativar engenhocas. Requer 4º círculo."}
     ]
   },
   {
@@ -1981,7 +1974,7 @@
     "Tipo":"Divina",
     "Círculo":3,
     "Escola":"Abjuração",
-    "Ação":"1d31 rodadas",
+    "Ação":"1d3+1 rodadas",
     "Alcance":"curto (9m 6q)",
     "Duração":"instantânea",
     "Alvo":"1 criatura",
@@ -1989,7 +1982,7 @@
     "Descrição":"Você expulsa uma criatura não nativa de Arton. Um alvo nativo de outro mundo (como muitos espíritos), é teletransportado de volta para um lugar aleatório de seu mundo de origem. Já um alvo morto-vivo tem sua conexão com as energias negativas rompidas, sendo reduzido a 0 PV. Se passar na resistência, em vez dos efeitos acima, o alvo fica enjoado por 1d4 rodadas.<br>Se você tiver um ou mais itens que se oponham ao alvo de alguma maneira, a CD do teste de resistência aumenta em +2 por item. Por exemplo, se lançar a magia contra demônios do frio (vulneráveis a água benta e que odeiam luz e calor) enquanto segura um frasco de água benta e uma tocha acesa, a CD  aumenta em +4. O mestre decide se determinado item é forte o bastante contra a criatura para isso.",
     "Publicação":"Jogo do Ano",
     "mod":[
-      {"muda a resistência para nenhum. Em vez do normal, devolve automaticamente uma criatura conjurada (como por uma magia de convocação) para seu plano de origem.":0
+      {"0":"muda a resistência para nenhum. Em vez do normal, devolve automaticamente uma criatura conjurada (como por uma magia de convocação) para seu plano de origem."
       }
     ]
   },
@@ -2624,7 +2617,7 @@
     "Duração":"sustentada",
     "Alvo":"1 criatura",
     "Resistência":"Vontade anula",
-    "Descrição":"Através de uma superfície reflexiva (bacia de água benta para clérigos, lago para druidas, bola de cristal para magos, espelho para feiticeiros etc.) você pode ver e ouvir uma criatura escolhida e seus arredores (cerca de 6m em qualquer direção), mesmo que ela se mova. O alvo pode estar a qualquer distância, mas se passar em um teste de Vontade, a magia falha. A vítima recebe bônus ou penalidades em seu teste de resistência, dependendo do conhecimento que você tiver dela (veja tabela abaixo).<table><tr><th>Conhecimento do alvo</th><th>Modificador</th></tr><tr><td>Não conhece</td><td>+10</td></tr><tr><td>Ouviu falar</td><td>+5</td></tr><tr><td>O alvo está em outro plano ou mundo</td><td>+5</td></tr><tr><td>Já encontrou o alvo pessoalmente</td><td>+0</td></tr><tr><td>Tem uma pintura, escultura ou outra representação</td><td>-2</td></tr><tr><td>Conhece bem o alvo</td><td>-5</td></tr><tr><td>Tem um pertence pessoal ou peça de roupa do alvo</td><td>-5</td></tr><tr><td>Tem uma parte do corpo do alvo (unhas, cabelos...)</td><td>-10</td></tr></table>",
+    "Descrição":"Através de uma superfície reflexiva (bacia de água benta para clérigos, lago para druidas, bola de cristal para magos, espelho para feiticeiros etc.) você pode ver e ouvir uma criatura escolhida e seus arredores (cerca de 6m em qualquer direção), mesmo que ela se mova. O alvo pode estar a qualquer distância, mas se passar em um teste de Vontade, a magia falha. A vítima recebe bônus ou penalidades em seu teste de resistência, dependendo do conhecimento que você tiver dela (veja tabela abaixo).<table><tr><th>Conhecimento do alvo</th><th>Modif.</th></tr><tr><td>Não conhece</td><td>+10</td></tr><tr><td>Ouviu falar</td><td>+5</td></tr><tr><td>O alvo está em outro plano ou mundo</td><td>+5</td></tr><tr><td>Já encontrou o alvo pessoalmente</td><td>+0</td></tr><tr><td>Tem uma pintura, escultura ou outra representação</td><td>-2</td></tr><tr><td>Conhece bem o alvo</td><td>-5</td></tr><tr><td>Tem um pertence pessoal ou peça de roupa do alvo</td><td>-5</td></tr><tr><td>Tem uma parte do corpo do alvo (unhas, cabelos...)</td><td>-10</td></tr></table>",
     "Publicação":"Jogo do Ano",
     "mod":0
   },

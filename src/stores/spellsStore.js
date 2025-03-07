@@ -19,11 +19,20 @@ export const useSpellsStore = defineStore("spellsStore", () => {
   }
 
   const spellNumber = computed(() => allSpells.value ? allSpells.value.length : 0);
-  const spellTypes = computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Tipo))].sort() : []); //arcana, divina, universal
-  const spellSchools = computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Escola))].sort() : []);
-  const spellLevels = computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Círculo))] : []);
-  const spellPub = computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Publicação))].sort() : []);
   const spellAlphabet = computed(() => allSpells.value ? allSpells.value.map(spell => spell.Nome.charAt(0)) : []);
 
-  return { allSpells, spellNumber, spellTypes, spellSchools, spellLevels, spellPub, spellAlphabet, fetchSpells };
+  const spellProperties = ref({ 'Tipo': ref([]), 'Círculo': ref([]), 'Escola': ref([]), 'Publicação': ref([]) })  //equal to filterCheck const in filterStore.js
+  Object.keys(spellProperties.value).forEach(key => {
+    spellProperties.value[key] = computed(() => 
+      allSpells.value ? [...new Set(allSpells.value.map(spell => spell[key]))].sort() : []
+    )
+  })
+  
+  return { allSpells, spellNumber, spellAlphabet, spellProperties, fetchSpells };
 });
+
+  // const spellTypes =    computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Tipo))].sort() : []);
+  // const spellSchools =  computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Escola))].sort() : []);
+  // const spellLevels =   computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Círculo))] : []);
+  // const spellPub =      computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Publicação))].sort() : []);
+  //return { allSpells, spellNumber, spellTypes, spellSchools, spellLevels, spellPub, spellAlphabet, fetchSpells };

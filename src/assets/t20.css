@@ -1,7 +1,8 @@
 @font-face{font-family:'tormenta20';src:url('Tormenta20.ttf') format('truetype');font-weight:normal;font-style:normal}
 :root{--t20-color:#b72a2b;--overlay:#e8e8e8;--over-trans:#eeeeee69}
 
-.t20{color:var(--t20-color)!important}
+.t20,h1,h2,h3,h4{color:var(--t20-color)!important}
+.t20box h1,.t20box h2,.t20box h3,.t20box h4,.t20box p{color:currentColor!important;filter:none}
 
 .t20box label,.t20box input,.t20box select,.t20box textarea,.t20box .fakeinput{
   color:currentColor;
@@ -10,4 +11,4 @@
   border:1px solid currentColor;
   background:var(--gray-washed);
 }
-.t20box input:focus, .t20box select:focus{outline:1px solid currentColor}
+.t20box input:focus, .t20box select:focus{outline:1px solid currentColor} 
