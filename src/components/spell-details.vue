@@ -5,10 +5,9 @@ import btn from '@/composables/button.vue'
 import {ref,computed,onMounted,watch} from 'vue'
 import {useRoute,useRouter} from 'vue-router';
 const route = useRoute();
-const id = computed(() => route.params.id);
 
 const router = useRouter();
-const edit_spell = () => router.push(`/magias/${id.value}/editar`) //router.currentRoute.value.params.id
+const edit_spell = () => router.push(`/magias/${route.params.id}/editar`) //router.currentRoute.value.params.id
 
 import {useSpellsStore} from '@/stores/spellsStore'   //import {useSpellStore} from '@/stores/old_spellsStore'
 const spellsStore = useSpellsStore();
@@ -20,9 +19,7 @@ onMounted(fetchSpells); // Fetch spells when component is mounted
 import {useFilterStore} from '@/stores/filterStore'
 const filterStore = useFilterStore()
 
-const spellList = ref(null)
-const spellDetails = async () => spellList.value = await filterStore.filterList(allSpells,0,[{id:Number(id.value)}])[0]
-watch(() => id,spellDetails,{deep:true});
+const spellList = computed(() => filterStore.filterList(allSpells,0,[{id:Number(route.params.id)}])[0])
 
 const pms = lvl => lvl<2?1:(lvl<3?3:(lvl<4?6:(lvl<5?10:15)))
 const mod_pms = (key) => isNaN(key)?key:(`${key} PM${key>1?'s':''}`)

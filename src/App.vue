@@ -1,7 +1,7 @@
 <script setup>
-import { useCharacterStore } from '@/stores/characterStore'   // import {spells} from '@/stores/localStorage'
+import { useCharacterStore } from '@/stores/characterStore'
 import navigation from '@/views/navigation.vue'
-const storeCharacter = useCharacterStore()    // const charSpellsList = spells;
+const storeCharacter = useCharacterStore()
 
 //storeCharacter.clearStorage()
 storeCharacter.newChar('Aurora')

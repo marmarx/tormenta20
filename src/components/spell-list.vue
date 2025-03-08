@@ -29,9 +29,9 @@ watchEffect(() => {
   filteredSpells.value = filterStore.filterSearch(allSpells, props.all, props.list);
 })
 
-// import {useSortStore} from '@/stores/sortStore'
-// const sortStore = useSortStore()
-// const orderedSpellsList = computed(() => sortStore.sorter(props.list,filteredSpellsList.value))
+import {useSortStore} from '@/stores/sortStore'
+const sortStore = useSortStore()
+const orderedSpellsList = computed(() => sortStore.sorter(props.list,filteredSpells.value))
 
 const pms = lvl => lvl<2?1:(lvl<3?3:(lvl<4?6:(lvl<5?10:15)))
 const transX = computed(() => `${props.all?'-':''}25%`)
@@ -41,7 +41,7 @@ const transX = computed(() => `${props.all?'-':''}25%`)
   <p v-if="!allSpells">Loading spells...</p>
   <flex v-else class="grow">
     <TransitionGroup tag="div" name="slide" class="overflow">
-      <div class="item-cont" v-for="item in filteredSpells" v-bind:key="`spell-${item.id}`">
+      <div class="item-cont" v-for="item in orderedSpellsList" v-bind:key="`spell-${item.id}`">
         <div class="item">
           <checkbox @click="$emit('add_remove',item.id)" :checkmarked="!all" />
           <div class="item-click" @click="open_details(item.id)">

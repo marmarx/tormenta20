@@ -5,7 +5,7 @@ export const useFilterStore = defineStore("filterStore", () => {
   const filterList = (fullList, all = 0, list) => {
     if (!fullList.value) return [];   //full list is expected to be an array of objects [{},{},{}...]
     const ids = list.map(item => item.id);  //extract ids from objects
-
+    
     return all
       ? fullList.value.filter((_, i) => !ids.includes(i))
       : ids.map(i => fullList.value[i]); // .filter(item => item !== undefined)  // Removes undefined
