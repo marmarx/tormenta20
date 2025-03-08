@@ -43,7 +43,7 @@ const avoid = ['id','Nome','Tipo','Círculo','Escola','mod','Publicação']
       <p v-for="mod in spellList.mod">
         <b>{{ mod_pms(Object.keys(mod).join()) }}:</b>  <span v-html="mod[Object.keys(mod)]"></span>
       </p>
-      <p v-if="spellList.Publicação"><i>Publicação:</i> {{spellList.Publicação}}</p>
+      <p v-if="spellList.Publicação"><i>Publicação:</i> {{ Array.isArray(spellList.Publicação)?spellList.Publicação.join(', '):spellList.Publicação }}</p>
       <btn @click="edit_spell()">Editar magia</btn>
     </div>
   </flex>

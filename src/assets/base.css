@@ -56,6 +56,7 @@ body{font-size:1rem} /* 1 rem = 16px */
 textarea{field-sizing:content}
 
 b{font-weight:bold}i{font-weight:italic}.tac{text-align:center}
+b,i,.tac{line-height:inherit}
 
 /*
 1 rem relates to the font-size set by the browser's setting (accessbility)

@@ -1,6 +1,4 @@
 <script setup>
-import test from '@/views/test.vue'
-
 import { useCharacterStore } from '@/stores/characterStore'   // import {spells} from '@/stores/localStorage'
 import navigation from '@/views/navigation.vue'
 const storeCharacter = useCharacterStore()    // const charSpellsList = spells;
@@ -15,6 +13,5 @@ console.log(charData)
 
 <template>
   <router-view />
-  <!-- <test/> -->
   <navigation/>
 </template>

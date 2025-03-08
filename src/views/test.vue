@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref, computed, onMounted } from "vue";
 
 import {useSpellsStore} from '@/stores/spellsStore'   //import {useSpellStore} from '@/stores/old_spellsStore'
@@ -22,4 +22,4 @@ const filteredItems = computed(() => filterStore.filterSearch(allSpells));
   <div v-for="item in filteredItems" :key="item.id">
     {{ item.Nome }}
   </div>
-</template>
+</template> -->

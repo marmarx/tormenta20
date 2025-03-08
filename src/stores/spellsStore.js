@@ -24,9 +24,11 @@ export const useSpellsStore = defineStore("spellsStore", () => {
   const spellProperties = ref({ 'Tipo': ref([]), 'Círculo': ref([]), 'Escola': ref([]), 'Publicação': ref([]) })  //equal to filterCheck const in filterStore.js
   Object.keys(spellProperties.value).forEach(key => {
     spellProperties.value[key] = computed(() => 
-      allSpells.value ? [...new Set(allSpells.value.map(spell => spell[key]))].sort() : []
-    )
-  })
+      allSpells.value 
+        ? [...new Set(allSpells.value.flatMap(spell => Array.isArray(spell[key]) ? spell[key] : [spell[key]]))].sort()  //will always return an array
+        : []
+    );
+  });
   
   return { allSpells, spellNumber, spellAlphabet, spellProperties, fetchSpells };
 });

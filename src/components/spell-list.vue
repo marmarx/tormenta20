@@ -23,18 +23,11 @@ onMounted(fetchSpells); // Fetch spells when component is mounted
 import {useFilterStore} from '@/stores/filterStore'
 const filterStore = useFilterStore()
 
-const charSpells = ref([]);
+const filteredSpells = ref([]);
 watchEffect(() => {
   if (!allSpells.value) return; // wait until spells are loaded
-  charSpells.value = filterStore.filterList(allSpells, props.all, props.list);
+  filteredSpells.value = filterStore.filterSearch(allSpells, props.all, props.list);
 })
-
-const filteredSpellsList = computed(() => {
-  console.log(charSpells.value);
-  return filterStore.filterSearch(charSpells)
-})
-
-// const filteredSpellsList = filterStore.filterSearch(charSpells)
 
 // import {useSortStore} from '@/stores/sortStore'
 // const sortStore = useSortStore()
@@ -48,11 +41,11 @@ const transX = computed(() => `${props.all?'-':''}25%`)
   <p v-if="!allSpells">Loading spells...</p>
   <flex v-else class="grow">
     <TransitionGroup tag="div" name="slide" class="overflow">
-      <div class="item-cont" v-for="item in filteredSpellsList" v-bind:key="`spell-${item.id}`">
+      <div class="item-cont" v-for="item in filteredSpells" v-bind:key="`spell-${item.id}`">
         <div class="item">
           <checkbox @click="$emit('add_remove',item.id)" :checkmarked="!all" />
           <div class="item-click" @click="open_details(item.id)">
-            <p class="item-title">{{ item.Nome }}</p>
+            <p class="item-title" v-html="item.Nome"></p>
             <p class="item-subtitle">{{`${pms(item.Círculo)} PM${item.Círculo>1?'s':''} • ${item.Tipo} • ${item.Escola} ${item.Círculo}`}}</p>
             <div class="item-icon"><div :class="`ac_${item.Ação}`"></div></div>
           </div>
@@ -67,7 +60,7 @@ const transX = computed(() => `${props.all?'-':''}25%`)
 .item-cont{width:100%;display:inline-flex;left:0}
 .item{position:relative;width:100%;margin:.6em 0;display:inline-flex;top:0}
 .item-click{cursor:pointer;width:100%}
-.item-title{display:inline-flex;margin:auto 0;font-size:1em;font-weight:500}
+.item-title{display:inline-flex;margin:auto 0;font-size:1em;font-weight:500;white-space:pre-wrap}
 .item-subtitle{font-size:.85em;margin:0}
 .item-icon{display:flex;position:absolute;right:0;top:0;height:100%;aspect-ratio:1/1}
 
