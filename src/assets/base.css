@@ -1,0 +1,64 @@
+:root{
+  --white:#fff;--white-soft:#f8f8f8;--white-mute:#f2f2f2;--white-washed:rgba(255,255,255,.9);--white-vanish:rgba(255,255,255,.6);
+  --black:#171717;--black-soft:#222222;--black-mute:#292929;--black-washed:rgba(0,0,0,.75);--black-vanish:rgba(0,0,0,.4);
+  --gray:#717171;--gray-washed:rgba(255,255,255,.25);
+  --invalid-color:#6c6c6c;
+  --unfocused-color:#b0b0b0;
+}
+
+:root{
+  --plain-color: var(--black);
+  --plain-bg: var(--white);
+  --color: var(--black-mute);
+  --sub-color:var(--black-washed);
+  --back-img: url("@/assets/back-light.jpg");
+  --back-color: var(--white-washed);
+  --back-blend: lighten;
+  --el-back-color: var(--white-vanish);
+  --el-back-hover: var(--white-washed);
+  --bright:brightness(.9)
+}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --plain-color: var(--white);
+    --plain-bg: var(--black);
+    --color: var(--white-mute);
+    --sub-color:var(--white-washed);
+    --back-img: url("@/assets/back-dark.jpg");
+    --back-color: var(--black-washed);
+    --back-blend: darken;
+    --el-back-color: var(--black-washed);
+    --el-back-hover: var(--black-vanish);
+    --bright:brightness(1.1)
+  }
+}
+
+*,*:before,*:after{
+  margin:0;padding:0;border:0;
+  font-family:'Open Sans', sans-serif;font-weight:normal;color:var(--color);line-height:1.4rem;
+  text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;
+  word-wrap:normal;word-break:keep-all;box-sizing:border-box;
+  /* transition:all .7s ease-in-out */
+}
+*[onclick]{cursor:pointer}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#f1f1f1}
+::-webkit-scrollbar-thumb{background:#bbb}
+::-webkit-scrollbar-thumb:hover{background:#999}
+::selection{background:#30f2bb}
+
+html,body{scroll-behavior:smooth;overflow:hidden;width:100vw;background:var(--bg-color)}
+html{height:100vh}body{height:100%}
+/* html{font-size:62.5%} makes 1 rem = 10px, thus making 1.6 rem = 16px; normally 1 rem = 16px */
+body{font-size:1rem} /* 1 rem = 16px */
+textarea{field-sizing:content}
+
+b{font-weight:bold}i{font-weight:italic}.tac{text-align:center}
+b,i,.tac{line-height:inherit}
+
+/*
+1 rem relates to the font-size set by the browser's setting (accessbility)
+1 em relates to the font-size defined by the parent, so, if the parent is 16px, a 1em = 16px
+*/

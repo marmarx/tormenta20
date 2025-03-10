@@ -1,0 +1,24 @@
+@import './base.css';
+@import './t20.css';
+
+body{
+  position:fixed;padding:0 7em;
+  background-color:var(--back-color);background-size:20em;background-blend-mode:var(--back-blend);
+  background-image:var(--back-img);background-repeat:repeat;background-attachment:fixed;
+}
+@media (max-width:859px){body{padding:0 1em}}
+
+p{
+  font-size:1.1em;font-weight:500;line-height:1.8em;
+  letter-spacing:.8px;text-align:justify;color:currentColor;
+  margin:.5em 0;
+}
+
+.grow{flex-grow:1;overflow-y:auto}
+.overflow{height:100%;overflow-y:scroll;padding:0 2em}
+
+table{margin:1.2em auto;width:90%}
+th{font-weight:bold}
+td,th{text-align:center;padding:5px}
+tr:nth-child(even){background-color:rgba(0,0,0,.1)}
+tr:hover {background-color:rgba(0,0,0,.2)}
