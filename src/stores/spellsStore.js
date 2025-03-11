@@ -1,6 +1,9 @@
 import { defineStore } from "pinia";
 import { ref, computed } from "vue";
 
+import {useSortStore} from '@/stores/sortStore'
+const sortStore = useSortStore()
+
 export const useSpellsStore = defineStore("spellsStore", () => {
   const allSpells = ref(null); 
 
@@ -18,20 +21,22 @@ export const useSpellsStore = defineStore("spellsStore", () => {
     return allSpells.value;
   }
 
-  const spellNumber = computed(() => allSpells.value ? allSpells.value.length : 0);
   const spellAlphabet = computed(() => allSpells.value ? allSpells.value.map(spell => spell.Nome.charAt(0)) : []);
 
-  const spellProperties = ref({ 'Tipo': ref([]), 'Círculo': ref([]), 'Escola': ref([]), 'Publicação': ref([]) })  //equal to filterCheck const in filterStore.js
+  const spellProperties = ref({ 'Tipo': ref([]), 'Círculo': ref([]), 'Escola': ref([]), 'Ação': ref([]), 'Publicação': ref([]) })  //equal to filterCheck const in filterStore.js
   Object.keys(spellProperties.value).forEach(key => {
-    spellProperties.value[key] = computed(() => 
-      allSpells.value 
-        ? [...new Set(allSpells.value.flatMap(spell => Array.isArray(spell[key]) ? spell[key] : [spell[key]]))].sort()  //will always return an array
-        : []
-    );
+    spellProperties.value[key] = computed(() => {
+      if(!allSpells.value) return []
+
+      const uniqueValues = [...new Set(allSpells.value.flatMap(spell => Array.isArray(spell[key]) ? spell[key] : [spell[key]]))] //will always return an array
+      return key==='Ação'
+        ? uniqueValues.sort(sortStore.sortCustom(key))
+        : uniqueValues.sort()
+    });
   });
   
-  return { allSpells, spellNumber, spellAlphabet, spellProperties, fetchSpells };
-});
+  return { allSpells, spellAlphabet, spellProperties, fetchSpells };
+})
 
   // const spellTypes =    computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Tipo))].sort() : []);
   // const spellSchools =  computed(() => allSpells.value ? [...new Set(allSpells.value.map(spell => spell.Escola))].sort() : []);

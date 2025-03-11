@@ -1,16 +1,16 @@
 <script setup>
 import { defineAsyncComponent } from 'vue';
-const views = ['Personagem',
-  // 'Combate','Pericias','Poderes',
-  'Magias',
-  // 'Condicoes','Equipamentos','Anotacoes','Dados','Configuracoes'
-]
+const views = ['Personagem', 'Magias'] //'Combate','Pericias','Poderes','Condicoes','Equipamentos','Anotacoes','Dados','Configuracoes'
 const icons = views.map(view => defineAsyncComponent(() => import(`@/icons/menu/nav${view}.vue`)))
+
+import {useRoute} from 'vue-router'
+const route = useRoute()
+const isActive = view => route.path.startsWith(view.toLowerCase())
 </script>
 
 <template>
 <nav>
-  <router-link v-for="(view,i) in views" :key="`nav-${view}`" :to="`/${view.toLowerCase()}`">
+  <router-link v-for="(view,i) in views" :key="`nav-${view}`" :to="`/${view.toLowerCase()}`" :class="{'router-link-active':isActive(`/${view.toLowerCase()}`)}">
     <div class="navicon"><component :is="icons[i]"></component></div>
     <div class="navtext">{{view}}</div>
   </router-link>

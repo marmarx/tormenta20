@@ -1,9 +1,9 @@
 import { defineStore } from "pinia";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 export const useFilterStore = defineStore("filterStore", () => {
   const filterList = (fullList, activeTab = 0, list) => {
-    if (!fullList.value) return [];   //full list is expected to be an array of objects [{},{},{}...]
+    if (!fullList.value) return [];   //full list is expected to be an array of objects [{},{},{}...] 
     const ids = list.map(item => item.id);  //extract ids from objects
     
     return activeTab
@@ -45,7 +45,7 @@ export const useFilterStore = defineStore("filterStore", () => {
   };
 
   //filter by checkbox selection
-  const filterCheck = ref({ 'Tipo': [], 'Círculo': [], 'Escola': [], 'Publicação': [] });
+  const filterCheck = ref({ 'Tipo': [], 'Círculo': [], 'Escola': [], 'Ação': [], 'Publicação': [] });
 
   const filterByCheck = (items, key) => {
     if (!items.value) return [];
@@ -57,12 +57,22 @@ export const useFilterStore = defineStore("filterStore", () => {
     });
   };
 
-  const filterSearch = (fullList, activeTab, list) => {
-    let filteredList = ref(filterList(fullList, activeTab, list));
-    filteredList.value = filterByText(filteredList);
-    Object.keys(filterCheck.value).forEach((key) => filteredList.value = filterByCheck(filteredList, key));
-    return filteredList.value;
-  };
+  const filteredCharList = ref([])
+  const filteredFullList = ref([])
 
-  return { filterList, filterSearch, filterText, filterCheck };
+  const filterSearch = (fullList, activeTab, list) => {
+    filteredCharList.value = filterList(fullList, 0, list);
+    filteredCharList.value = filterByText(filteredCharList);
+    Object.keys(filterCheck.value).forEach((key) => filteredCharList.value = filterByCheck(filteredCharList, key));
+
+    filteredFullList.value = filterList(fullList, 1, list);
+    filteredFullList.value = filterByText(filteredFullList);
+    Object.keys(filterCheck.value).forEach((key) => filteredFullList.value = filterByCheck(filteredFullList, key));
+    return activeTab?filteredFullList.value:filteredCharList.value;
+  }
+
+  const numberCharList = computed(() => filteredCharList.value ? filteredCharList.value.length : 0);
+  const numberFullList = computed(() => filteredFullList.value ? filteredFullList.value.length : 219);
+
+  return { filterList, filterSearch, filterText, filterCheck, numberCharList, numberFullList };
 });

@@ -1,13 +1,13 @@
 <script setup>
 import flex from '@/composables/flex.vue'
 import btn from '@/composables/button.vue'
+import pencil from '@/icons/pencil.vue'
 
 import {ref,computed,onMounted,watch} from 'vue'
-import {useRoute,useRouter} from 'vue-router';
+import {useRouter,useRoute} from 'vue-router';
 const route = useRoute();
-
 const router = useRouter();
-const edit_spell = () => router.push(`/magias/${route.params.id}/editar`) //router.currentRoute.value.params.id
+const edit_spell = () => router.push(`${router.currentRoute.value.path}/editar`)
 
 import {useSpellsStore} from '@/stores/spellsStore'   //import {useSpellStore} from '@/stores/old_spellsStore'
 const spellsStore = useSpellsStore();
@@ -33,6 +33,7 @@ const avoid = ['id','Nome','Tipo','Círculo','Escola','mod','Publicação']
   </flex>
   <flex class="grow" v-if="spellList">
     <div class="flex-over overflow">
+      <pencil @click="edit_spell(spellList.id)"/>
       <div v-for="(value, key) in spellList" :key="key">
         <p v-if="(!avoid.includes(key))"><b>{{ key==='Descrição'?'':`${key}:` }}</b> <span v-html="value"></span></p>
       </div>
@@ -41,7 +42,6 @@ const avoid = ['id','Nome','Tipo','Círculo','Escola','mod','Publicação']
         <b>{{ mod_pms(Object.keys(mod).join()) }}:</b>  <span v-html="mod[Object.keys(mod)]"></span>
       </p>
       <p v-if="spellList.Publicação"><i>Publicação:</i> {{ Array.isArray(spellList.Publicação)?spellList.Publicação.join(', '):spellList.Publicação }}</p>
-      <btn @click="edit_spell()">Editar magia</btn>
     </div>
   </flex>
   <flex v-else class="h100">

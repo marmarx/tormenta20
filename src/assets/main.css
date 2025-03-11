@@ -15,7 +15,7 @@ p{
 }
 
 .grow{flex-grow:1;overflow-y:auto}
-.overflow{height:100%;overflow-y:scroll;padding:0 2em}
+.overflow{position:relative;height:100%;overflow-y:scroll;padding:0 2em}
 
 table{margin:1.2em auto;width:90%}
 th{font-weight:bold}

@@ -1,5 +1,4 @@
 <script setup>
-import t20box from '@/composables/t20box.vue'
 import flex from '@/composables/flex.vue'
 import customChecklist from '@/composables/checklist.vue'
 import customSelect from '@/composables/select.vue'
@@ -13,7 +12,6 @@ const spellsStore = useSpellsStore()
 
 import {useSortStore} from '@/stores/sortStore'
 const sortStore = useSortStore()
-
 </script>
 
 <template>
@@ -22,13 +20,13 @@ const sortStore = useSortStore()
   <div class="overflow">
     <customInput v-model="filterStore.filterText">Nome</customInput>
     <customChecklist v-for="(value, key) in spellsStore.spellProperties" :options="value" v-model="filterStore.filterCheck[key]">{{key}}</customChecklist>
+    <customSelect :options="['Nome','Círculo','Escola','Ação','Publicação','Adicionada em...']" v-model="sortStore.sortBy">
+      <template #title>Ordenar</template>
+      <template #default>Escolha como deseja ordenar...</template>
+    </customSelect>
+    <customChecklist :options="['Ordem reversa']" v-model="sortStore.reverse"></customChecklist>
   </div>
 </flex>
-<t20box>
-  <customSelect :options="['Nome','Círculo','Escola','Publicação','Adicionada em...']" v-model="sortStore.sortBy" style="margin:0">
-    <template #default>Escolha como deseja ordenar...</template>
-  </customSelect>
-</t20box>
 </template>
 
     <!--
