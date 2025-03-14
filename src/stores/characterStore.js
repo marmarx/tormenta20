@@ -51,14 +51,15 @@ export const useCharacterStore = defineStore('characterStore', () => {
     charData.value = null
   }
 
-  const charSpells = computed(() => charData.value?.spells || []) //?. prevents errors if null
+  //spell functions
+  const newSpell = id => ({id,history:new Date().getTime(),edits:{}})   //history: miliseconds since 1970
+  const charSpells = computed(() => charData.value?.spells || []) //?. prevents errors if null, similar to 'charData.value?charData.value.spells:[]'
 
-  const newSpell = id => ({id,history:new Date().getTime(),edits:{}})   //history:miliseconds since 1970
-
+  //computed properties are read-only, instead, mutate 'charData.value.spells'
   const addRemoveSpell = spellId => {
-    const index = charSpells.value.findIndex(el => el.id === spellId)
-    if(index !== -1){charSpells.value.splice(index,1)}  //remove spell
-    else{charSpells.value.push(newSpell(spellId))}  //add spell object to charSpells array
+    const index = charData.value.spells.findIndex(el => el.id === spellId)
+    if(index !== -1){charData.value.spells.splice(index,1)}  //remove spell
+    else{charData.value.spells.push(newSpell(spellId))}  //add spell object to charSpells array
   }
 
   return { clearStorage, charList, charData, charSpells, newChar, saveChar, loadChar, clearChar, deleteChar, addRemoveSpell }

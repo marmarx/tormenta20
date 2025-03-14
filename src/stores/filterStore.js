@@ -19,7 +19,7 @@ export const useFilterStore = defineStore("filterStore", () => {
     if (!items.value) return [];
 
     const normalizedFilterText = removeAccents(filterText.value.trim().toLowerCase());
-    if (!normalizedFilterText) return items.value.map(e => ({ ...e, Nome: e.Nome.replace(/<\/?b>/g, '') }));  //remove any residual </?b> tags
+    if (!normalizedFilterText) return items.value.map(e => ({ ...e, Nome:e.Nome.replace(/<\/?b>/g, '') }));  //remove any residual </?b> tags
 
     const regex = new RegExp(normalizedFilterText, 'gi');
 

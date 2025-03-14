@@ -9,6 +9,7 @@ import spellList from '@/components/spell-list.vue'
 import { useCharacterStore } from '@/stores/characterStore'   // import {spells} from '@/stores/localStorage'
 const storeCharacter = useCharacterStore()    // const charSpellsList = spells;
 const charSpellsList = storeCharacter.charSpells
+console.log('Magia.vue - charSpells.value',charSpellsList.value)
 
 import {ref,computed} from 'vue'
 
@@ -26,7 +27,6 @@ const route = useRoute();
 
 import spellDetails from '@/components/spell-details.vue'
 import spellEdit from '@/components/spell-edit.vue'
-//const comp1 = computed(() => route.params.id?spellDetails:null)
 const comp2 = computed(() => route.path.includes('edit')?spellEdit:spellDetails)
 </script>
 

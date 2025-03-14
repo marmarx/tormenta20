@@ -1,4 +1,5 @@
 @import './base.css';
+@import './input.css';
 @import './t20.css';
 
 body{
@@ -14,8 +15,8 @@ p{
   margin:.5em 0;
 }
 
-.grow{flex-grow:1;overflow-y:auto}
-.overflow{position:relative;height:100%;overflow-y:scroll;padding:0 2em}
+.grow{flex-grow:1;overflow-y:auto;scrollbar-width:none}
+.overflow{position:relative;height:100%;overflow-x:hidden;overflow-y:scroll;padding:0 2em}
 
 table{margin:1.2em auto;width:90%}
 th{font-weight:bold}

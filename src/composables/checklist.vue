@@ -20,7 +20,6 @@ const updateSelection = (option, isChecked) => {
 </template>
 
 <style scoped>
-@import '@/assets/input.css';
 label,input,.checkmark{cursor:pointer;pointer-events:auto}
 label{
   position:relative;width:100%;display:block;

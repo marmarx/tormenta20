@@ -1,10 +1,11 @@
-.input{position:relative;margin:1.2em 0;color:currentColor}
+.input{position:relative;margin:.4em auto;color:currentColor}
 
-label,input[type="text"],select,textarea,.input,.fakeinput{width:100%}
+label,input[type="text"],select,textarea,.fakeinput{width:100%}
+textarea{min-height:125px}
 
 input[type="text"],select,textarea,.fakeinput{
   font-size:1em;line-height:1.1em;color:var(--color);
-  padding:1.6em 1.3em .5em;border:1px solid #b0b0b0;border-radius:5px;
+  padding:.8em 1.3em;border:1px solid #b0b0b0;border-radius:5px;
   background:var(--back-color);appearance:none;-webkit-appearance:none
 }
 
@@ -24,8 +25,9 @@ select:focus ~ label, select:not(:focus):valid ~ label,
   left:2px;font-size:.7em;
   padding:.4em 2.1em;margin:.3em 0;
 }
-.input{width:80%;margin:1.6em auto}
 
 select{padding:.8em 1.3em!important}
 select option{color:var(--color)!important}
-select:invalid,option:disabled{color:var(--sub-color)!important}
+select:invalid,option:disabled{color:var(--gray)!important}
+
+::placeholder,::-ms-input-placeholder{color:var(--gray)}

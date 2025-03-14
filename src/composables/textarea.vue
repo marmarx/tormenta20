@@ -5,7 +5,7 @@ defineProps({modelValue:String, placeholder:String})
 <template>
 <div class="input">
   <p v-if="$slots.default"><slot></slot></p>
-  <input type="text" :placeholder="placeholder" :value="modelValue" @input="$emit('update:modelValue',$event.target.value)" required/>
+  <textarea :placeholder="placeholder" :value="modelValue" @input="$emit('update:modelValue',$event.target.value)"></textarea>
 </div>
 </template>
 

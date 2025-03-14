@@ -33,7 +33,7 @@ const avoid = ['id','Nome','Tipo','Círculo','Escola','mod','Publicação']
   </flex>
   <flex class="grow" v-if="spellList">
     <div class="flex-over overflow">
-      <pencil @click="edit_spell(spellList.id)"/>
+      <pencil v-if="0" @click="edit_spell(spellList.id)"/>  <!-- v-if! -->
       <div v-for="(value, key) in spellList" :key="key">
         <p v-if="(!avoid.includes(key))"><b>{{ key==='Descrição'?'':`${key}:` }}</b> <span v-html="value"></span></p>
       </div>

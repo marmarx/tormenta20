@@ -10,7 +10,6 @@ const checkmark = () => event.target.classList.toggle('checkmarked')
 </template>
 
 <style>
-@import '@/assets/input.css';
 .checkbox-cont{position:relative;width:15%;margin-left:-2%;height:100%;display:flex}
 .checkmark{
   position:relative;float:left;width:22px;height:22px;

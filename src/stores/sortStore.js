@@ -51,7 +51,6 @@ export const useSortStore = defineStore("sortStore", () => {
     if(orderObj.hasOwnProperty(sortBy.value)) return items.sort(sortCustom(sortBy.value)) //sort using a specific order (see orderObj)
     return sortString(items,sortBy.value)
   }
-
   const sorter = (char,items) => reverse.value.length?sorterSelect(char,items).reverse():sorterSelect(char,items) //reverse?
 
   return { sortCustom, sorter, sortBy, reverse };

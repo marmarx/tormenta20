@@ -1,58 +1,92 @@
 <script setup>
 import flex from '@/composables/flex.vue'
-import {ref,computed,onMounted} from 'vue'
+import customInput from '@/composables/input.vue'
+import customSelect from '@/composables/select.vue'
+import customTextArea from '@/composables/textarea.vue'
+import spellMod from '@/components/spell-mod.vue'
+import { ref,watch,watchEffect,computed,onMounted } from 'vue'
 
-import {useRoute} from 'vue-router'
+import { useRoute } from 'vue-router'
 const route = useRoute()
-const id = computed(() => route.params.id)
+const spellId = computed(() => Number(route.params.id))
 
-import { useCharacterStore } from '@/stores/characterStore'   // import {spells} from '@/stores/localStorage'
-const storeCharacter = useCharacterStore()    // const charSpellsList = spells;
-const charSpellsList = storeCharacter.charSpells
+//annonymous function, will always create a new object
+const newSpell = ref((() => ({id:spellId.value,Nome:'Nova Magia',Tipo:'Universal',Círculo:1,Escola:'Abjuração',Ação:'Padrão',Publicação:'Criada pelo usuário'}))())
+console.log('newSpell:',newSpell.value)
 
-import {useSpellsStore} from '@/stores/spellsStore'   //import {useSpellStore} from '@/stores/old_spellsStore'
-const spellsStore = useSpellsStore();
-const spellProperties = computed(() => {
-  let list = spellsStore.spellProperties
-  // list['Ação'] = ref(['Nenhuma ação','Ação livre','Ação de movimento','Ação padrão','Ação completa','Reação'])
-  return list
-})
-
+import { useSpellsStore } from '@/stores/spellsStore'
+const spellsStore = useSpellsStore()
 const allSpells = ref(null);
 const fetchSpells = async () => { allSpells.value = await spellsStore.fetchSpells() }
-onMounted(fetchSpells); // Fetch spells when component is mounted
+onMounted(fetchSpells);
 
-import {useFilterStore} from '@/stores/filterStore'
-const filterStore = useFilterStore()
+watchEffect(() => {
+  if(!allSpells.value) return
+  if(!allSpells.value.find(el => el.id === spellId.value)) allSpells.value.push(newSpell.value)
+  console.log('allSpells updated:',allSpells.value[allSpells.length-1])
+})
 
-const spellList = computed(() => filterStore.filterList(allSpells,0,[{id:Number(id.value)}])[0])
+import { useCharacterStore } from '@/stores/characterStore'
+const storeCharacter = useCharacterStore()
+const charSpells = computed(() => storeCharacter.charSpells)
 
-const edit = key => {
-  const val = event.target.value;
-  if(charSpellsList.edits[key]!=val&&spellList[key]!=val){charSpellsList.edits[key]=val}
+watchEffect(() => {
+  console.log('charSpells.value',charSpells.value)
+  if(!storeCharacter.charSpells) return
+  if(storeCharacter.charSpells.findIndex(el => el.id === spellId.value)<0) storeCharacter.addRemoveSpell(spellId.value)
+  console.log('charSpells updated:',charSpells.value)
+})
+
+const spellProperties = computed(() => {
+  let list = { ...spellsStore.spellProperties }
+  list['Ação'] = list['Ação'].filter(e => !/\d/.test(e)).concat('Outro (escrever)')
+  //delete list['Publicação']
+  return list
+})
+const keyPairs = computed(() => Array.from({length:Math.ceil(spellsStore.spellEditKeys.length/2)},(_, i) => [spellsStore.spellEditKeys[i*2],spellsStore.spellEditKeys[i*2+1] || null]))
+
+watchEffect(() => console.log('newSpell updated:',newSpell.value))
+watchEffect(() => console.log('charSpells updated:',charSpells.value))
+//const a = setInterval(() => console.log('charSpells timeinterval:',charSpells.value),1000)
+
+const delete_mod = () => {
+
 }
-const load = key => charSpellsList.edits[key]?charSpellsList.edits[key]:spellList[key]
-const action = ['Nenhuma ação','Ação livre','Ação de movimento','Ação padrão','Ação completa','Reação','Outro (escrever)']
 </script>
 
 <template>
-  <flex v-if="spellList">
+  <flex v-if="newSpell.edits" class="grow">
     <h2>Editar Magia</h2>
-    <div v-for="(_,key) in spellList" class="input">
-      <textarea v-if="key==='Descrição'" @change="edit(key)" :placeholder="key">{{ load(key) }}</textarea>
+    <div class="overflow">
+      <customInput type="text" placeholder="Nome" v-model="newSpell.edits.Nome">Nome</customInput>
 
-      <select v-else-if="spellProperties.hasOwnProperty(key)" @change="edit(key)" :placeholder="key">
-        <!-- <option v-for=""></option> -->
-      </select>
-
-      <input v-else type="text" @change="edit(key)" :placeholder="key">
+      <div v-for="(pair,index) in keyPairs" :key="`index-${index}`" class="flexy">
+        <div v-for="un in pair" :key="`index-${index}-${un}`" class="half">
+          <div v-if="spellProperties.hasOwnProperty(un)">
+            <customSelect :options="spellProperties[un]" v-model="newSpell.edits[un]"><template #title>{{un}}</template><template #default>{{un}}</template></customSelect>
+          </div>
+          <div v-else>
+            <customInput type="text" :placeholder="un" v-model="newSpell.edits[un]">{{ un }}</customInput>
+          </div>
+        </div>
+      </div>
+      <customTextArea placeholder="Descrição" v-model="newSpell.edits.Descrição">Descrição</customTextArea>
+    <p class="label">Modificadores</p>
+    <div v-for="obj in newSpell.edits.mod" :key="`edit-mod-${obj}`">
+      <spellMod :obj="obj" @delete="delete_mod"></spellMod>
     </div>
+    <p class="hint">Dica: utilize *texto* para <b>negrito</b> e _texto_ para <i>itálico</i>.</p>
+  </div>
   </flex>
   <flex v-else class="h100">
-    <p class="tac">Clique em uma magia para ver e editar</p>
+    <p class="tac">Clique em Criar Magia para editar</p>
   </flex>
 </template>
 
 <style scoped>
 .h100{height:100%}
+.half{width:45.9999%}
+.flexy{display:flex;justify-content:space-between}
+p.label{font-size:1em;line-height:1em;padding:.5em 0;font-weight:600}
+p.hint{font-size:.8em;text-align:center}
 </style>

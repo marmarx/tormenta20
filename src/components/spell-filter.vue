@@ -29,9 +29,6 @@ const sortStore = useSortStore()
 </flex>
 </template>
 
-    <!--
-    <customChecklist :options="spellsStore.spellTipo" v-model="checkedTipo">Círculo</customChecklist>
-    <customChecklist :options="spellsStore.spellLevels" v-model="checkedLevels">Círculo</customChecklist>
-    <customChecklist :options="spellsStore.spellSchools" v-model="checkedSchools">Escola</customChecklist>
-    <customChecklist :options="spellsStore.spellPub" v-model="checkedPub">Publicação</customChecklist>
-    -->
+<style scoped>
+.input{width:80%}
+</style>

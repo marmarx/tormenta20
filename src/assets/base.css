@@ -1,7 +1,7 @@
 :root{
-  --white:#fff;--white-soft:#f8f8f8;--white-mute:#f2f2f2;--white-washed:rgba(255,255,255,.9);--white-vanish:rgba(255,255,255,.6);
-  --black:#171717;--black-soft:#222222;--black-mute:#292929;--black-washed:rgba(0,0,0,.75);--black-vanish:rgba(0,0,0,.4);
-  --gray:#717171;--gray-washed:rgba(255,255,255,.25);
+  --white:#fff;--white-soft:#f8f8f8;--white-mute:#f2f2f2;--white-washed:rgba(255,255,255,.92);--white-vanish:rgba(255,255,255,.6);
+  --black:#171717;--black-soft:#222222;--black-mute:#292929;--black-washed:rgba(0,0,0,.8);--black-vanish:rgba(0,0,0,.4);
+  --gray:#717171;--gray-washed:rgba(209,209,209,.5);--gray-vanish:rgba(209,209,209,.25);
   --invalid-color:#6c6c6c;
   --unfocused-color:#b0b0b0;
 }
@@ -21,7 +21,6 @@
 
 @media (prefers-color-scheme:dark){
   :root{
-    --plain-color: var(--white);
     --plain-bg: var(--black);
     --color: var(--white-mute);
     --sub-color:var(--white-washed);
