@@ -3,6 +3,7 @@ import flex from '@/composables/flex.vue'
 import customChecklist from '@/composables/checklist.vue'
 import customSelect from '@/composables/select.vue'
 import customInput from '@/composables/input.vue'
+import checkSingle from '@/composables/checksingle.vue'
 
 import {useFilterStore} from '@/stores/filterStore'
 const filterStore = useFilterStore()
@@ -24,7 +25,7 @@ const sortStore = useSortStore()
       <template #title>Ordenar</template>
       <template #default>Escolha como deseja ordenar...</template>
     </customSelect>
-    <customChecklist :options="['Ordem reversa']" v-model="sortStore.reverse"></customChecklist>
+    <checkSingle option="Ordem reversa" v-model="sortStore.reverse"></checkSingle>
   </div>
 </flex>
 </template>

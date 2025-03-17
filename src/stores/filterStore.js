@@ -23,12 +23,9 @@ export const useFilterStore = defineStore("filterStore", () => {
 
     const regex = new RegExp(normalizedFilterText, 'gi');
 
-    // return items.value
-    // .filter(item => removeAccents(item.Nome.toLowerCase()).includes(normalizedFilterText))
-    // .map(item => {return { ...item, Nome: item.Nome.replace(/<\/?b>/g, '').replace(regex, "<b>$1</b>")}});   //although simpler, this won't match accents and specialcharacters
-
     return items.value
     .filter(item => removeAccents(item.Nome.toLowerCase()).includes(normalizedFilterText))
+ // .map(item => {return { ...item, Nome: item.Nome.replace(/<\/?b>/g, '').replace(regex, "<b>$1</b>")}});   //although simpler, this won't match accents and specialcharacters
     .map(item => {
       let originalText = item.Nome.replace(/<\/?b>/g, ''); //remove existing </?b> tags from filtered itens
       let normalizedText = removeAccents(originalText.toLowerCase());

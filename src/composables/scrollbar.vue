@@ -8,7 +8,7 @@ const emit = defineEmits(['update:modelValue'])
 import {useSortStore} from '@/stores/sortStore'
 const sortStore = useSortStore()
 
-const indexerAvoid = ['Publicação','Adicionada em...']
+const indexerAvoid = ['Publicação']
 const indexer = item => {
   if(!sortStore.sortBy||indexerAvoid.includes(sortStore.sortBy)) return null
   if(sortStore.sortBy==='Nome') return removeAccents(item.Nome.charAt(0))
@@ -28,7 +28,6 @@ const scrollBar = computed(() => props.orderedSpellsList
   ? props.orderedSpellsList.map((set => val => !set.has(indexer(val)) && set.add(indexer(val)) ? indexer(val) : null)(new Set))
   : []
 );
-//watch(scrollBar,() => console.log('scrollBar',scrollBar.value))
 
 let scrollTimeout = null
 const isScrolled = computed(() => props.beingScrolled)

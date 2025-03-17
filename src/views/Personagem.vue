@@ -1,22 +1,15 @@
 <script setup>
-import layout from '@/composables/layout.vue'
 import titles from '@/composables/title.vue'
+import layout from '@/composables/layout.vue'
 
-import t20color from '@/composables/t20color.vue'
+//import t20color from '@/composables/t20color.vue'<t20color />
 </script>
 
 <template>
-  <layout>
-    <template #layout1>
-      <titles>Personagem</titles>
-      <t20color />
-    </template>
-    <template #layout2>
-      <component :is=""></component>
-    </template>
-    <template #layout3>
-      <component :is="">
-      </component>  
-    </template>
-  </layout>
-  </template>
+<titles class="comp">Personagem</titles>
+<layout>
+  <template #layout1><component :is=""></component></template>
+  <template #layout2><component :is=""></component></template>
+  <template #layout3><component :is=""></component></template>
+</layout>
+</template>

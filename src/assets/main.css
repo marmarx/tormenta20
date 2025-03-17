@@ -3,11 +3,20 @@
 @import './t20.css';
 
 body{
-  position:fixed;padding:0 7em;
+  position:fixed;padding:1.8em 7em;
   background-color:var(--back-color);background-size:20em;background-blend-mode:var(--back-blend);
   background-image:var(--back-img);background-repeat:repeat;background-attachment:fixed;
 }
-@media (max-width:859px){body{padding:0 1em}}
+@media (max-width:1730px){body{padding:1em}}
+
+h1,h2{
+  font-family:'tormenta20';font-weight:500;
+  line-height:1.2em;letter-spacing:4px;text-align:center;
+  color:var(--t20-color);filter:var(--bright);
+}
+h1{font-size:3em;margin:0 0 .6em}
+h2{font-size:2.4em;margin:.6em 0 0}
+@media (min-width:1730px){h2{margin:0}}
 
 p{
   font-size:1.1em;font-weight:500;line-height:1.8em;
@@ -23,3 +32,6 @@ th{font-weight:bold}
 td,th{text-align:center;padding:5px}
 tr:nth-child(even){background-color:rgba(0,0,0,.1)}
 tr:hover {background-color:rgba(0,0,0,.2)}
+
+.comp{display:none!important}.mob{display:flex!important;justify-content:center}
+@media (min-width:1730px){.mob{display:none!important}.comp{display:flex!important;justify-content:center}}

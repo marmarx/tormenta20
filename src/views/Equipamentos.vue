@@ -4,15 +4,10 @@ import titles from '@/composables/title.vue';
 </script>
 
 <template>
+  <titles class="comp">Equipamentos</titles>
   <layout>
-    <template #layout1>
-      <titles>Equipamentos</titles>
-    </template>
-    <template #layout2>
-      <component :is=""></component>
-    </template>
-    <template #layout3>
-      <component :is=""></component>  
-    </template>
+    <template #layout1><component :is=""></component></template>
+    <template #layout2><component :is=""></component></template>
+    <template #layout3><component :is=""></component></template>
   </layout>
   </template>

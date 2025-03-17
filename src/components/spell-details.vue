@@ -14,7 +14,7 @@ const spellsStore = useSpellsStore();
 
 const allSpells = ref(null);
 const fetchSpells = async () => { allSpells.value = await spellsStore.fetchSpells() }
-onMounted(fetchSpells); // Fetch spells when component is mounted
+onMounted(fetchSpells); //fetch spells when component is mounted
 
 import {useFilterStore} from '@/stores/filterStore'
 const filterStore = useFilterStore()
@@ -50,25 +50,7 @@ const avoid = ['id','Nome','Tipo','Círculo','Escola','mod','Publicação']
 </template>
 
 <style>
-h2{
-  font-family:'tormenta20';font-size:2.4em;font-weight:500;
-  line-height:1.2em;letter-spacing:4px;text-align:center;
-  color:var(--t20-color);filter:var(--bright);
-}
 p{font-size:.95em;margin:.1em 0;line-height:2.2em}
 .flex-over{display:flex;flex-direction:column}
 .h100{height:100%}
 </style>
-
-<!--
-  <flex v-else>
-    <div class="item" v-for="item in spellList" v-bind:key="`spell-${item.Nome}`">
-      <checkbox @click="$emit('add_remove',item.id)" :checkmarked="!all"/>
-      <div class="item-click" @click="open_details(item.id)">
-        <p class="item-title">{{ item.Nome }}</p>
-        <p class="item-subtitle"></p>
-        <div class="item-icon"><div :class="`ac_${item.Ação}`"></div>
-      </div>
-    </div></div>
-  </flex>
--->

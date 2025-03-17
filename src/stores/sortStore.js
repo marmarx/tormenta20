@@ -27,8 +27,7 @@ export const useSortStore = defineStore("sortStore", () => {
   }
 
   const sortBy = ref(null)  //'Nome','Círculo','Escola','Ação','Publicação','Adicionada em...'
-  const reverse = ref([])
-  watch(reverse,() => console.log('reverse',reverse.value))
+  const reverse = ref(false)
   const sortNumbers = ['Círculo']
   const orderObj = {'Ação':['Livre', 'Movimento', 'Padrão', 'Completa', 'Reação']}
 
@@ -52,7 +51,8 @@ export const useSortStore = defineStore("sortStore", () => {
     if(orderObj.hasOwnProperty(sortBy.value)) return items.sort(sortCustom(sortBy.value)) //sort using a specific order (see orderObj)
     return sortString(items,sortBy.value)
   }
-  const sorter = (char,items) => reverse.value.length?sorterSelect(char,items).reverse():sorterSelect(char,items) //reverse?
+
+  const sorter = (char,items) => reverse.value ? sorterSelect(char,items).reverse() : sorterSelect(char,items)
 
   return { sortCustom, sorter, sortBy, reverse };
 })

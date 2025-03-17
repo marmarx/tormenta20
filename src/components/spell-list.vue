@@ -8,7 +8,7 @@ const props = defineProps({
 import checkbox from '@/composables/checkbox.vue'
 import flex from '@/composables/flex.vue'
 import scrollbar from '@/composables/scrollbar.vue'
-import { ref, computed, onMounted, watchEffect } from 'vue'
+import { ref, computed, watch, onMounted, watchEffect } from 'vue'
 
 import {useRouter} from 'vue-router';
 const router = useRouter();
@@ -24,15 +24,19 @@ onMounted(fetchSpells); // Fetch spells when component is mounted
 import {useFilterStore} from '@/stores/filterStore'
 const filterStore = useFilterStore()
 
-const filteredSpells = ref([]);
-watchEffect(() => {
-  if (!allSpells.value) return; // wait until spells are loaded
-  filteredSpells.value = filterStore.filterSearch(allSpells, props.activeTab, props.list);
-})
+const filteredSpells = computed(() => {
+  if (!allSpells.value) return [];
+  return filterStore.filterSearch(allSpells, props.activeTab, props.list);
+});
 
 import {useSortStore} from '@/stores/sortStore'
 const sortStore = useSortStore()  //'Nome','Círculo','Escola','Ação','Publicação','Adicionada em...'
-const orderedSpellsList = computed(() => sortStore.sorter(props.list,filteredSpells.value))
+
+const orderedSpellsList = ref([]);
+//why not computed? Because 'list' changes aren't important, as 'filteredSpells' already changes when 'list' changes, also it must trigger when 'sortBy' and 'reverse' are changed
+watch(() => [sortStore.sortBy, sortStore.reverse, filteredSpells.value],() => {
+  orderedSpellsList.value = sortStore.sorter(props.list,filteredSpells.value)
+},{deep:true});
 
 const beingScrolled = ref(false)
 const handleScroll = () => beingScrolled.value = true
