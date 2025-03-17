@@ -9,7 +9,6 @@ import spellList from '@/components/spell-list.vue'
 import { useCharacterStore } from '@/stores/characterStore'   // import {spells} from '@/stores/localStorage'
 const storeCharacter = useCharacterStore()    // const charSpellsList = spells;
 const charSpellsList = storeCharacter.charSpells
-console.log('Magia.vue - charSpells.value',charSpellsList.value)
 
 import {ref,computed} from 'vue'
 

@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import { ref, computed } from "vue";
+import { removeAccents } from '@/stores/utility'
 
 export const useFilterStore = defineStore("filterStore", () => {
   const filterList = (fullList, activeTab = 0, list) => {
@@ -13,7 +14,6 @@ export const useFilterStore = defineStore("filterStore", () => {
 
   //filter by text input
   const filterText = ref('');
-  const removeAccents = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, '');
 
   const filterByText = (items) => {
     if (!items.value) return [];

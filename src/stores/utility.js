@@ -1,6 +1,5 @@
 const objectMap = (obj,fn) => Object.fromEntries(Object.entries(obj).map(([k,v],i) => [k,fn(v,k,i)]))   //value, key, index; original obj is unchanged
 
-
 //richtext from input
 const boldify = str => {
   let indexes = [...str.matchAll(/_/g)].map(match => match.index);
@@ -15,7 +14,8 @@ const boldify = str => {
   }
   return str.replaceAll('</table>\n','</table><p class="nowrap ms">').replaceAll('\n','<br>');
 }
-
 const unboldify = str => isNaN(str)?str.replaceAll(/<br>|<\/br>/gi,'\n').replaceAll(/<i>|<\/i>/gi,'_').replaceAll(/<b>|<\/b>/gi,'*').replaceAll(/<\/?p[^>]*>/gi,'\n'):str
 
-export {objectMap, boldify, unboldify}
+const removeAccents = str => str.normalize("NFD").replace(/[\u0300-\u036f]/g, '')
+
+export {objectMap, boldify, unboldify, removeAccents}

@@ -1,4 +1,4 @@
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { defineStore } from "pinia";
 
 export const useSortStore = defineStore("sortStore", () => {
@@ -28,6 +28,7 @@ export const useSortStore = defineStore("sortStore", () => {
 
   const sortBy = ref(null)  //'Nome','Círculo','Escola','Ação','Publicação','Adicionada em...'
   const reverse = ref([])
+  watch(reverse,() => console.log('reverse',reverse.value))
   const sortNumbers = ['Círculo']
   const orderObj = {'Ação':['Livre', 'Movimento', 'Padrão', 'Completa', 'Reação']}
 
@@ -36,7 +37,7 @@ export const useSortStore = defineStore("sortStore", () => {
 
     if(sortBy.value==='Adicionada em...'){  //special sorting case
       const sorteredCharItems = sortNumber(char,'history')
-      const orderMap = new Map(sorteredCharItems.map((u, index) => [u.id, index]));
+      const orderMap = new Map(sorteredCharItems.map((spell, index) => [spell.id, index]));
 
       items.sort((a, b) => {
         const indexA = orderMap.has(a.id) ? orderMap.get(a.id) : Infinity;
