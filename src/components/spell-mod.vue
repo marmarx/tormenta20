@@ -1,5 +1,5 @@
 <script setup>
-import trash from '@/icons/trash.vue'
+import trash from '@/icons/buttonIcons/trash.vue'
 defineProps({obj:Object})
 </script>
 

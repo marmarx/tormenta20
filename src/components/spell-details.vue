@@ -1,7 +1,7 @@
 <script setup>
 import flex from '@/composables/flex.vue'
 import btn from '@/composables/button.vue'
-import pencil from '@/icons/pencil.vue'
+import pencil from '@/icons/buttonIcons/pencil.vue'
 
 import {ref,computed,onMounted,watch} from 'vue'
 import {useRouter,useRoute} from 'vue-router';

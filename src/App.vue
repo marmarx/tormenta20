@@ -1,7 +1,6 @@
 <script setup>
 import { useCharacterStore } from '@/stores/characterStore'
 import navigation from '@/views/navigation.vue'
-import test from '@/views/test.vue'
 const storeCharacter = useCharacterStore()
 
 //storeCharacter.clearStorage()
@@ -15,6 +14,5 @@ storeCharacter.newChar('Aurora')
 
 <template>
   <router-view />
-   <!-- <test/> -->
   <navigation/>
 </template>

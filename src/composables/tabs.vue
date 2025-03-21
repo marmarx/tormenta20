@@ -13,7 +13,7 @@ defineEmits(['tab'])
 </template>
 
 <style scoped>
-.tab_container{flex-direction:row;margin-bottom:.6em}
+.tab_container{flex-direction:row;margin:.6em 0}
 .tab{display:none}
 .tab:checked + label{background:var(--over-trans);opacity:1}
 .tab#tab1:checked ~ .line{left:0%}

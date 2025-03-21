@@ -10,16 +10,18 @@ import flex from '@/composables/flex.vue'
 import scrollbar from '@/composables/scrollbar.vue'
 import { ref, computed, watch, onMounted, watchEffect } from 'vue'
 
-import {useRouter} from 'vue-router';
-const router = useRouter();
-const open_details = spellId => router.push(`/magias/${spellId}`)
-
 import {useSpellsStore} from '@/stores/spellsStore'   //import {useSpellStore} from '@/stores/old_spellsStore'
 const spellsStore = useSpellsStore();
 
 const allSpells = ref(null);
 const fetchSpells = async () => { allSpells.value = await spellsStore.fetchSpells() }
 onMounted(fetchSpells); // Fetch spells when component is mounted
+
+import { useRouter } from 'vue-router';
+import { useNavStore } from '@/stores/navStore';
+const router = useRouter();
+const navStore = useNavStore()
+const open_details = spellId => {navStore.setNavBtn1(false);router.push(`/magias/${spellId}`)}
 
 import {useFilterStore} from '@/stores/filterStore'
 const filterStore = useFilterStore()

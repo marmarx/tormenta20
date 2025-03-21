@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { removeAccents } from '@/stores/utility'
 
 export const useFilterStore = defineStore("filterStore", () => {
