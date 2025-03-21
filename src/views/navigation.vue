@@ -21,7 +21,7 @@ const isActive = view => route.path.startsWith(view.toLowerCase())
 nav{
   display:flex;flex-direction:column;
   position:fixed;left:0;top:50%;transform:translateY(-50%);
-  background:var(--back-color);padding:15px 0;box-shadow:0 0 10px rgba(0,0,0,.4)
+  background:var(--back-washed);padding:15px 0;box-shadow:0 0 10px rgba(0,0,0,.4)
 }
 
 a{

@@ -1,44 +1,19 @@
 <script setup>
 import layout from '@/composables/layout.vue'
 
-import filter from '@/components/spell-filter.vue'
-import main from '@/components/spell-main.vue'
-import spellDetails from '@/components/spell-details.vue'
-import spellEdit from '@/components/spell-edit.vue'
+import spellFilter from '@/components/spells/filtros.vue'
+import spellMain from '@/components/spells/lista.vue'
+import spellDetails from '@/components/spells/detalhes.vue'
+import spellEdit from '@/components/spells/editar.vue'
 
-import { computed, watch } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router';
-const route = useRoute();
-const edit = computed(() => route.path.includes('edit')?spellDetails:spellDetails)  //?spellEdit:spellDetails
-watch(edit,() => console.log('edit:',edit.value)) //spellDetails or spellDetails
+const route = useRoute()
+const spellDetailsEdit = computed(() => route.path.includes('edit')?spellEdit:spellDetails)  //?spellEdit:spellDetails
 
-import { useNavStore } from '@/stores/navStore';
-const navStore = useNavStore()
-
-const comp1 = computed(() => {
-  if(navStore.screenWidth<1730){return navStore.navBtn1?filter:main}
-  if(navStore.screenWidth<1035){return null}
-  return filter
-})
-
-const comp2 = computed(() => {
-  if(navStore.screenWidth<1730){return navStore.navBtn1?main:spellDetails}  //main, details-edit
-  if(navStore.screenWidth<1035){return }  //main, filtro, details-edit
-  return main
-})
-
-const comp3 = computed(() => {
-  if(navStore.screenWidth<1730){return null} 
-  return edit.value
-})
+const components = [spellFilter, spellMain, spellDetailsEdit.value] //spellDetailsEdit.value]
 </script>
 
 <template>
-<layout>
-  <template v-if="navStore.showComp1" #layout1><component :is="comp1"></component></template>
-  <template                           #layout2><component :is="comp2"></component></template>
-  <template v-if="navStore.showComp3" #layout3><component :is="comp3"></component></template>
-</layout>
+  <layout :components="components" />
 </template>
-
-<!-- 1035px and 1730px -->

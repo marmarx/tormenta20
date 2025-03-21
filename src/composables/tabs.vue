@@ -21,7 +21,7 @@ defineEmits(['tab'])
 label{
 	display:inline-block;position:relative;width:50%;height:2.2rem;
   font-size:1rem!important;line-height:2.2rem;text-align:center;
-  background:var(--el-back-color);color:var(--color);opacity:.7;
+  background:var(--el-back-color);color:var(--color-main);opacity:.7;
   transition:0.25s background ease;
   cursor:pointer;
   left:unset!important;

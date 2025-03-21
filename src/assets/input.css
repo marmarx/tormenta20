@@ -1,15 +1,15 @@
-.input{position:relative;margin:.4em auto;color:currentColor}
+.input{position:relative;margin:.4em 0;color:currentColor}
 
 label,input[type="text"],select,textarea,.fakeinput{width:100%}
 textarea{min-height:125px}
 
 input[type="text"],select,textarea,.fakeinput{
-  font-size:1em;line-height:1.1em;color:var(--color);
+  font-size:1em;line-height:1.1em;color:var(--color-main);
   padding:.8em 1.3em;border:1px solid #b0b0b0;border-radius:5px;
-  background:var(--back-color);appearance:none;-webkit-appearance:none
+  background:var(--back-washed);appearance:none;-webkit-appearance:none
 }
 
-.t20box input[type="text"],.t20box select,.t20box option,.t20box textarea,.t20box .fakeinput{border:1px solid var(--color);background:var(--plain-bg)}
+.t20box input[type="text"],.t20box select,.t20box option,.t20box textarea,.t20box .fakeinput{border:1px solid var(--color-main);background:var(--back-washed)}
 
 label{
   position:absolute;top:0;left:0;
@@ -27,7 +27,7 @@ select:focus ~ label, select:not(:focus):valid ~ label,
 }
 
 select{padding:.8em 1.3em!important}
-select option{color:var(--color)!important}
+select option{color:var(--color-main)!important}
 select:invalid,option:disabled{color:var(--gray)!important}
 
 ::placeholder,::-ms-input-placeholder{color:var(--gray)}

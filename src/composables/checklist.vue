@@ -32,7 +32,7 @@ input,.checkmark{position:absolute;left:0;top:0}
 .checkmark{
   width:22px;height:22px;
   border:2px solid #dbdbdb;border-radius:4px;margin:0 .8em 0 .5em;
-  color:var(--color)!important;background:var(--el-back-color);
+  color:var(--color-main)!important;background:var(--el-back-color);
   transition:all .3s
 }
 label:hover input ~ .checkmark,label:focus input ~ .checkmark,label input:checked ~ .checkmark{background:var(--el-back-hover)}

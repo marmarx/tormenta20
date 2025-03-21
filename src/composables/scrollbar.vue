@@ -49,7 +49,7 @@ watch(isScrolled,(newVal) => {if(newVal) handleScroll()})
   position:absolute;right:6px;top:0;
   min-width:15px;height:100%;padding-right:6px;
   display:flex;flex-direction:column;
-  color:var(--sub-color);opacity:0;transition:all .2s ease-in-out
+  color:var(--color-washed);opacity:0;transition:all .2s ease-in-out
 }
 .scrollBar:hover,.viewBar{opacity:.8}
 .scrollItem{position:relative;height:100%}

@@ -6,7 +6,7 @@
 .pencilbox{
   position:absolute;right:10%;top:5%;
   width:15px;height:15px;
-  border:2px var(--color) solid;margin:auto;
+  border:2px var(--color-main) solid;margin:auto;
   cursor:pointer
 }
 .pencilbox:before{
@@ -24,20 +24,20 @@
 .pencil:before{
   position:absolute;top:50%;left:50%;
   width:3px;height:5px;
-  background-color:var(--color);
-  box-shadow:1px 0px 0px var(--color),
-      2px 0px 0px var(--color),
-      3px 0px 0px var(--color),
-      -1px 0px 0px var(--color),
-      -2px 0px 0px var(--color),
-      -3px 0px 0px var(--color),
-      -3.3px 0px 0px var(--color),
-      7px 0px 0px var(--color);
+  background-color:var(--color-main);
+  box-shadow:1px 0px 0px var(--color-main),
+      2px 0px 0px var(--color-main),
+      3px 0px 0px var(--color-main),
+      -1px 0px 0px var(--color-main),
+      -2px 0px 0px var(--color-main),
+      -3px 0px 0px var(--color-main),
+      -3.3px 0px 0px var(--color-main),
+      7px 0px 0px var(--color-main);
   transform:translate(-2px,-3px) rotate(-45deg);
 }
 .pencil:after{
   position:absolute;top:50%;left:50%;font-size:1px;
-  border:solid 3em transparent;border-left-width:0;border-right-width:5em;border-right-color:var(--color);
+  border:solid 3em transparent;border-left-width:0;border-right-width:5em;border-right-color:var(--color-main);
   transform:translate(-9px,3px) rotate(-45deg)
 }
 .pencilbox:before,.pencil:before,.pencil:after{content:''}

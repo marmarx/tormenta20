@@ -17,5 +17,7 @@ const boldify = str => {
 const unboldify = str => isNaN(str)?str.replaceAll(/<br>|<\/br>/gi,'\n').replaceAll(/<i>|<\/i>/gi,'_').replaceAll(/<b>|<\/b>/gi,'*').replaceAll(/<\/?p[^>]*>/gi,'\n'):str
 
 const removeAccents = str => str.normalize("NFD").replace(/[\u0300-\u036f]/g, '')
+const toSentenceCase = str => str.charAt(0).toUpperCase() + str.substring(1).toLowerCase()
 
-export {objectMap, boldify, unboldify, removeAccents}
+
+export {objectMap, boldify, unboldify, removeAccents, toSentenceCase}

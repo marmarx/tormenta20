@@ -1,13 +1,9 @@
 <script setup>
 import layout from '@/composables/layout.vue'
-import titles from '@/composables/title.vue';
+
+const components = []
 </script>
 
 <template>
-  <titles class="comp">Equipamentos</titles>
-  <layout>
-    <template #layout1><component :is=""></component></template>
-    <template #layout2><component :is=""></component></template>
-    <template #layout3><component :is=""></component></template>
-  </layout>
-  </template>
+  <layout :components="components" />
+</template>
