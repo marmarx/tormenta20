@@ -65,7 +65,7 @@
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
     "Duração":"1 dia",
-    "Área":"Esfera de 9m de raio",
+    "Área":"esfera de 9m de raio",
     "Descrição":"Você cria uma barreira protetora invisível que detecta qualquer criatura que tocar ou entrar na área protegida. Ao lançar a magia, você pode escolher quais criaturas podem entrar na área sem ativar seus efeitos. Alarme pode emitir um aviso telepático ou sonoro, decidido quando a magia é lançada. Um aviso telepático alerta apenas você, inclusive acordando-o se estiver dormindo, mas apenas se estiver a até 1km da área protegida. Um aviso sonoro alerta todas as criaturas em alcance longo.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -102,7 +102,7 @@
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
     "Duração":"cena",
-    "Área":"Quadrado de 3m ou 1 objeto",
+    "Área":"quadrado de 3m ou 1 objeto",
     "Resistência":"Reflexos (veja texto)",
     "Descrição":"Esta magia recobre uma superfície com uma substância gordurosa e escorregadia. Criaturas na área devem passar na resistência para não cair. Nas rodadas seguintes, criaturas que tentem movimentar-se pela área devem fazer testes de Acrobacia para equilíbrio (CD 10).<br>Área Escorregadia pode tornar um item escorregadio. Uma criatura segurando um objeto afetado deve passar na resistência para não deixar o item cair cada vez que usá-lo.",
     "Publicação":"Jogo do Ano",
@@ -121,7 +121,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"cena",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Você invoca a arma preferida de sua divindade (se tiver uma), que surge flutuando a seu lado. Uma vez por rodada, quando você sofre um ataque corpo a corpo, pode usar uma reação para que a arma cause automaticamente 2d6 pontos de dano do tipo da arma — por exemplo, uma espada longa causa dano de corte — no oponente que fez o ataque. Esta magia se dissipa se você morrer.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -160,7 +160,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"cena",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Esta magia cria uma película protetora invisível, mas tangível, fornecendo +5 na Defesa. Esse bônus é cumulativo com outras magias, mas não com bônus fornecido por armaduras.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -216,7 +216,7 @@
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
     "Duração":"cena",
-    "Alvo":"Aliados",
+    "Alvo":"aliados",
     "Descrição":"Abençoa seus aliados, que recebem +1 em testes de ataque e rolagens de dano. Bênção anula Perdição.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -251,7 +251,7 @@
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
     "Duração":"1 rodada",
-    "Alvo":"1 humanóide",
+    "Alvo":"1 humanoide",
     "Resistência":"Vontade anula",
     "Descrição":"Você dá uma ordem irresistível, que o alvo deve ser capaz de ouvir (mas não precisa entender). Se falhar na resistência, ele deve obedecer ao comando em seu próprio turno da melhor maneira possível. Escolha um dos efeitos a seguir:<br><i>Fuja:</i> o alvo gasta seu turno se afastando de você (usando todas as suas ações).<br><i>Largue:</i> o alvo solta quaisquer itens que esteja segurando e não pode pegá-los novamente até o início de seu próximo turno. Como esta é uma ação livre, ele ainda pode executar outras ações (exceto pegar aquilo que largou).<br><i>Pare:</i> o alvo fica pasmo (uma vez por cena).<br><i>Senta:</i> com uma ação livre, o alvo senta no chão (se estava pendurado ou voando, desce até o chão). Ele pode fazer outras ações, mas não se levantar até o início de seu próximo turno.<br><i>Venha:</i> o alvo gasta seu turno se aproximando de você (usando todas as suas ações).",
     "Publicação":"Jogo do Ano",
@@ -270,7 +270,7 @@
     "Alcance":"toque",
     "Duração":"cena",
     "Alvo":"1 criatura ou texto",
-    "Resistência":"Vontade anula (veja descrição)",
+    "Resistência":"Vontade anula (veja texto)",
     "Descrição":"Essa magia lhe confere compreensão sobrenatural. Você pode tocar um texto e entender as palavras mesmo que não conheça o idioma. Se tocar numa criatura inteligente, pode se comunicar com ela mesmo que não tenham um idioma em comum. Se tocar uma criatura não inteligente, como um animal, pode perceber seus sentimentos.<br>Você também pode gastar uma ação de movimento para ouvir os pensamentos de uma criatura tocada (você “ouve” o que o alvo está pensando), mas um alvo involuntário tem direito a um teste de Vontade para proteger seus pensamentos e evitar este efeito.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -289,7 +289,7 @@
     "Ação":"Livre",
     "Alcance":"pessoal",
     "Duração":"1 rodada",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Você amplia sua percepção, antecipando movimentos dos inimigos e achando brechas em sua defesa. Quando faz um teste de ataque, você rola dois dados e usa o melhor resultado",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -393,7 +393,7 @@
     "Alcance":"médio (30m 20q)",
     "Duração":"cena",
     "Resistência":"Vontade desacredita",
-    "Efeito":"ilusão que se estende a até 4 cubos de 5m",
+    "Efeito":"ilusão que se estende a até 4 cubos de 5m de lado",
     "Descrição":"Esta magia cria uma ilusão visual (uma criatura, uma parede...) ou sonora (um grito de socorro, um uivo assustador...). A magia cria apenas imagens ou sons simples, com volume equivalente ao tom de voz normal para cada cubo de 1,5m no efeito. Não é possível criar cheiros, texturas ou temperaturas, nem sons complexos, como uma música ou diálogo. Criaturas e objetos atravessam uma ilusão sem sofrer dano, mas a magia pode, por exemplo, esconder uma armadilha ou inimigo. A magia é dissipada se você sair do alcance.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -457,8 +457,8 @@
     "Escola":"Adivinhação",
     "Ação":"Padrão",
     "Alcance":"pessoal",
-    "Duração":"Cena até ser descarregada",
-    "Área":"Esfera de8m de raio",
+    "Duração":"cena ou até ser descarregada",
+    "Área":"esfera de 8m de raio",
     "Descrição":"Você recebe uma intuição aguçada sobre perigos ao seu redor. Quando uma criatura hostil ou armadilha entra na área do efeito, você faz um teste de Percepção (CD determinada pelo mestre de acordo com a situação). Se passar, sabe a origem (criatura ou armadilha), direção e distância do perigo. Se falhar, sabe apenas que o perigo existe.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -475,7 +475,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"cena",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Resistência":"Vontade desacredita",
     "Descrição":"Você muda a aparência do alvo, incluindo seu equipamento. Isso inclui altura, peso, tom de pele, cor de cabelo, timbre de voz etc. O alvo recebe +10 em testes de Enganação para disfarce. O alvo não recebe novas habilidades (você pode ficar parecido com outra raça, mas não ganhará as habilidades dela), nem modifica o equipamento (uma espada longa disfarçada de bordão continua funcionando e causando dano como uma espada).",
     "Publicação":"Jogo do Ano",
@@ -496,7 +496,7 @@
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
     "Duração":"cena",
-    "Alvo":"1 humanóide",
+    "Alvo":"1 humanoide",
     "Resistência":"Vontade anula",
     "Descrição":"O alvo fica enfeitiçado (veja a página 394). Um alvo hostil ou que esteja envolvido em um combate recebe +5 em seu teste de resistência. Se você ou seus aliados tomarem qualquer ação hostil contra o alvo, a magia é dissipada e o alvo retorna à atitude que tinha antes (ou piorada, de acordo com o mestre).",
     "Publicação":"Jogo do Ano",
@@ -556,7 +556,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"instantânea",
-    "Área":"Cone de 6m",
+    "Área":"cone de 6m",
     "Resistência":"Reflexos reduz à metade",
     "Descrição":"Um leque de chamas irrompe de suas mãos, causando 2d6 pontos de dano de fogo às criaturas na área.",
     "Publicação":"Jogo do Ano",
@@ -574,7 +574,7 @@
     "Escola":"Encantamento",
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
-    "Duração":"1d4 Rodadas",
+    "Duração":"1d4 rodadas",
     "Alvo":"1 animal ou humanoide",
     "Resistência":"Vontade anula",
     "Descrição":"Suas palavras e movimentos ritmados deixam o alvo fascinado. Esta magia só afeta criaturas que possam perceber você. Se usar esta magia em combate, o alvo recebe +5 em seu teste de resistência. Se a criatura passar, fica imune a este efeito por um dia.",
@@ -597,7 +597,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"cena",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Três cópias ilusórias suas aparecem. As duplicatas ficam ao seu redor e imitam suas ações, tornando difícil para um inimigo saber quem atacar. Você recebe +6 na Defesa. Cada vez que um ataque contra você erra, uma das imagens desaparece e o bônus na Defesa diminui em 2. Um oponente deve ver as cópias para ser confundido. Se você estiver invisível, ou o atacante fechar os olhos, você não recebe o bônus (mas o atacante ainda sofre penalidades normais por não enxergar).",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -715,7 +715,7 @@
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
     "Duração":"cena",
-    "Alvo":"Criaturas Escolhidas",
+    "Alvo":"criaturas escolhidas",
     "Resistência":"nenhuma", 
     "Descrição":"Amaldiçoa os alvos, que recebem –1 em testes de ataque e rolagens de dano. Perdição anula Bênção.",
     "Publicação":"Jogo do Ano",
@@ -974,7 +974,7 @@
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
     "Duração":"cena",
-    "Alvo":"1 animal ou humanóide",
+    "Alvo":"1 animal ou humanoide",
     "Resistência":"Vontade parcial",
     "Descrição":"Você emana ondas de serenidade. Se falhar na resistência, o alvo tem sua atitude mudada para indiferente (veja a página 259) e não pode atacar ou realizar qualquer ação agressiva. Se passar, sofre –2 em testes de ataque. Qualquer ação hostil contra o alvo ou seus aliados dissipa a magia e faz ele retornar à atitude que tinha antes (ou pior, de acordo com o mestre).",
     "Publicação":"Jogo do Ano",
@@ -1105,7 +1105,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"cena",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Esta magia lhe concede um rosto idealizado, porte físico garboso, voz melodiosa e olhar sedutor. Enquanto a magia estiver ativa, seu Carisma torna-se 5 (ou recebe um bônus de +2, caso seja 5 ou maior) e você recebe +5 nos testes de Diplomacia e Enganação. Quando a magia acaba, quaisquer observadores percebem a mudança e tendem a suspeitar de você. Da mesma maneira, pessoas que o viram sob o efeito da magia sentirão que “algo está errado” ao vê-lo em condições normais. Quando a cena acabar, você pode gastar os PM da magia novamente como uma ação livre para mantê-la ativa. Este efeito não fornece PV ou PM adicionais.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -1121,7 +1121,7 @@
     "Ação":"Completa",
     "Alcance":"pessoal",
     "Duração":"instantânea",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Esta magia diz se uma ação que você tomará em breve — no máximo uma hora no futuro — trará resultados bons ou ruins. O mestre rola 1d6 em segredo; com um resultado de 2 a 6, a magia funciona e você recebe uma das seguintes respostas:“felicidade” (a ação trará bons resultados);“miséria” (a ação trará maus resultados);“felicidade e miséria” (para ambos) ou “nada” (para ações que não trarão resultados bons ou ruins).<br>Com um resultado 1, a magia falha e oferece o resultado “nada”. Não há como saber se esse resultado foi dado porque a magia falhou ou não. Lançar esta magia múltiplas vezes sobre o mesmo assunto gera sempre o primeiro resultado.<br>Por exemplo, se o grupo está prestes a entrar em uma câmara, o augúrio dirá “felicidade” se a câmara contém um tesouro desprotegido, “miséria” se contém um monstro, “felicidade e miséria” se houver um tesouro e um monstro ou “nada” se a câmara estiver vazia.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -1159,7 +1159,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"cena",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Esta magia cria uma película protetora sobre você. Você recebe 30 pontos de vida temporários.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -1272,7 +1272,7 @@
     "Ação":"Padrão",
     "Alcance":"médio (30m 20q)",
     "Duração":"cena",
-    "Alvo":"1objeto de madeira grande ou menor",
+    "Alvo":"1 objeto de madeira grande ou menor",
     "Descrição":"Você molda, retorce, altera ou repele madeira. Se lançar esta magia num objeto de uma criatura involuntária, ela tem direito a um teste de Vontade para anulá-la. Ao lançar a magia, escolha.<br><i>Fortalecer:</i> deixa o alvo mais resistente. Armas têm seu dano aumentado em um passo. Escudos têm seu bônus de Defesa aumentado em +2 (isso é uma melhoria no item, portanto é cumulativa com outras magias). Esses e outros itens de madeira recebem +5 na RD e dobram seus PV.<br><i>Modelar:</i> muda a forma do alvo. Pode transformar um galho em espada, criar uma porta onde antes havia apenas uma parede, transformar um tronco em uma caixa... Mas não pode criar mecanismos complexos (como uma besta) ou itens consumíveis.<br><i>Repelir:</i> o alvo é repelido por você. Se for uma arma, ataques feitos com ela contra você falham automaticamente. Se for uma porta ou outro objeto que possa ser aberto, ele vai se abrir quando você se aproximar, mesmo que esteja trancado. Um objeto que vá atingi-lo, como uma carroça, tronco ou barril, vai desviar ou parar adjacente a você, sem lhe causar dano. Os efeitos de regras em outros objetos de madeira ficam a cargo do mestre.<br><i>Retorcer:</i> estraga o alvo. Uma porta retorcida emperra (exigindo um teste de Força contra CD 25 para ser aberta). Armas e itens retorcidos impõem –5 em testes de perícia. Escudos retorcidos deixam de oferecer bônus (mas ainda impõem penalidades). Um barco retorcido começa a afundar e naufraga ao final da cena. Os efeitos de regras em outros objetos de madeira ficam a cargo do mestre.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -1309,7 +1309,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"cena",
-    "Área":"Cone de 6m",
+    "Área":"cone de 6m",
     "Resistência":"Vontade parcial",
     "Descrição":"Humanoides na área são acometidos de grande tristeza, adquirindo as condições Fraco e Frustrado. Se passarem na resistência, adquirem essas condições por uma rodada.",
     "Publicação":"Jogo do Ano",
@@ -1585,7 +1585,7 @@
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
     "Duração":"1 dia",
-    "Efeito":"criatura conjurada",
+    "Efeito":"1 criatura conjurada",
     "Descrição":"Esta magia convoca um parceiro cavalo (ou pônei) de guerra veterano. Sua aparência é de um animal negro com crina e cauda cinzentas e cascos feitos de fumaça, mas você pode mudá-la se quiser. Além dos benefícios normais, a Montaria Arcana pode atravessar terreno difícil sem redução em seu deslocamento. Você pode usar Misticismo no lugar de Cavalgar para efeitos desta montaria (incluindo ser considerado treinado).",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -1716,7 +1716,7 @@
     "Escola":"Abjuração",
     "Ação":"1 hora",
     "Alcance":"toque",
-    "Duração":"permanente até ser descarregada",
+    "Duração":"permanente ou até ser descarregada",
     "Alvo":"uma área com 6m de raio",
     "Resistência":"varia (veja o texto)",
     "Descrição":"Você escreve uma runa pessoal em uma superfície fixa, como uma parede ou o chão, que protege uma pequena área ao redor. Quando uma criatura entra na área afetada a runa explode, causando 6d6 pontos de dano em todos os alvos a até 6m. A criatura que ativa a runa não tem direito a teste de resistência; outras criaturas na área têm direito a um teste de Reflexos para reduzir o dano à metade. Quando lança a magia, você escolhe o tipo de dano, entre ácido, eletricidade, fogo, frio, luz ou trevas.<br>Você pode determinar que a runa se ative apenas em condições específicas — por exemplo, apenas por goblins ou apenas por mortos-vivos. Você também pode criar uma palavra mágica que impeça a runa de se ativar.<br>Um personagem pode encontrar a runa com um teste de Investigação e desarmá-la com um teste de Ladinagem (CD da magia).<br><i>Componente material:</i> pó de diamante no valor de T$ 200, com o qual o conjurador desenha a runa, que brilha por alguns instantes e depois se torna praticamente invisível.",
@@ -1946,7 +1946,7 @@
       {"2":"muda o alcance para médio, a área para esfera com 3m de raio e o alvo para criaturas escolhidas."},
       {"2":"muda o efeito para criar um fio de energia cor de esmeralda que prende o alvo a um ponto no espaço dentro do alcance. O ponto precisa ser fixo, mas não precisa de nenhum apoio ou superfície (pode simplesmente flutuar no ar). O alvo não pode se afastar mais de 3m do ponto, nem fisicamente, nem com movimento planar. O fio possui 20 PV e resistência a dano 20 (mas pode ser dissipado por efeitos que libertam criaturas, como o Julgamento Divino:Libertação do paladino)."},
       {"4":"muda o efeito para criar um fio de energia cor de esmeralda que prende o alvo a um ponto no espaço dentro do alcance. O ponto precisa ser fixo, mas não precisa de nenhum apoio ou superfície (pode simplesmente flutuar no ar). O alvo não pode se afastar mais de 3m do ponto, nem fisicamente, nem com movimento planar. O fio possui 20 PV e redução de dano 40 (mas pode ser dissipado por efeitos que libertam criaturas, como o Julgamento Divino:Libertação do paladino)."},
-      {"4":"muda o alvo para área de cubo de 9m, a duração para permanente e adiciona componente material (chave de esmeralda no valor de T$ 2.000). Em vez do normal, nenhum tipo de movimento planar pode ser feito para entrar ou sair da área."},
+      {"4":"muda o alvo para área de cubo de 9m de lado, a duração para permanente e adiciona componente material (chave de esmeralda no valor de T$ 2.000). Em vez do normal, nenhum tipo de movimento planar pode ser feito para entrar ou sair da área."},
       {"9":"muda o alcance para médio, a área para esfera de 3m de raio e o alvo para criaturas escolhidas. Cria um fio de energia (veja acima) que prende todos os alvos ao centro da área."}
     ]
   },
@@ -2013,7 +2013,7 @@
     "Ação":"Completa",
     "Alcance":"pessoal",
     "Duração":"1 dia",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Após uma breve união com a natureza local, você obtém informações e intuições sobre a região em que está, numa distância equivalente a um dia de viagem. Você recebe 6d4 dados de auxílio. <br>Enquanto a magia durar, sempre que for realizar um teste de perícia em áreas naturais, você pode gastar 2d4 (mais 2d4 para cada círculo de magias acima do 3º que puder lançar) e adicionar o resultado rolado como bônus no teste. A magia termina se você ficar sem dados.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2032,7 +2032,7 @@
     "Ação":"Completa",
     "Alcance":"pessoal",
     "Duração":"1 dia",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Sua mente viaja até outro plano de existência, onde entra em contato com seres extraplanares como gênios e demônios. Você firma um contrato com uma dessas entidades para que o auxilie durante o dia, em troca de se alimentar de seu mana. Quando a magia é lançada, você recebe 6d6 dados de auxílio. Enquanto a magia durar, sempre que for realizar um teste de perícia, você pode gastar 1d6 (mais 1d6 para cada círculo de magias acima do 3º que puder lançar) e adicionar o resultado como bônus no teste. No entanto, sempre que rolar um “6” num desses dados, a entidade “suga” 1 PM de você. A magia termina se você gastar todos os dados, ficar sem PM ou no fim do dia (o que acontecer primeiro).",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2050,7 +2050,7 @@
     "Alcance":"longo (90m 60q)",
     "Duração":"cena",
     "Área":"esfera com 30m de raio",
-    "Resistência":"Veja texto",
+    "Resistência":"veja texto",
     "Descrição":"Você controla os movimentos e comportamentos da água. Ao lançar a magia, escolha um dos efeitos abaixo.<br><i>Congelar:</i> toda a água mundana na área é congelada. Criaturas nadando na área ficam imóveis; escapar exige gastar uma ação padrão e passar num teste de Atletismo ou Acrobacia.<br><i>Derreter:</i> gelo mundano na área vira água e a magia termina. A critério do mestre, isso pode criar terreno difícil.<br><i>Enchente:</i> eleva o nível da água mundana na área em até 4,5m. A sua escolha, muda área para alvo:uma embarcação. O alvo recebe +3m em seu deslocamento pela duração do efeito.<br><i>Evaporar:</i> toda a água e gelo mundano na área evaporam instantaneamente e a magia termina. Elementais da água, plantas monstruosas e criaturas com imunidade a frio na área sofrem 10d8 pontos de dano de fogo; outras criaturas vivas recebem metade desse dano (Fortitude reduz à metade).<br><i>Partir:</i> diminui o nível de toda água mundana na área em até 4,5m. Em um corpo d’água raso, isso abre um caminho seco, que pode ser atravessado a pé. Em um corpo d’água profundo, cria um redemoinho que pode prender barcos (um teste de Pilotagem com CD igual à da magia permite ao piloto livrar a embarcação). Elementais da água na área ficam lentos.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2066,7 +2066,7 @@
     "Ação":"Padrão",
     "Alcance":"longo (90m 60q)",
     "Área":"9 cubos com 1,5m de lado",
-    "Resistência":"Veja texto",
+    "Resistência":"veja texto",
     "Descrição":"Você manipula a densidade e a forma de toda terra, pedra, lama, argila ou areia na área. Ao lançar a magia, escolha.<br><i>Amolecer:</i> se afetar o teto, uma coluna ou suporte, provoca um desabamento que causa 10d6 pontos de dano de impacto às criaturas na área (Reflexos reduz à metade). Se afetar um piso de terra ou pedra, cria terreno difícil de areia ou argila, respectivamente.<br><i>Modelar:</i> pode usar pedra ou argila para criar um ou mais objetos simples de tamanho Enorme ou menor (sem mecanismos ou partes móveis). Por exemplo, pode transformar um tijolo em uma maça, criar uma passagem onde antes havia apenas uma parede ou levantar uma ou mais paredes que oferecem cobertura total (RD 8 e 50 PV para cada 3m).<br><i>Solidificar:</i> transforma lama ou areia em terra ou pedra. Criaturas com os pés na superfície ficam agarradas. Elas podem se soltar com uma ação padrão e um teste de Acrobacia ou Atletismo.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2123,7 +2123,7 @@
     "Descrição":"Esta magia oculta a presença do alvo contra qualquer meio mágico de detecção, inclusive detectar magia. Um conjurador que lance uma magia de adivinhação para detectar a presença ou localização do alvo deve fazer um teste de Vontade. Se falhar, a magia não funciona, mas os PM são gastos mesmo assim. Se for lançada sobre uma criatura, Dificultar Detecção protege tanto a criatura quanto seu equipamento.",
     "Publicação":"Jogo do Ano",
     "mod":[
-      {"4":"muda o alvo para área de cubo de 9m. Qualquer criatura ou objeto na área recebe o efeito da magia enquanto estiver dentro dela."},
+      {"4":"muda o alvo para área de cubo de 9m de lado. Qualquer criatura ou objeto na área recebe o efeito da magia enquanto estiver dentro dela."},
       {"4":"muda a duração para 1 semana."}
     ]
   },
@@ -2136,7 +2136,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"veja texto",
-    "Área":"Esfera de 6m de raio",
+    "Área":"esfera de 6m de raio",
     "Descrição":"Esta magia cria um forte brilho (multicolorido ou de uma cor que remeta a sua divindade) que causa diversos efeitos. Todas as magias de 3º círculo ou menor ativas na área são dissipadas se você passar num teste de Religião contra a CD de cada magia. Seus aliados na área recebem +4 em testes de resistência e redução de trevas 10 até o fim da cena, protegidos por uma aura sutil da mesma cor. Inimigos na área ficam Cego por 1d4 rodadas (apenas uma vez pela magia). Dispersar as Trevas anula Anular a Luz (este efeito tem duração instantânea).",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2156,7 +2156,7 @@
     "Alcance":"médio (30m 20q)",
     "Duração":"sustentada",
     "Resistência":"Reflexos reduz à metade",
-    "Efeito":"1 enxame Grande (quadrado de 3m);",
+    "Efeito":"1 enxame Grande (quadrado de 3m)",
     "Descrição":"Você conjura um enxame de pequenas criaturas da Tormenta. O enxame pode passar pelo espaço de outras criaturas e não impede que outras criaturas entrem no espaço dele. No final de cada um de seus turnos, o enxame causa 4d12 pontos de dano de ácido a qualquer criatura em seu espaço (Reflexos reduz à metade). Você pode gastar uma ação de movimento para mover o enxame com deslocamento de 12m.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2178,7 +2178,7 @@
     "Alcance":"médio (30m 20q)",
     "Duração":"instantânea",
     "Área":"quadrado de 6m de lado",
-    "Resistência":"Relfexos parcial",
+    "Resistência":"Reflexos parcial",
     "Descrição":"Estacas de gelo irrompem do chão. Criaturas na área sofrem 4d6 de dano de corte, 4d6 de dano de frio e ficam caídas. Passar no teste de Reflexos evita o dano de corte e a queda. As estacas duram pela cena, o que torna a área afetada terreno difícil, e concedem cobertura leve para criaturas dentro da área ou atrás dela. As estacas são destruídas caso sofram qualquer quantidade de dano por fogo mágico.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2213,7 +2213,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"sustentada",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Você é envolto por uma esfera mágica brilhante com 3m de raio, que detém qualquer magia de 2º círculo ou menor. Nenhuma magia pode ser lançada contra um alvo dentro do globo e magias de área não o penetram. No entanto, magias ainda podem ser lançadas de dentro para fora.<br>Uma magia que dissipa outras magias só dissipa o globo se for usada diretamente sobre você, não o afetando se usada em área. Efeitos mágicos não são dissipados quando entram na esfera, apenas suprimidos (voltam a funcionar fora do globo, caso sua duração não tenha acabado). O globo é imóvel e não tem efeito sobre criaturas ou objetos. Após lançá-lo, você pode entrar ou sair livremente.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2246,13 +2246,13 @@
     "Ação":"Padrão",
     "Alcance":"médio (30m 20q)",
     "Duração":"sustentada",
-    "Área":"cubo de 9m",
+    "Área":"cubo de 9m de lado",
     "Resistência":"Vontade anula",
     "Descrição":"Você cria uma ilusão de algum perigo mortal. Quando a magia é lançada, criaturas na área devem fazer um teste de Vontade; uma falha significa que a criatura acredita que a ilusão é real e sofre 3d6 pontos de dano psíquico não letal. Sempre que uma criatura iniciar seu turno dentro da área, deve repetir o teste de Vontade. Se falhar, sofre o dano novamente. Somente criaturas que falham veem a ilusão, e racionalizam o efeito sempre que falham no teste (por exemplo, acredita que o mesmo teto pode cair sobre ela várias vezes).",
     "Publicação":"Jogo do Ano",
     "mod":[
       {"3":"aumenta o dano em +2d6."},
-      {"4":"muda a área para um cubo de 90m. Requer 4º círculo."}
+      {"4":"muda a área para um cubo de 90m de lado. Requer 4º círculo."}
     ]
   },
   {
@@ -2264,7 +2264,7 @@
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
     "Duração":"cena",
-    "Alvo":"1 humanóide ou animal",
+    "Alvo":"1 animal ou humanoide",
     "Resistência":"Vontade parcial",
     "Descrição":"O alvo fica Paralisado; se passar na resistência, em vez disso fica Lento. A cada rodada, pode gastar uma ação completa para fazer um novo teste de Vontade. Se passar, se liberta do efeito.",
     "Publicação":"Jogo do Ano",
@@ -2301,7 +2301,7 @@
     "Ação":"Padrão",
     "Alcance":"toque",
     "Duração":"sustentada",
-    "Alvo":"1 criatura objeto ou local",
+    "Alvo":"1 criatura, objeto ou local",
     "Descrição":"Você descobre informações sobre uma criatura, objeto ou local que esteja tocando. O que exatamente você descobre depende do mestre:talvez você não descubra tudo que há para saber, mas ganhe pistas para continuar a investigação. A cada rodada que mantiver a magia, você descobre:<br>Todas as informações sobre o alvo, como se tivesse passado em todos os testes de Conhecimento para tal.<br>Todas as habilidades do alvo. Se for uma criatura, você sabe suas estatísticas de jogo como raça, classe, nível, atributos, magias, resistências e fraquezas. Se for um item mágico, aprende seu efeito e funcionamento.<br>Se o alvo está sob influência de alguma magia e todas as informações sobre as magias ativas, se houver alguma.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2462,7 +2462,7 @@
     "Alcance":"toque",
     "Duração":"cena",
     "Alvo":"1 criatura",
-    "Resistência":"Vontade Parcial",
+    "Resistência":"Vontade parcial",
     "Descrição":"Seu toque manifesta um selo mágico na pele do alvo, que atrapalha o fluxo de mana. Pela duração da magia, sempre que o alvo realizar qualquer ação que gaste PM, deve fazer um teste de Vontade; se passar, faz a ação normalmente. Se falhar, a ação não tem efeito (mas os PM são gastos mesmo assim).",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2477,8 +2477,8 @@
     "Escola":"Convocação",
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
-    "Duração":"Cena ou até ser descarregada",
-    "Efeito":"criatura conjurada",
+    "Duração":"cena ou até ser descarregada",
+    "Efeito":"1 criatura conjurada",
     "Descrição":"Você pede a sua divindade que envie um espírito para ajudá-lo. Esse espírito realiza uma tarefa a sua escolha que possa ser cumprida em até uma hora — desde algo simples como “use suas asas para nos levar até o topo da montanha” até algo complexo como “escolte esses camponeses até o castelo”. A magia é descarregada quando a criatura cumpre a tarefa, retornando a seu plano natal. O tipo de criatura é escolhido pelo mestre, de acordo com as necessidades da tarefa.<br><i>Componente material:</i> um pagamento de T$ 100 ao espírito. A forma de pagamento varia — doações a um templo, um item mágico ou mesmo dinheiro.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2666,7 +2666,7 @@
     "Ação":"Padrão",
     "Alcance":"médio (30m 20q)",
     "Duração":"cena",
-    "Alvo":"Até 8 objetos Minúsculos ou Pequenos, 4 objetos Médios, 2 objetos Grandes ou 1 objeto Enorme",
+    "Alvo":"até 8 objetos Minúsculos ou Pequenos, 4 objetos Médios, 2 objetos Grandes ou 1 objeto Enorme",
     "Descrição":"Você concede vida a objetos inanimados. Cada objeto se torna um parceiro sob seu controle. O tipo dele é escolhido da lista de tamanho e ele não conta em seu limite de parceiros. Com uma ação de movimento, você pode comandar mentalmente qualquer objeto animado dentro do alcance para que auxilie você ou outra criatura. Outros usos criativos para os objetos ficam a cargo do mestre. Objetos animados são construtos com valores de Força, Destreza e  PV de acordo com seu tamanho. Todos os outros atributos nulos, eles não têm valor de Defesa ou testes de resistência e falham automaticamente em qualquer teste oposto. Diferente de parceiros comuns, um objeto pode ser alvo de um ataque direto. Esta magia não afeta itens mágicos, nem objetos que estejam sendo carregados por outra criatura.<br>Esta magia não afeta itens mágicos, nem objetos que estejam sendo carregados por outra criatura.<br><b>Estatísticas de objetos animados:</b><br><i>Minúsculo:</i> For -3, Des 4, 5 PV; Assassino ou Combatente Iniciante.<br><i>Pequeno:</i> For -2, Des 2, 10 PV; Combatente ou Guardião Iniciante.<br><i>Médio:</i> For 0, Des 1, 20 PV; Combatente ou Guardião Veterano.<br><i>Grande:</i> For 2, Des 0, 40 PV; Fortão, Guardião ou Montaria (cavalo) Veterano.<br><i>Enorme:</i> For 4, Des -2, 60 PV; Fortão, Guardião ou Montaria (cavalo) Mestre.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2681,9 +2681,9 @@
     "Escola":"Necromancia",
     "Ação":"Padrão",
     "Alcance":"longo (90m 60q)",
-    "Duração":"cena até ser descarregada",
+    "Duração":"cena ou até ser descarregada",
     "Alvo":"1 criatura",
-    "Resistência":"Vontade Anula, Fortitude Parcial",
+    "Resistência":"Vontade anula, Fortitude parcial",
     "Descrição":"Usando os medos subconscientes do alvo, você cria uma imagem daquilo que ele mais teme. Apenas a própria vítima pode ver o Assassino Fantasmagórico com nitidez; outras criaturas presentes (incluindo o conjurador) enxergam apenas um espectro sombrio.<br>Quando você lança a magia, o espectro surge adjacente a você e a vítima faz um teste de Vontade. Se ela passar, percebe que o espectro é uma ilusão e a magia é dissipada. Se falhar, acredita na existência do espectro, que então flutua 18m por rodada em direção à vítima, sempre no fim do seu turno. Ele é incorpóreo e imune a magias (exceto magias que dissipam outras).<br>Se o espectro terminar seu turno adjacente à vítima, ela deve fazer um teste de Fortitude. Se passar, sofre 6d6 pontos de dano de trevas (este dano não pode reduzir o alvo a menos de 0 PV e não o deixa sangrando). Se falhar, sofre um colapso, ficando imediatamente com –1 PV e sangrando.<br>O espectro persegue o alvo implacavelmente. Ele desaparece se o alvo ficar inconsciente ou se afastar além de alcance longo dele, ou se for dissipado.",
     "Publicação":"Jogo do Ano",
     "mod":0
@@ -2697,7 +2697,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"sustentada",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Você é cercado por uma barreira invisível com 3m de raio que o acompanha. Qualquer habilidade mágica ou item mágico que entre na área da barreira é suprimida enquanto estiver lá.<br>Criaturas convocadas que entrem em um Campo Antimagia desaparecem. Elas reaparecem na mesma posição quando a duração do Campo termina — supondo que a duração da magia que as convocou ainda não tenha terminado.<br>Criaturas mágicas ou imbuídas com magia durante sua criação não são diretamente afetadas pelo Campo Antimagia. Entretanto, como qualquer criatura, não poderão usar magias ou habilidades mágicas dentro dele.<br>Uma magia que dissipa outras não dissipa um Campo Antimagia, e dois Campos na mesma área não se neutralizam. Artefatos e deuses maiores não são afetados por um Campo Antimagia.",
     "Publicação":"Jogo do Ano",
     "mod":0
@@ -2728,7 +2728,7 @@
     "Alcance":"médio (30m 20q)",
     "Duração":"instantânea",
     "Área":"esfera com 6m de raio",
-    "Resistência":"Reflexos Parcial",
+    "Resistência":"Reflexos parcial",
     "Descrição":"Você cria um fulgor dourado e intenso. Criaturas na área ficam cegas por 1d4 rodadas e em chamas, e sofrem 10d6 pontos de dano de fogo (mortos-vivos sofrem 10d8 pontos de dano). Uma criatura que passe no teste de resistência não fica cega nem em chamas e sofre metade do dano.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2809,8 +2809,8 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"sustentada",
-    "Alvo":"Você",
-    "Resistência":"Vontade Anula",
+    "Alvo":"você",
+    "Resistência":"Vontade anula",
     "Descrição":"Uma cúpula de energia invisível o cerca, impedindo a aproximação de certas criaturas. Escolha um tipo de criatura (animais, espíritos, monstros...) ou uma raça de humanoides (elfos, goblins, minotauros..). Criaturas do grupo escolhido que tentem se aproximar a menos de 3m de você (ou seja, que tentem ficar adjacentes a você) devem fazer um teste de Vontade. Se falharem, não conseguem, gastam a ação e só podem tentar novamente na rodada seguinte. Isso impede ataques corpo a corpo, mas não ataques ou outros efeitos à distância. Se você tentar se aproximar além do limite de 3m, rompe a cúpula e a magia é dissipada.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2875,7 +2875,7 @@
     "Ação":"Completa",
     "Alcance":"pessoal",
     "Duração":"sustentada",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Você e todo o equipamento que está com você são transportados para o plano etéreo, que existe paralelamente ao plano material (o mundo físico). Na prática, é como ser transformado em um fantasma (mas você ainda é considerado uma criatura viva). Uma criatura etérea é invisível (pode alterar entre visível e invisível como ação livre), incorpórea e capaz de se mover em qualquer direção, inclusive para cima e para baixo. Ela enxerga o plano material, mas tudo parece cinza e insubstancial, reduzindo o alcance da visão e audição para 18m. Magias de abjuração e essência afetam criaturas etéreas, mas outras magias, não. Da mesma forma, uma criatura etérea não pode atacar nem lançar magias contra criaturas no plano material. Duas criaturas etéreas podem se afetar normalmente. Uma criatura afetada pode se materializar como uma ação de movimento, encerrando a magia. Uma criatura etérea que se materialize em um espaço ocupado é jogada para o espaço não ocupado mais próximo e sofre 1d6 pontos de dano de impacto para cada 1,5m de deslocamento.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -2890,7 +2890,7 @@
     "Escola":"Convocação",
     "Ação":"Padrão",
     "Alcance":"curto (9m 6q)",
-    "Duração":"Cena ou até ser descarregado",
+    "Duração":"cena ou até ser descarregada",
     "Efeito":"elemental de luz invocado",
     "Descrição":"A magia invoca um elemental Pequeno, com a forma de um orbe feito de luz divina. A criatura é incorpórea, imune a dano e ilumina como uma tocha. O elemental tem 100 pontos de luz.Uma vez por rodada, durante o seu turno, o elemental pode se movimentar (deslocamento de voo 18m) e gastar quantos pontos de luz quiser para curar dano ou condições de criaturas em alcance curto, à taxa de 1 PV por 1 ponto de luz ou uma condição por 3 pontos de luz (entre abalado, apavorado, alquebrado, atordoado, cego, confuso, debilitado, enjoado, esmorecido, exausto, fascinado, fatigado, fraco, frustrado, ofuscado, pasmo, sangrando, surdo ou vulnerável). A magia é encerrada quando o elemental fica sem pontos de luz.",
     "Publicação":"Jogo do Ano",
@@ -2942,7 +2942,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"sustentada",
-    "Alvo":"vocẽ",
+    "Alvo":"você",
     "Descrição":"Você invoca o poder de sua divindade na forma de um manto de energia que reveste seu corpo. Esta magia tem duas versões. Você escolhe qual versão pode lançar quando aprende esta magia. Ela não pode ser mudada.<br><i>Manto de Luz:</i> um manto dourado e luminoso. No início de cada um de seus turnos, você e todos os seus aliados em alcance curto recuperam 2d8 PV. Você recebe imunidade a dano de trevas e seus ataques corpo a corpo causam +2d8 pontos de dano de luz.<br><i>Manto de Trevas:</i> um manto negro como a noite. No início de cada um de seus turnos, todos os inimigos em alcance curto sofrem 4d8 pontos de dano de trevas. Você cura metade de todo o dano causado pela magia.",
     "Publicação":"Jogo do Ano",
     "mod":0
@@ -3056,7 +3056,7 @@
     "Escola":"Adivinhação",
     "Ação":"10 minutos",
     "Alcance":"ilimitado (veja texto)",
-    "Duração":"Veja Texto",
+    "Duração":"veja texto",
     "Alvo":"1 criatura viva",
     "Descrição":"Você entra nos sonhos de uma criatura. Uma vez lá, pode conversar com ela até que ela acorde. Se o alvo não estiver dormindo quando você lançar a magia, você pode permanecer em transe até que ele adormeça. Durante o transe, você fica Indefeso e sem consciência dos arredores. Você pode sair do transe quando quiser, mas a magia termina.",
     "Publicação":"Jogo do Ano",
@@ -3142,7 +3142,7 @@
     "Ação":"Reação",
     "Alcance":"pessoal",
     "Duração":"instantânea",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Sua mente visualiza todas as possibilidades de um evento, permitindo a você escolher o melhor curso de ação. Você pode rolar novamente um teste de resistência com um bônus de +10 ou um inimigo deve rolar novamente um ataque contra você com uma penalidade de –10",
     "Publicação":"Jogo do Ano",
     "mod":0
@@ -3207,7 +3207,7 @@
     "Alcance":"longo (90m 60q)",
     "Duração":"3 rodadas",
     "Resistência":"Fortitude parcial",
-    "Efeito":"Buraco Negro",
+    "Efeito":"buraco negro",
     "Descrição":"Esta magia cria um vácuo capaz de sugar tudo nas proximidades. Escolha um espaço desocupado para o buraco negro. No início de cada um de seus três turnos seguintes, todas as criaturas a até alcance longo do buraco negro, incluindo você, devem fazer um teste de Fortitude. Em caso de falha, ficam caídas e são puxadas 30m na direção do buraco. Objetos soltos também são puxados. Criaturas podem gastar uma ação de movimento para se segurar em algum objeto fixo, recebendo +2 em seus testes de resistência.<br>Criaturas e objetos que iniciem seu turno no espaço do buraco negro devem gastar uma ação de movimento e fazer um teste de Fortitude. Se passarem, podem escapar se arrastando (deslocamento de 1,5m) para longe dele. Se falharem, perdem a ação (mas podem gastar outra para tentar novamente). Se terminarem seu turno no espaço do buraco negro, são sugadas, desaparecendo para sempre.<br>Não se conhece o destino das coisas sugadas pelo buraco negro. Alguns estudiosos sugerem que são enviadas para outros mundos — provavelmente o reino da deusa das Trevas.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -3304,7 +3304,7 @@
     "Ação":"Completa",
     "Alcance":"longo (90m 60q)",
     "Duração":"sustentada",
-    "Área":"cubo de 90m",
+    "Área":"cubo de 90m de lado",
     "Resistência":"veja texto",
     "Descrição":"Você cria uma nuvem de tempestade violenta. Os ventos tornam ataques à distância impossíveis e fazem a área contar como condição terrível para lançar magia. Além disso, inimigos na área têm a visibilidade reduzida (como a magia Névoa). Uma vez por turno, você pode gastar uma ação de movimento para gerar um dos efeitos a seguir.<br><i>Nevasca:</i> inimigos na área sofrem 10d6 pontos de dano de frio (Fortitude reduz à metade). A área fica coberta de neve, virando terreno difícil até o fim da cena ou até você usar siroco.<br><i>Raios:</i> até 6 inimigos a sua escolha na área sofrem 10d8 pontos de dano de  eletricidade (Reflexos reduz à metade).<br><i>Siroco:</i> transforma a chuva em uma tempestade de areia escaldante. Inimigos na área sofrem 10d6 pontos de dano (metade corte, metade fogo) e ficam Sangrando (Fortitude reduz o dano à metade e evita a condição).<br><i>Trovões:</i> inimigos sofrem 10d6 pontos de dano de impacto e ficam Desprevenido por uma rodada (Fortitude reduz o dano à metade e evita a condição).",
     "Publicação":"Jogo do Ano",
@@ -3333,7 +3333,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"cena",
-    "Alvo":"Você",
+    "Alvo":"você",
     "Descrição":"Esta magia cria uma barreira mágica impenetrável que protege você contra efeitos nocivos mentais ou físicos, a sua escolha.Proteção mental:você fica imune às condições abalado, alquebrado, apavorado, atordoado, confuso, esmorecido, fascinado, frustrado e pasmo, além de efeitos de encantamento e ilusão.Proteção física:você fica imune às condições atordoado, cego, debilitado, enjoado, envenenado, exausto, fatigado, fraco, lento, ofuscado e paralisado, além de acertos críticos, ataques furtivos e doenças.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -3417,7 +3417,7 @@
     "Alcance":"longo (90m 60q)",
     "Duração":"1 dia",
     "Alvo":"1 criatura",
-    "Resistência":"Vontade anual",
+    "Resistência":"Vontade anula",
     "Descrição":"Você projeta sua consciência no corpo do alvo. Enquanto possuir uma criatura, você assume o controle total do corpo dela. O seu próprio corpo fica inconsciente e a consciência do alvo fica inerte. Em termos de jogo, você continua usando a sua ficha, mas com os atributos físicos e deslocamento da criatura. Se o alvo passar no teste de resistência, sabe que você tentou possuí-lo e fica imune a esta magia por um dia. Caso o corpo da criatura morra enquanto você a possui, a criatura morre e você deve fazer um teste de Vontade contra a CD da sua própria magia. Se passar, sua consciência retorna para o seu corpo (contanto que esteja dentro do alcance). Do contrário, você também morre. Retornar para o seu corpo voluntariamente é uma ação livre.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -3551,7 +3551,7 @@
     "Alcance":"toque",
     "Duração":"instantânea",
     "Alvo":"1 criatura",
-    "Resistência":"Veja texto",
+    "Resistência":"veja texto",
     "Descrição":"Sua mão exala energias letais. A criatura sofre 10d8+10 pontos de dano de trevas. Se estiver com menos da metade de seus PV, em vez disso deve fazer um teste de Fortitude. Se passar, sofre o dano normal. Se falhar, seus PV são reduzidos a –10.",
     "Publicação":"Jogo do Ano",
     "mod":[
@@ -3640,7 +3640,7 @@
     "Ação":"Completa",
     "Alcance":"pessoal",
     "Duração":"sustentada",
-    "Área":"cubo de 30m",
+    "Área":"cubo de 30m de lado",
     "Resistência":"veja texto",
     "Descrição":"Uma nuvem rubra surge acima do conjurador. Uma vez por turno, você pode gastar uma ação de movimento para fazer a nuvem manifestar um dos fenômenos a seguir.<br><i>Chuva ácida:</i> gotas corrosivas causam 6d4 pontos de dano de ácido em todas as criaturas na área.<br><i>Neblina venenosa:</i> uma neblina faz com que todas as criaturas na área percam 2d12 PV por veneno (Fortitude evita).<br><i>Raios escarlates:</i> Até 6 inimigos aleatórios na área sofrem 6d8 pontos de dano de eletricidade (Reflexos reduz à metade).<br><i>Pesadelos reais:</i> Cada criatura na área sofre 4d6 pontos de dano psíquico e perde 1d4 PM (Vontade reduz o dano à metade e evita a perda de PM).<br>Esta magia só pode ser aprendida e lançada por conjuradores que tenham observado uma área de Tormenta pelo menos uma vez. Sua divulgação é proibida e seu uso é permitido apenas em áreas controladas na Academia Arcana e outros lugares restritos, para estudar o fenômeno da Tormenta. Usar esta magia em qualquer outro ponto do Reinado é crime punido com a morte!",
     "Publicação":"Ameaças de Arton 1.0",
@@ -3713,7 +3713,7 @@
     "Ação":"Padrão",
     "Alcance":"pessoal",
     "Duração":"instantânea",
-    "Área":"esfera de 6m",
+    "Área":"esfera de 6m de raio",
     "Resistência":"Fortitude parcial",
     "Descrição":"Você emite uma onda de frio extremo que cobre a área de gelo. Criaturas na área sofrem 2d6 pontos de dano de frio e ficam enredadas e imóveis por 1d4 rodadas. Passar no teste de resistência reduz o dano pela metade e deixa a criatura enredada por uma rodada. Uma criatura voadora que fica imóvel começa a cair no início do seu turno.",
     "Publicação":"Dragão Brasil",
@@ -3804,7 +3804,7 @@
     "Alcance":"médio (30m 20q)",
     "Duração":"cena",
     "Área":"varia",
-    "Resistência":"Veja texto",
+    "Resistência":"veja texto",
     "Descrição":"Você pode controlar os movimentos e comportamentos de massas de ar. Ao lançar a magia, escolha um dos efeitos abaixo.<br><i>Ascender:</i> cria uma corrente de ar ascendente capaz de erguer do chão uma criatura ou objeto médio, fazendo o alvo ﬂutuar para cima e para baixo conforme sua vontade. Você pode gastar uma ação de movimento para subir ou descer o alvo até 6m por rodada, até um máximo de 30m de altura. Você não pode mover o alvo horizontalmente — mas o alvo pode, por exemplo, escalar uma colina ou se apoiar no teto para mover-se lateralmente (com metade de seu deslocamento normal). Uma criatura levitando fica vulnerável e sofre –2 nas jogadas de ataque. Alvos involuntários tem direito a um teste de Fortitude no início de seu turno para negar o efeito. Derrubar um alvo flutuando (simplesmente parando a corrente de ar) causa o dano normal de queda, mas um alvo que passe no teste pode “nadar” para o chão contra a corrente. Você pode usar essa opção para fazer uma manobra derrubar contra uma criatura voadora dentro do alcance, usando seu atributo-chave no lugar de Força.<br><i>Sopro:</i> cria uma lufada de vento a partir de suas mãos, que empurra qualquer criatura Média ou menor em um cone de 4,5m — faça uma manobra empurrar usando seu atributo-chave ao invés de força, usando o mesmo resultado de sua rolagem para todos os alvos. A lufada de vento também faz qualquer coisa que um vento forte e súbito faria, como levantar pó, dispersar vapores, apagar chamas, espalhar papéis ou mover uma embarcação. Manter o sopro ativo exige uma ação padrão.<br><i>Vento:</i> cria uma área de vento forte (Tormenta20 página 253) dentro do alcance da magia. Se lançada numa área que já esteja com algum efeito de vento, aumenta esse efeito em um passo. Manter o vento ativo requer uma ação de movimento. Você também pode usar essa opção para reduzir os efeitos de vento em uma área.",
     "Publicação":"Dragão Brasil",
     "mod":[

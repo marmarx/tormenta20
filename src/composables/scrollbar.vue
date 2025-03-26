@@ -6,7 +6,7 @@ const props = defineProps({orderedSpellsList:Array,beingScrolled:Boolean,list:Ar
 const emit = defineEmits(['update:modelValue'])
 
 import {useSortStore} from '@/stores/sortStore'
-const sortStore = useSortStore()
+const sortStore = useSortStore();
 
 const indexerAvoid = ['Publicação']
 const indexer = item => {

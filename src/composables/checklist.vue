@@ -12,7 +12,7 @@ const updateSelection = (option, isChecked) => {
   <div class="input">
     <p v-if="$slots.default"><slot></slot></p>
     <label v-for="option in options" :key="`checkbox-${option}`" :for="`checkbox-${option}`">
-      {{ option }}  <!-- isNaN(option)?option:`Nível ${option}` -->
+      {{ option?option:'em branco' }}  <!-- isNaN(option)?option:`Nível ${option}` -->
       <input type="checkbox" :id="`checkbox-${option}`" :value="option" :checked="modelValue.includes(option)" @change="updateSelection(option, $event.target.checked)" />
       <span class="checkmark"></span>
     </label>

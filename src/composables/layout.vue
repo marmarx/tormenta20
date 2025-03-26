@@ -2,7 +2,7 @@
 import buttonIcon from '@/composables/buttonIcon.vue'
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { toSentenceCase } from '@/stores/utility'
-const props = defineProps({components:Array})
+const props = defineProps({components:Array,purpose:String})
 
 const screenWidth = ref(window.innerWidth)
 const updateWidth = () => screenWidth.value = window.innerWidth
@@ -24,6 +24,12 @@ const transitionName = ref('')
 
 const nextComponent = () => {if(lastComponent.value){transitionName.value = 'slide-left'; currentIndex.value++}}
 const prevComponent = () => {if(currentIndex.value > 0){transitionName.value = 'slide-right'; currentIndex.value--}}
+
+import { useRoute } from 'vue-router';
+const route = useRoute()
+const id = computed(() => Number(route.path.match(/\d+/)))
+if(id.value){nextComponent()}
+watch(id,() => nextComponent())
 
 const leftComponentName = computed(() => {
   if(currentIndex.value>0) return props.components[currentIndex.value - 1].__name
@@ -70,14 +76,14 @@ onUnmounted(() => {
   <div ref="swipeContainer">
     <keep-alive>
       <transition-group :name="transitionName" tag="div" class="component-wrapper">
-        <component v-for="(comp,index) in visibleComponents" :key="`${comp.name}-${index}`" :is="comp" class="component"></component>
+        <component v-for="(comp,index) in visibleComponents" :key="`${comp.name}-${index}`" :is="comp" class="component" :purpose="props.purpose"></component>
       </transition-group>
     </keep-alive>
   </div>
 
   <div class="footnav">
-    <buttonIcon v-if="leftComponentName" class="left" @clicked="prevComponent" :icon="leftComponentName" iconPos="left">{{toSentenceCase(leftComponentName)}}</buttonIcon>
-    <buttonIcon v-if="rightComponentName" class="right" @clicked="nextComponent" :icon="rightComponentName" iconPos="right">{{toSentenceCase(rightComponentName)}}</buttonIcon>
+    <buttonIcon v-if="leftComponentName" @clicked="prevComponent" :icon="leftComponentName" iconPos="left">{{toSentenceCase(leftComponentName)}}</buttonIcon>
+    <buttonIcon v-if="rightComponentName" @clicked="nextComponent" :icon="rightComponentName" iconPos="right">{{toSentenceCase(rightComponentName)}}</buttonIcon>
   </div>
 
 </template>
@@ -114,10 +120,11 @@ then adds '.slide-left-enter-active' and the '.slide-left-enter-to' classes to o
 }
 
 .footnav{
-  position:fixed;bottom:0;left:0;
-  width:100%;height:4.4em;
+  position:fixed;top:0;left:0;
+  width:100%;height:6em;
   display:flex;flex-direction:row;justify-content:space-between;align-items:center;
-  background:var(--black-mute)
+  /* top:unset;bottom:0;height:4.4em;
+  background:var(--black-mute) */
 }
 @media (min-width:1730px){.footnav{display:none}}
 </style>

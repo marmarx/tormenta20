@@ -1,4 +1,6 @@
 <script setup>
+const props = defineProps({purpose:String})
+
 import flex from '@/composables/flex.vue'
 import btn from '@/composables/button.vue'
 import pencil from '@/icons/buttonIcons/pencil.vue'
@@ -16,14 +18,15 @@ const allSpells = ref(null);
 const fetchSpells = async () => { allSpells.value = await spellsStore.fetchSpells() }
 onMounted(fetchSpells); //fetch spells when component is mounted
 
-import {useFilterStore} from '@/stores/filterStore'
-const filterStore = useFilterStore()
+import {createFilterStore} from '@/stores/filterStore'
+const filterStore = createFilterStore(props.purpose)()
 
 const spellList = computed(() => filterStore.filterList(allSpells,0,[{id:Number(route.params.id)}])[0])
 
 const pms = lvl => lvl<2?1:(lvl<3?3:(lvl<4?6:(lvl<5?10:15)))
 const mod_pms = (key) => isNaN(key)?key:(`${key} PM${key>1?'s':''}`)
-const avoid = ['id','Nome','Tipo','Círculo','Escola','mod','Publicação']
+
+import { avoidProperties } from '@/stores/constantsStore'
 </script>
 
 <template>
@@ -34,7 +37,7 @@ const avoid = ['id','Nome','Tipo','Círculo','Escola','mod','Publicação']
       <div class="flex-over overflow">
         <pencil v-if="0" @click="edit_spell(spellList.id)"/>  <!-- v-if! -->
         <div v-for="(value, key) in spellList" :key="key">
-          <p v-if="(!avoid.includes(key))"><b>{{ key==='Descrição'?'':`${key}:` }}</b> <span v-html="value"></span></p>
+          <p v-if="(!avoidProperties.spells.includes(key))"><b>{{ key==='Descrição'?'':`${key}:` }}</b> <span v-html="value"></span></p>
         </div>
         <p v-for="mod in spellList.mod"><b>{{ mod_pms(Object.keys(mod).join()) }}:</b>  <span v-html="mod[Object.keys(mod)]"></span></p>
         <p v-if="spellList.Publicação"><i>Publicação:</i> {{ Array.isArray(spellList.Publicação)?spellList.Publicação.join(', '):spellList.Publicação }}</p>

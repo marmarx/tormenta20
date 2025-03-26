@@ -1,7 +1,8 @@
 <script setup>
-defineProps({modelValue:[String,Number], options:Array})
+const props = defineProps({modelValue:[String,Number], options:Array, purpose:String})
 
 import checkSingle from '@/composables/checksingle.vue'
+
 import {useSortStore} from '@/stores/sortStore'
 const sortStore = useSortStore()
 </script>
@@ -16,7 +17,6 @@ const sortStore = useSortStore()
     </select>
     <checkSingle option="Ordem reversa" v-model="sortStore.reverse"></checkSingle>
   </div>
-
 </div>
 </template>
 

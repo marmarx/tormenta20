@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
-import { ref, computed, watch } from "vue";
+import { ref, computed } from "vue";
+import { editKeys, mainProperties, customOrder } from '@/stores/constantsStore'
 
 import { useCharacterStore } from "./characterStore";
 const charStore = useCharacterStore()
@@ -19,25 +20,26 @@ export const useSpellsStore = defineStore("spellsStore", () => {
           console.log('Spells JSON loaded successfully!');
           return results
         })
-        .catch(error => console.log('Spells JSON failed to load:\n',error));
-        allSpells.value = data;
+        .catch(error => console.log('Spells JSON failed to load:\n',error))
+        allSpells.value = data
     }
-    return allSpells.value;
+    return allSpells.value
   }
 
-  const spellProperties = ref({ 'Tipo': ref([]), 'Círculo': ref([]), 'Escola': ref([]), 'Ação': ref([]), 'Publicação': ref([]) })  //equal to filterCheck const in filterStore.js
+  const spellProperties = mainProperties.spells
   Object.keys(spellProperties.value).forEach(key => {
     spellProperties.value[key] = computed(() => {
       if(!allSpells.value) return []
 
-      const uniqueValues = [...new Set(allSpells.value.flatMap(spell => Array.isArray(spell[key]) ? spell[key] : [spell[key]]))]
-      return key==='Ação'
-        ? uniqueValues.sort(sortStore.sortCustom(key))
+      const uniqueValues = [...new Set(allSpells.value.flatMap(item => Array.isArray(item[key]) ? item[key] : [item[key]]))]
+
+      return customOrder.spells.hasOwnProperty(key)
+        ? uniqueValues.sort(sortStore.sortCustom(key,'spells'))
         : uniqueValues.sort()
     });
   });
 
-  const spellEditKeys = ['Tipo','Círculo', 'Escola','Ação','Alvo','Alcance','Área','Efeito','Duração','Resistência']
+  const spellEditKeys = editKeys.spells
 
   const updateSpell = (id, key, value) => {
     const spell = charSpells.value.find(spell => spell.id == id);

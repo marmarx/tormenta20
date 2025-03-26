@@ -2,13 +2,14 @@
 defineEmits(['add_remove'])
 const props = defineProps({
   list:{type:Array,required:true},  //[{id:1,history:0,edits:{}},{id:5,history:1,edits:{Nome:'Mini bola de fogo'}}]
-  activeTab:{type:Boolean,default:false}
+  activeTab:{type:Boolean,default:false},
+  purpose:String
 })
 
 import checkbox from '@/composables/checkbox.vue'
 import flex from '@/composables/flex.vue'
 import scrollbar from '@/composables/scrollbar.vue'
-import { ref, computed, watch, onMounted, watchEffect } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 
 import {useSpellsStore} from '@/stores/spellsStore'   //import {useSpellStore} from '@/stores/old_spellsStore'
 const spellsStore = useSpellsStore();
@@ -21,8 +22,8 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 const open_details = spellId => router.push(`/magias/${spellId}`)
 
-import {useFilterStore} from '@/stores/filterStore'
-const filterStore = useFilterStore()
+import {createFilterStore} from '@/stores/filterStore'
+const filterStore = createFilterStore(props.purpose)();
 
 const filteredSpells = computed(() => {
   if (!allSpells.value) return [];
@@ -30,12 +31,12 @@ const filteredSpells = computed(() => {
 });
 
 import {useSortStore} from '@/stores/sortStore'
-const sortStore = useSortStore()  //'Nome','Círculo','Escola','Ação','Publicação','Adicionada em...'
+const sortStore = useSortStore()
 
 const orderedSpellsList = ref([]);
 //why not computed? Because 'list' changes aren't important, as 'filteredSpells' already changes when 'list' changes, also it must trigger when 'sortBy' and 'reverse' are changed
 watch(() => [sortStore.sortBy, sortStore.reverse, filteredSpells.value],() => {
-  orderedSpellsList.value = sortStore.sorter(props.list,filteredSpells.value)
+  orderedSpellsList.value = sortStore.sorter(props.list,filteredSpells.value,'spells')
 },{deep:true});
 
 const beingScrolled = ref(false)
@@ -66,7 +67,7 @@ const create_spell = () => router.push(`/magias/${allSpells.value.length}/editar
   </flex>
 </template>
 
-<style>
+<style scoped>
 @import '@/icons/actions.css';
 .item-cont{width:100%;display:inline-flex;left:0}
 .item{position:relative;width:100%;margin:.6em 0;display:inline-flex;top:0}

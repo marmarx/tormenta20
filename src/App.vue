@@ -1,10 +1,5 @@
 <script setup>
-import { useCharacterStore } from '@/stores/characterStore'
 import navigation from '@/views/navigation.vue'
-const storeCharacter = useCharacterStore()
-
-//storeCharacter.clearStorage()
-storeCharacter.newChar('Aurora')
 
 //watch(reverse,() => console.log('reverse',reverse.value))
 //watch(beingWatched,function,{deep:true})

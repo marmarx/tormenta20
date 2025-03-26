@@ -1,4 +1,6 @@
 <script setup>
+const props = defineProps({purpose:String})
+
 import flex from '@/composables/flex.vue'
 import tabs from '@/composables/tabs.vue'
 import spellList from '@/components/spells/list.vue'
@@ -9,8 +11,8 @@ const charSpellsList = storeCharacter.charSpells
 
 import { ref, computed } from 'vue'
 
-import {useFilterStore} from '@/stores/filterStore'
-const filterStore = useFilterStore()
+import {createFilterStore} from '@/stores/filterStore'
+const filterStore = createFilterStore(props.purpose)()
 const numberCharList = computed(() => filterStore.numberCharList)
 const numberFullList =  computed(() => filterStore.numberFullList)
 
@@ -26,8 +28,7 @@ const addRemove = spellId => storeCharacter.addRemoveSpell(spellId)
       <template #tab1>Pessoal ({{ numberCharList }})</template>
       <template #tab2>Restantes ({{ numberFullList }})</template>
     </tabs>
-    <spellList v-if="!selected_tab" :list="charSpellsList" @add_remove="addRemove" />
-    <spellList v-else :activeTab="true" :list="charSpellsList" @add_remove="addRemove" />
-
+    <spellList v-if="!selected_tab" :list="charSpellsList" @add_remove="addRemove" :purpose="props.purpose" />
+    <spellList v-else :activeTab="true" :list="charSpellsList" @add_remove="addRemove" :purpose="props.purpose" />
   </flex>
 </template>

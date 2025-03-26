@@ -5,6 +5,3 @@ import {t20color} from '@/stores/t20colorStore'
 <template>
   <input type="color" v-model="t20color" />
 </template>
-
-<style>
-</style>

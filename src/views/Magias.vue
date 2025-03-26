@@ -15,5 +15,5 @@ const components = [spellFilter, spellMain, spellDetailsEdit.value] //spellDetai
 </script>
 
 <template>
-  <layout :components="components" />
+  <layout :components="components" purpose="spells" />
 </template>

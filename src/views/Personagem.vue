@@ -1,9 +1,12 @@
 <script setup>
 import layout from '@/composables/layout.vue'
 
-const components = []
+import charLoader from '@/components/char/carregar.vue'
+import charMain from '@/components/char/atributos.vue'
+import empty from '@/components/empty.vue'
+const components = [charMain, charLoader, empty]
 </script>
 
 <template>
-  <layout :components="components" />
+  <layout :components="components" purpose="" />
 </template>
