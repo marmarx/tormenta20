@@ -1,5 +1,5 @@
 @font-face{font-family:'tormenta20';src:url('Tormenta20.ttf') format('truetype');font-weight:normal;font-style:normal}
-:root{--t20-color:#b72a2b;--t20-trans:#b72a2a80;--overlay:#e8e8e8;--over-trans:#eeeeee69}
+:root{--t20-color:#b72a2b;--t20-hover:rgba(183, 42, 42, 0.6);--t20-trans:rgba(183, 42, 42, 0.3);--overlay:#e8e8e8;--over-trans:#eeeeee69}
 
 .t20,h1,h2,h3,h4{color:var(--t20-color)!important}
 .t20box h1,.t20box h2,.t20box h3,.t20box h4,.t20box p{color:currentColor!important;filter:none}

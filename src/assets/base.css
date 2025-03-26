@@ -1,5 +1,5 @@
 :root{
-  --white:#fff;--white-soft:#f8f8f8;--white-mute:#f2f2f2;--white-washed:rgba(255,255,255,.92);--white-vanish:rgba(255,255,255,.6);
+  --white:#fff;--white-soft:#f8f8f8;--white-mute:#f2f2f2;--white-washed:rgba(255,255,255,.92);--white-vanish:rgba(255,255,255,.5);
   --black:#171717;--black-soft:#222222;--black-mute:#292929;--black-washed:rgba(0,0,0,.8);--black-vanish:rgba(0,0,0,.4);
   --gray:#717171;--gray-washed:rgba(209,209,209,.5);--gray-vanish:rgba(209,209,209,.25);
   --invalid-color:#6c6c6c;
@@ -9,10 +9,12 @@
 :root{
   --color-main: var(--black-mute);
   --color-plain: var(--black);
+  --color-soft: var(--black-soft);
   --color-washed: var(--black-washed);
   --color-vanish: var(--black-vanish);
 
   --back-color: var(--white);
+  --back-soft: var(--white-soft);
   --back-washed: var(--white-washed);
   --back-vanish: var(--white-vanish);   
 
@@ -28,10 +30,12 @@
   :root{
     --color-main: var(--white-mute);
     --color-plain: var(--white);
+    --color-soft: var(--white-soft);
     --color-washed: var(--white-washed);
     --color-vanish: var(--white-vanish);
 
     --back-color: var(--black);
+    --back-soft: var(--black-soft);
     --back-washed: var(--black-washed);
     --back-vanish: var(--black-vanish);   
 

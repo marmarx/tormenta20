@@ -9,15 +9,11 @@ export const useCharacterStore = defineStore('characterStore', () => {
 
   //State: declare reactive state variables
   const charData = ref(null)  // Current character being viewed/edited
-  console.log('--charData--',charData.value)
-  watch(charData,() => console.log('--charData--',charData.value),{deep:true})
 
   //List of characters 
   const charList = ref(null)
   const createCharList = () => fetchStorage().map(char => { return { name: char.name, basic: [ char.stats.raça, ...char.stats.classes.map(c => `${c.classe} ${c.nível}`)] }})
   charList.value = createCharList()
-  console.log('--charList--',charList.value)
-  watch(charData,() => charList.value = createCharList(),{deep:true})
   watch(charList,() => console.log('--charList--',charList.value),{deep:true})
 
   //Actions: functions to interact with the state

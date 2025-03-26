@@ -22,21 +22,22 @@ watch(() => props.icon,() => loadIcon(),{immediate:true}) // run immediately on 
 .iconButton{
   position:relative;
   display:flex;justify-content:center;flex-direction:row;align-items:center;gap:1em;
-  color:var(--black-mute);background:var(--white-washed);
-  border:1px solid var(--black-washed);
-  padding:.3em 1.5em;border-radius:12px;margin:1em 2em;
+  color:var(--color-main);background:var(--back-washed);
+  padding:.5em 1.5em;border:1px solid var(--color-washed);border-radius:8px;margin:1em 2em;
   outline:transparent solid 1px;transition:all .3s ease-in-out;
   cursor:pointer
   /* width:25%;padding:.3em .5em;margin:0 1em;border:none*/
 }
+p{font-size:1.15em}
 
 .iconButton:hover,.iconButton:focus{
-  background:var(--white-soft);
-  border:1px solid var(--black-mute);outline:var(--black-mute) solid 1px
+  background:var(--back-soft);
+  border:1px solid var(--color-main);outline:var(--color-main) solid 1px
   /* border:none;outline:none */
 }
 .left,.right{position:absolute}
 .left{left:0}.right{right:0;flex-direction:row-reverse}
+.left p,.right p{font-size:1em}
 
 .fade-enter-active,.opacity-leave-active{transition:opacity .2s}
 .fade-enter-from,.opacity-leave-to{opacity:0}
