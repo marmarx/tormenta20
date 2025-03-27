@@ -1,68 +1,87 @@
 import { defineStore } from 'pinia'
 import { ref, computed, watch } from 'vue'
+import { uuidv4 } from '@/stores/utility'
 
 export const useCharacterStore = defineStore('characterStore', () => {
+
+  // -- Storage: functions to interact with localStorage --
   const fetchStorage = () => {
     try{return JSON.parse(localStorage.getItem('tormenta20')) || []}
     catch(error){console.error('Error parsing localStorage!\n',error);return []}
   }
 
-  //State: declare reactive state variables
-  const charData = ref(null)  // Current character being viewed/edited
+  const saveStorage = data => localStorage.setItem('tormenta20', JSON.stringify(data))
+  const clearStorage = () => localStorage.setItem('tormenta20', JSON.stringify([]))
 
-  //List of characters 
-  const charList = ref(null)
-  const createCharList = () => fetchStorage().map(char => { return { name: char.name, basic: [ char.stats.raça, ...char.stats.classes.map(c => `${c.classe} ${c.nível}`)] }})
-  charList.value = createCharList()
-  watch(charList,() => console.log('--charList--',charList.value),{deep:true})
+  // -- State: declare reactive state variables --
+  const createCharList = () => fetchStorage().map(char => ({ id:char.id, name: char.name, basic: [ char.stats.raça, ...char.stats.classes.map(c => `${c.classe} ${c.nível}`)] }))
 
-  //Actions: functions to interact with the state
+  const charData = ref(null)  //current character being viewed/edited
+  const charList = ref(createCharList())   //list of all characters in storage
+
+  //Actions: functions to interact with the state and storage
   const newChar = (name) => {
     const character = ref({
+      id: uuidv4(),
       name,
+      nível_total: 1,
       stats: {
+        jogador: '',
+        atributos: {força: 0, destreza: 0, constituição: 0, inteligência: 0, sabedoria: 0, carisma: 0},
         raça: 'Raça',
-        classes: [{ classe: 'Classe', nível: 1 }]
+        origem: [],
+        classes: [{ classe: 'Classe', nível: 1 }],
+        distinção: [],
+        divindade: [],
+        tamanho: 'Médio',
+        deslocamento: [{tipo: 'Terrestre', valor: '9m 6q'}],
+        experiência: 0,
+        pv: 0,
+        pm: 0
       },
-      spells: []
+      spells: [],
+      poderes: []
     })
 
-    const nível_total = computed(() => character.value.stats.classes.reduce((acc, el) => acc + el.nível, 0))
-    return { ...character.value, nível_total }
+    return character.value
   }
+
+  const nível_total = computed(() => charData.value.stats.classes.reduce((acc, el) => acc + el.nível, 0))
 
   const createChar = name => {
     console.log(`Creating new character`)
     let storedData = fetchStorage()
 
-    console.log('here',storedData,name)
-    console.log(storedData.findIndex(el => el.name === name))
+    const newCharacter = newChar(name)
+    storedData.push(newCharacter)
 
-    if(storedData.findIndex(el => el.name === name)>=0){
-      const text = `Personagem <${name}> já existe! Deseja sobrescrever?\n\nAtenção: essa operação não poderá ser desfeita!`
-      if(!confirm(text)) return
-    }
-    loadChar(name)
+    saveStorage(storedData)
+    loadChar(newCharacter.id)
   }
 
-  const loadChar = name => {
+  const loadChar = id => {
     if (charData.value) saveChar()
-    console.log(`Loading character <${name}>`)
+
     const storedData = fetchStorage()
-    charData.value = storedData.find(el => el.name === name) || newChar(name)
-    console.log(charData.value)
+    charData.value = storedData.find(el => el.id === id) || null
+
+    if(charData.value) console.log(`Loading character <${charData.value.name}>\nID ${charData.value.id}`)
+    else console.log(`There are no characters in storage!`)
   }
 
   const saveChar = () => {
-    if (!charData.value) return
-    console.log(`Saving character <${charData.value.name}>`);
+    if (!charData.value) return;
+    console.log(`Saving character <${charData.value.name}>\nID ${charData.value.id}`)
+
     let storedData = fetchStorage()
-    const index = storedData.findIndex(el => el.name === charData.value.name)
+    const index = storedData.findIndex(el => el.id === charData.value.id)
+
+    charData.value.nível_total = nível_total.value
 
     if(index !== -1) storedData[index] = charData.value  //updated existing character
     else storedData.push(charData.value) //add new character
 
-    localStorage.setItem('tormenta20', JSON.stringify(storedData))
+    saveStorage(storedData)
     charList.value = createCharList()
   }
   watch(charData,saveChar,{deep:true})
@@ -72,21 +91,45 @@ export const useCharacterStore = defineStore('characterStore', () => {
     if(charData.value) saveChar()
     charData.value = null
   }
-  const clearStorage = () => localStorage.setItem('tormenta20', JSON.stringify([]))
 
   const deleteChar = () => {
-    if(!charData.value) return
-
+    if(!charData.value) return;
     const text = `Tem certeza que deseja apagar o personagem <${charData.value.name}>?\n\nAtenção: essa operação não poderá ser desfeita!`
-    if(!confirm(text)) return
 
-    console.log(`Deleting character <${charData.value.name}>`);
+    if(!confirm(text)) return;
+    console.log(`Deleting character <${charData.value.name}>\nID ${charData.value.id}`);
+
     let storedData = fetchStorage()
-    const index = storedData.findIndex(el => el.name === charData.value.name)
+    const index = storedData.findIndex(el => el.id === charData.value.id)
+
     if(index !== -1){storedData.splice(index,1)}  //remove character
-    localStorage.setItem('tormenta20', JSON.stringify(storedData))
-    charData.value = null
+    saveStorage(storedData)
+
+    charData.value = null;
+    charList.value = createCharList()
+
+    if(charList.value.length) loadChar(charList.value[0].id)
+    else createChar('Novo personagem')
   }
+
+  const renameChar = (newName) => {
+    if (!charData.value) return;
+    if (!newName.trim()) return alert("Nome inválido! Por favor, insira outro nome :)");
+  
+    let storedData = fetchStorage()
+    const index = storedData.findIndex(el => el.id === charData.value.id)
+    
+    if (index === -1) return console.log(`Personagem não encontrado!`);
+    console.log(`Renaming character <${charData.value.name}> to <${newName}>`)
+  
+    storedData[index].name = newName //rename character in storage
+    saveStorage(storedData)
+      
+    charData.value.name = newName //rename in memory
+  
+    charList.value = createCharList() //update charList to reflect the new name
+  }
+  
 
   //spell functions
   const newSpell = id => ({id,history:new Date().getTime(),edits:{}})   //history: miliseconds since 1970
@@ -99,7 +142,7 @@ export const useCharacterStore = defineStore('characterStore', () => {
     else{charData.value.spells.push(newSpell(spellId))}  //add spell object to charSpells array
   }
 
-  return { clearStorage, charList, charData, charSpells, createChar, saveChar, loadChar, clearChar, deleteChar, addRemoveSpell }
+  return { clearStorage, charList, charData, charSpells, createChar, renameChar, saveChar, loadChar, clearChar, deleteChar, addRemoveSpell }
 })
 
 

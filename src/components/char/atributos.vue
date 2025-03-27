@@ -7,17 +7,20 @@ import customTextArea from '@/composables/textarea.vue'
 import { useCharacterStore } from '@/stores/characterStore'
 const storeCharacter = useCharacterStore()
 
+//storeCharacter.clearStorage()
+
 if(!storeCharacter.charData){
-  if(storeCharacter.charList.length == 0) storeCharacter.creatChar('Personagem sem nome')
-  else storeCharacter.loadChar(storeCharacter.charList[0].name)
+  if(storeCharacter.charList.length == 0) storeCharacter.createChar('Novo personagem')
+  else storeCharacter.loadChar(storeCharacter.charList[0].id)
 }
 </script>
 
 <template>
   <flex class="grow">
-    <h2>{{storeCharacter.charData.name}}</h2>
+    <h2>{{storeCharacter.charData.name?storeCharacter.charData.name:'Personagem'}}</h2>
     <div class="overflow" style="padding-top:1.5em">
-      <customInput type="text" placeholder="Nome do personagem" v-model="storeCharacter.charData.name">Nome</customInput>
+      <customInput type="text" placeholder="Nome do personagem" v-model="storeCharacter.charData.name" @update:modelValue="storeCharacter.renameChar">Nome</customInput>
+      <customInput type="text" placeholder="Nome do jogador" v-model="storeCharacter.charData.stats.jogador">Jogador</customInput>
     </div>
   </flex>
   

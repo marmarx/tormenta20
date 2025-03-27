@@ -1,3 +1,5 @@
+//general utility functions
+const uuidv4 = () => "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c => (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16))
 const objectMap = (obj,fn) => Object.fromEntries(Object.entries(obj).map(([k,v],i) => [k,fn(v,k,i)]))   //value, key, index; original obj is unchanged
 
 //richtext from input
@@ -16,8 +18,8 @@ const boldify = str => {
 }
 const unboldify = str => isNaN(str)?str.replaceAll(/<br>|<\/br>/gi,'\n').replaceAll(/<i>|<\/i>/gi,'_').replaceAll(/<b>|<\/b>/gi,'*').replaceAll(/<\/?p[^>]*>/gi,'\n'):str
 
+//text manipulation
 const removeAccents = str => str.normalize("NFD").replace(/[\u0300-\u036f]/g, '')
 const toSentenceCase = str => str.charAt(0).toUpperCase() + str.substring(1).toLowerCase()
 
-
-export {objectMap, boldify, unboldify, removeAccents, toSentenceCase}
+export {objectMap, boldify, unboldify, removeAccents, toSentenceCase, uuidv4}

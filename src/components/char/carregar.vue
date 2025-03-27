@@ -1,7 +1,7 @@
 <script setup>
 import flex from '@/composables/flex.vue'
 import buttonIcon from '@/composables/buttonIcon.vue'
-// import t20 from '@/composables/t20color.vue'
+//import t20 from '@/composables/t20color.vue'
 
 import { computed } from 'vue'
 import { useCharacterStore } from '@/stores/characterStore'
@@ -9,7 +9,7 @@ const storeCharacter = useCharacterStore()
 
 const activeChar = computed(() => {
   if (!storeCharacter.charData) return null
-  return storeCharacter.charData.name
+  return storeCharacter.charData.id
 })
 </script>
 
@@ -18,7 +18,7 @@ const activeChar = computed(() => {
   <h2>Personagens</h2>
   <div v-if="storeCharacter.charList" class="overflow" style="padding-top:1.5em">
     <div class="item-cont" v-for="char in storeCharacter.charList" :key="`char-${char.name}`" :name="char.name">
-      <div class="item" :class="{ selectedChar:char.name == activeChar }" @click="storeCharacter.loadChar(char.name)">
+      <div class="item" :class="{ selectedChar:char.id == activeChar }" @click="storeCharacter.loadChar(char.id)">
         <p class="item-title bold" v-html="char.name"></p>
         <p class="item-subtitle">{{char.basic.join(' • ')}}</p>
       </div>
