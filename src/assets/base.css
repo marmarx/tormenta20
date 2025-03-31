@@ -50,7 +50,7 @@
 
 *,*:before,*:after{
   margin:0;padding:0;border:0;
-  font-family:'Open Sans', sans-serif;font-weight:normal;color:var(--color-main);line-height:1.4rem;
+  font-family:'Open Sans', sans-serif;color:var(--color-main);font-weight:normal;line-height:1.4rem;
   text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
   word-wrap:normal;word-break:keep-all;box-sizing:border-box
 }

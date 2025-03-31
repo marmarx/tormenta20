@@ -23,7 +23,7 @@ const lastComponent = computed(() => currentIndex.value + visibleCount.value < p
 const transitionName = ref('')
 
 const nextComponent = () => {if(lastComponent.value){transitionName.value = 'slide-left'; currentIndex.value++}}
-const prevComponent = () => {if(currentIndex.value > 0){transitionName.value = 'slide-right'; currentIndex.value--}}
+const prevComponent = () => {if(currentIndex.value>0){transitionName.value = 'slide-right'; currentIndex.value--}}
 
 import { useRoute } from 'vue-router';
 const route = useRoute()
@@ -76,7 +76,7 @@ onUnmounted(() => {
   <div ref="swipeContainer">
     <keep-alive>
       <transition-group :name="transitionName" tag="div" class="component-wrapper">
-        <component v-for="(comp,index) in visibleComponents" :key="`${comp.name}-${index}`" :is="comp" class="component" :purpose="props.purpose"></component>
+        <component v-for="comp in visibleComponents" :key="`${comp.__name}`" :is="comp" class="component" :purpose="props.purpose"></component>
       </transition-group>
     </keep-alive>
   </div>

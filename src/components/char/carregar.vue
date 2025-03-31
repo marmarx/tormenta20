@@ -1,7 +1,7 @@
 <script setup>
 import flex from '@/composables/flex.vue'
 import buttonIcon from '@/composables/buttonIcon.vue'
-//import t20 from '@/composables/t20color.vue'
+import t20color from '@/composables/inputs/t20color.vue'
 
 import { computed } from 'vue'
 import { useCharacterStore } from '@/stores/characterStore'
@@ -20,13 +20,13 @@ const activeChar = computed(() => {
     <div class="item-cont" v-for="char in storeCharacter.charList" :key="`char-${char.name}`" :name="char.name">
       <div class="item" :class="{ selectedChar:char.id == activeChar }" @click="storeCharacter.loadChar(char.id)">
         <p class="item-title bold" v-html="char.name"></p>
-        <p class="item-subtitle">{{char.basic.join(' • ')}}</p>
+        <p class="item-subtitle">{{char.basic.filter(Boolean).join(' • ')}}</p>
       </div>
     </div>
   </div>
-  <!-- <t20 /> -->
   <buttonIcon @clicked="storeCharacter.createChar('Personagem sem nome')" icon="import">Criar novo personagem</buttonIcon>
   <buttonIcon @clicked="storeCharacter.deleteChar(storeCharacter.charData.name)" icon="trash">Deletar personagem</buttonIcon>
+  <t20color/>
 </flex>
 </template>
 

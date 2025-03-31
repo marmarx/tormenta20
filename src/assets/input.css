@@ -1,15 +1,15 @@
-.input{position:relative;margin:.4em 0;color:currentColor}
+.input{position:relative;margin:.4em;color:currentColor}
 
-label,input[type="text"],select,textarea,.fakeinput{width:100%}
+label,input[type="text"],input[type="number"],select,.fakeinput,textarea,.fakeinput{width:100%}
 textarea{min-height:125px}
 
-input[type="text"],select,textarea,.fakeinput{
+input[type="text"],input[type="number"],select,.fakeinput,textarea,.fakeinput{
   font-size:1em;line-height:1.1em;color:var(--color-main);
   padding:.8em 1.3em;border:1px solid #b0b0b0;border-radius:5px;
-  background:var(--back-washed);appearance:none;-webkit-appearance:none
+  background:var(--back-washed);appearance:none;-webkit-appearance:none;-moz-appearance:textfield
 }
 
-.t20box input[type="text"],.t20box select,.t20box option,.t20box textarea,.t20box .fakeinput{border:1px solid var(--color-main);background:var(--back-washed)}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 
 label{
   position:absolute;top:0;left:0;
@@ -21,13 +21,24 @@ label{
 
 input:focus ~ label, input:not(:focus):valid ~ label,
 select:focus ~ label, select:not(:focus):valid ~ label,
+.fakeinput:focus ~ label, .fakeinput:not(:focus):valid ~ label,
 .fakeinput:focus ~ label, .fakeinput:not(:empty) ~ label{
   left:2px;font-size:.7em;
   padding:.4em 2.1em;margin:.3em 0;
 }
 
-select{padding:.8em 1.3em!important}
+input:focus, select:focus, .fakeinput:focus, textarea:focus, .fakeinput:focus,
+input:hover, select:hover, .fakeinput:hover, textarea:hover, .fakeinput:hover{outline:1px solid var(--color-main)}
+
+/* select,.fakeinput{padding:.8em 1.3em!important} */
 select option{color:var(--color-main)!important}
 select:invalid,option:disabled{color:var(--gray)!important}
 
 ::placeholder,::-ms-input-placeholder{color:var(--gray)}
+
+input[type="color"]{
+  width:3em;height:3em;
+  padding:0;border:0;
+  background:none;cursor:pointer;
+  appearance:none;-moz-appearance:none;-webkit-appearance:none;
+}

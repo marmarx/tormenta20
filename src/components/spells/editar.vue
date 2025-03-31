@@ -1,8 +1,8 @@
 <script setup>
 import flex from '@/composables/flex.vue'
-import customInput from '@/composables/input.vue'
-import customSelect from '@/composables/select.vue'
-import customTextArea from '@/composables/textarea.vue'
+import customInput from '@/composables/inputs/textInput.vue'
+import customSelect from '@/composables/inputs/selectInput.vue'
+import customTextArea from '@/composables/inputs/textarea.vue'
 import spellMod from '@/components/spells/mod.vue'
 import { ref,watch,watchEffect,computed,onMounted } from 'vue'
 
