@@ -1,27 +1,6 @@
 <template>
-<div class="import"></div>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 9.98193V19.9819H19V9.98193H15V7.98193H21V21.9819H3V7.98193H9V9.98193H5Z" fill="currentColor" />
+    <path d="M13.0001 2H11.0001V14.0531L8.46451 11.5175L7.05029 12.9317L12 17.8815L16.9498 12.9317L15.5356 11.5175L13.0001 14.053V2Z" fill="currentColor" />
+  </svg>
 </template>
-
-<style>
-.import{
-  position:relative;
-  width:11px;height:11px;color:currentColor;
-  margin-left:4px;margin-top:5px;border:solid 1px currentColor;border-radius:1px
-}
-
-.import:before,.import:after{content:'';position:absolute}
-
-.import:before{
-  top:-4px;left:2px;
-  width:1px;height:10px;
-  border-left:solid 3px white;border-right:solid 3px white;
-  background-color:currentColor;
-}
-
-.import:after{
-  left:3px;top:1px;
-  width:4px;height:4px;
-  border-top:solid 1px currentColor;border-right:solid 1px currentColor;
-  -webkit-transform:rotate(135deg);transform:rotate(135deg)
-}
-</style>

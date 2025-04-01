@@ -4,10 +4,10 @@
 
 <style scoped>
 .pencilbox{
-  position:absolute;right:10%;top:5%;
+  position:relative;
   width:15px;height:15px;
   border:2px var(--color-main) solid;margin:auto;
-  cursor:pointer
+  cursor:pointer; transform:scale(.8)
 }
 .pencilbox:before{
   position:absolute;top:-2px;right:-2px;

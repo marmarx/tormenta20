@@ -30,6 +30,7 @@ input,.checkmark{position:absolute;left:0;top:0}
   color:var(--color-main)!important;background:var(--el-back-color);
   transition:all .3s
 }
+
 label:hover input ~ .checkmark,label:focus input ~ .checkmark,label input:checked ~ .checkmark{background:var(--el-back-hover)}
 
 .checkmark:after{

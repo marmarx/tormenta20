@@ -76,13 +76,14 @@ const create_spell = () => router.push(`/magias/${allSpells.value.length}/editar
 .item-subtitle{font-size:.85em;margin:0}
 .item-icon{display:flex;position:absolute;right:0;top:0;height:100%;aspect-ratio:1/1}
 
-.slide-enter-active,.slide-leave-active .item{left:0;transition:all .25s ease-in-out,position .4s}
-.slide-enter-active .item,.slide-leave-active,.slide-move{transition:all .3s ease,position .4s;transition-delay:.2s}
-.slide-leave-active .item{position:absolute;width:90%} /*move other elements smoothly */
-.slide-enter-active .item{position:relative} /*move other elements smoothly */
+.slide-enter-active,.slide-leave-active{transition:all .3s ease-in-out}
+.slide-enter-active{transition-delay:.1s}
 
-.slide-enter-to .item,.slide-leave-from .item{opacity:1;transform:translate(0,-30%)}
-.slide-enter-from .item,.slide-leave-to .item{opacity:0;transform:translate(v-bind(transX),-30%)}
+.slide-enter-to,.slide-leave-from{opacity:1;transform:translateX(0)}
+.slide-enter-from,.slide-leave-to{opacity:0;transform:translateX(v-bind(transX))}
+
+.slide-enter-to .item,.slide-leave-from .item{position:relative}
+.slide-enter-from .item{position:absolute}
 </style>
 
 <style scoped>

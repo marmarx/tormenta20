@@ -2,7 +2,7 @@
 <button><slot>Click me!</slot></button>
 </template>
 
-<style>
+<style scoped>
 button{
   display:inline-block;width:70%;
   font-size:1em;text-align:center;text-decoration:none;font-weight:600;

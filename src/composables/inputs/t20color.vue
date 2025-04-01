@@ -1,10 +1,13 @@
 <script setup>
-import {t20color} from '@/stores/t20colorStore'
+// import { useCharacterStore } from '@/stores/characterStore'
+// const storeCharacter = useCharacterStore()
+import { t20color } from '@/stores/t20colorStore'
 </script>
 
 <template>
   <div class="color-picker">
     <p>Escola uma cor:</p>
+    <!-- <input type="color" v-model="storeCharacter.charData.config.color" /> -->
     <input type="color" v-model="t20color" />
   </div>
 </template>

@@ -1,6 +1,3 @@
-:root{--icon-border:#8f8f8f;--icon-bg:#b2b2b2;--icon-color:#b2b2b2}
-@media (prefers-color-scheme:dark){:root{--icon-border:#b2b2b2;--icon-bg:#696969}}
-
 .ac_Livre,.ac_Movimento,.ac_Padrão,.ac_Completa,.ac_Padrão:before,.ac_Completa:before,.ac_Completa:after{
   width:12px;height:12px;border:1px solid var(--icon-border);display:block;margin:auto
 }

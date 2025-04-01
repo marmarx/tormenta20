@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed, watch } from 'vue'
 import { uuidv4 } from '@/stores/utility'
+import { t20color } from './t20colorStore'
 
 export const useCharacterStore = defineStore('characterStore', () => {
 
@@ -11,15 +12,27 @@ export const useCharacterStore = defineStore('characterStore', () => {
   }
 
   const saveStorage = data => localStorage.setItem('tormenta20', JSON.stringify(data))
-  const clearStorage = () => localStorage.setItem('tormenta20', JSON.stringify([]))
+  const clearStorage = () => {
+    if(!charData.value) return;
+    const text = `Seus dados são armazenados apenas localmente neste dispositivo, ou seja, nada é armazenado online ou em outro dispositivo. Tem certeza que deseja apagar todos os dados?\n\nAtenção: essa operação não poderá ser desfeita!`
+
+    if(!confirm(text)) return;
+    localStorage.setItem('tormenta20', JSON.stringify([]))
+    charData.value = null
+    console.log('--- All data deleted ---')
+    createChar('Novo personagem')
+  }
 
   // -- State: declare reactive state variables --
-  const createCharList = () => fetchStorage().map(char => ({ id:char.id, name: char.name, basic: [ char.stats.raça, ...char.stats.classes.map(c => `${c.classe} ${c.nível}`)] }))
+  const createCharList = () => fetchStorage().map(char => ({ id:char.id, name:char.name, basic:[ char.stats.raça, ...char.stats.classes
+    .map(c => c.classe&&c.nível?`${c.classe} ${c.nível}`:'')
+    .filter(c => c.trim()!='')]
+  }))
 
   const charData = ref(null)  //current character being viewed/edited
   const charList = ref(createCharList())   //list of all characters in storage
 
-  watch(charData,() => console.log(charData.value.stats),{deep:true}) //debugging: watch for changes in charData
+  watch(charData,() => console.log(charData.value),{deep:true}) //debugging: watch for changes in charData
 
   //Actions: functions to interact with the state and storage
   const newChar = (name) => {
@@ -41,6 +54,7 @@ export const useCharacterStore = defineStore('characterStore', () => {
         pm: '0', //number
         experiência: '' //number
       },
+      config: { color: '#b72a2b' },
       spells: [],
       poderes: []
     })
@@ -122,7 +136,7 @@ export const useCharacterStore = defineStore('characterStore', () => {
     const index = storedData.findIndex(el => el.id === charData.value.id)
     
     if (index === -1) return alert(`Personagem não encontrado!`);
-    console.log(`---Renaming character <${charData.value.name}> to <${newName}> ---`)
+    console.log(`--- Renaming character <${charData.value.name}> to <${newName}> ---`)
   
     storedData[index].name = newName //rename character in storage
     saveStorage(storedData)
@@ -130,6 +144,37 @@ export const useCharacterStore = defineStore('characterStore', () => {
     charData.value.name = newName //rename in memory
   
     charList.value = createCharList() //update charList to reflect the new name
+  }
+
+  const importChar = () => {
+    if(!window.FileReader) return console.log('--- Browser not supported: cannot import ---')
+    let reader = new FileReader()
+    reader.onload = () => {
+      console.log('--- File uploaded, reading file ---')
+      charData.value = JSON.parse(event.target.result)
+      console.log(`--- Imported character <${charData.value.name}> ---`)
+    }
+    reader.onerror = () => alert('Erro ao ler arquivo, por favor, tente novamente...')
+    reader.readAsText(event.target.files[0])
+  }
+
+  const exportChar = () => {
+    let filename = `${charData.value.name} - ${charList.value[0].basic.filter(Boolean).join(' - ')}.json`
+    let filedata = JSON.stringify(charData.value, (_, value) => isNaN(value)?value:Number(value), 2)
+    let file = new Blob([filedata], {type:'application/json'})  //for .txt use {type:'text/plain'}
+
+    if(window.navigator.msSaveOrOpenBlob) return window.navigator.msSaveOrOpenBlob(file,filename) //IE 10+
+    let a = document.createElement('a')
+    let url = URL.createObjectURL(file)
+    a.href = url
+    a.download = filename
+    document.body.appendChild(a)
+    a.click()
+    setTimeout(() => {
+      document.body.removeChild(a)
+      window.URL.revokeObjectURL(url)
+    }, 0)
+    console.log('--- Exported character <${charData.value.name}> ---')
   }
   
 
@@ -144,7 +189,7 @@ export const useCharacterStore = defineStore('characterStore', () => {
     else{charData.value.spells.push(newSpell(spellId))}  //add spell object to charSpells array
   }
 
-  return { clearStorage, charList, charData, charSpells, createChar, renameChar, saveChar, loadChar, clearChar, deleteChar, addRemoveSpell }
+  return { clearStorage, charList, charData, charSpells, createChar, renameChar, saveChar, loadChar, clearChar, deleteChar, importChar, exportChar, addRemoveSpell }
 })
 
 

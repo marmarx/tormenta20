@@ -1,4 +1,6 @@
 import { ref, computed, watchEffect } from 'vue'
+// import { useCharacterStore } from '@/stores/characterStore'
+// const storeCharacter = useCharacterStore()
 
 const hexToRgba = (hex, alpha = 0.3) => {
   let r = parseInt(hex.slice(1, 3), 16)
@@ -8,6 +10,7 @@ const hexToRgba = (hex, alpha = 0.3) => {
 }
 
 const t20color = ref('#b72a2b')
+// const t20color = computed(() => storeCharacter.charData.config.color || '#b72a2b')  //ref('#b72a2b')
 const t20hover = computed(() => hexToRgba(t20color.value,0.6))
 const t20trans = computed(() => hexToRgba(t20color.value))
 
