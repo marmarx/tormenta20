@@ -26,7 +26,7 @@ p{
 
 .grow{flex-grow:1;overflow-y:auto;scrollbar-width:none}
 .overflow{position:relative;height:100%;overflow-x:hidden;overflow-y:scroll;padding:0 2em}
-@media (max-width:1730px){.overflow{padding:0 2em 3em}}
+@media (max-width:1730px){.overflow{padding:0 .5em 1em}}
 
 table{margin:1.2em auto;width:90%}
 th{font-weight:bold}
