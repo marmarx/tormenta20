@@ -1,0 +1,21 @@
+@font-face{font-family:'tormenta20';src:url('Tormenta20.ttf') format('truetype');font-weight:normal;font-style:normal}
+:root{
+  --t20-color:#b72a2b;
+  --t20-hover:rgba(183, 42, 42, 0.6);
+  --t20-trans:rgba(183, 42, 42, 0.3);
+  --overlay:#e8e8e8;
+  --over-trans:#eeeeee69;
+}
+
+.t20,h1,h2,h3,h4{color:var(--t20-color)!important}
+.t20box h1,.t20box h2,.t20box h3,.t20box h4,.t20box p,.t20box label{color:var(--white-soft)!important;filter:none}
+
+.t20box input,.t20box select,.t20box textarea{
+  color:var(--white-soft);
+  border:1px solid var(--white-washed);
+  background:#ffffff40;
+  font-weight: bold;
+}
+
+.t20box input:focus, .t20box select:focus, .t20box textarea:focus, .t20box .fakeinput:focus,
+.t20box input:hover, .t20box select:hover, .t20box textarea:hover, .t20box .fakeinput:hover{outline:1px solid var(--white-soft)}
