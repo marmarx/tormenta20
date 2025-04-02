@@ -1,6 +1,6 @@
 # tormenta20
 
-This template should help get you started developing with Vue 3 in Vite.
+Published through Netlify: https://torment20.netlify.app/
 
 ## Recommended IDE Setup
 
