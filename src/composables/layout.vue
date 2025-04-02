@@ -104,7 +104,7 @@ onUnmounted(() => {
   transition:transform .5s ease-in-out,opacity .35s
 }
 @media (max-width:1730px){.component{width:49.9999%;padding:0 1em}}
-@media (max-width:1035px){.component{width:100%;padding:0}}
+@media (max-width:1035px){.component{width:100%;padding:0;padding-top:2em}}
 
 .slide-left-enter-active,.slide-right-enter-active{position:relative}
 .slide-left-leave-active,.slide-right-leave-active{position:absolute;opacity:0}
