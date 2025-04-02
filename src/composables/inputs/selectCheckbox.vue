@@ -94,7 +94,7 @@ select{padding:.75em 1.3em!important}
 .dropdown{
   position:absolute; top:100%; left:0;
   width: 100%; max-height:250px; overflow-y:scroll;
-  background:white;
+  background:var(--back-color);
   padding:5px; border:1px solid #ccc;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   z-index:1;

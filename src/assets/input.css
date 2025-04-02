@@ -31,7 +31,7 @@ input:focus, select:focus, .fakeinput:focus, textarea:focus, .fakeinput:focus,
 input:hover, select:hover, .fakeinput:hover, textarea:hover, .fakeinput:hover{outline:1px solid var(--color-main)}
 
 /* select,.fakeinput{padding:.8em 1.3em!important} */
-select option{color:var(--color-main)!important}
+select option{color:var(--color-main)!important;background:var(--back-soft)}
 select:invalid,option:disabled{color:var(--gray)!important}
 
 ::placeholder,::-ms-input-placeholder{color:var(--gray)}

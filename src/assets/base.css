@@ -65,7 +65,7 @@
 ::-webkit-scrollbar-thumb:hover{background:#999}
 ::selection{background:#30f2bb}
 
-html,body{scroll-behavior:smooth;overflow:hidden;width:100vw;background:var(--bg-color)}
+html,body{scroll-behavior:smooth;overflow:hidden;width:100vw;background:var(--back-vanish)}
 html{height:100vh}body{height:100%}
 /* html{font-size:62.5%} makes 1 rem = 10px, thus making 1.6 rem = 16px; normally 1 rem = 16px */
 body{font-size:1rem} /* 1 rem = 16px */
